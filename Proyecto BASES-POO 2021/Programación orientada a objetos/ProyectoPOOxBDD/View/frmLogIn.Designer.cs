@@ -58,8 +58,7 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtPassword, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.btnLogIn, 1, 7);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 172);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 103);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -71,8 +70,8 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(904, 848);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(633, 509);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox2
@@ -82,10 +81,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox2, 2);
             this.pictureBox2.Image = global::ProyectoPOOxBDD.Properties.Resources.LogIn;
-            this.pictureBox2.Location = new System.Drawing.Point(184, 89);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(129, 53);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(533, 142);
+            this.pictureBox2.Size = new System.Drawing.Size(372, 85);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -98,10 +96,9 @@ namespace ProyectoPOOxBDD
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(184, 236);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(129, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(533, 84);
+            this.label1.Size = new System.Drawing.Size(372, 50);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -113,10 +110,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.txtUser, 2);
             this.txtUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUser.Location = new System.Drawing.Point(184, 325);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUser.Location = new System.Drawing.Point(129, 194);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(533, 49);
+            this.txtUser.Size = new System.Drawing.Size(372, 35);
             this.txtUser.TabIndex = 2;
             // 
             // label2
@@ -127,10 +123,9 @@ namespace ProyectoPOOxBDD
             this.label2.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(184, 404);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(129, 241);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(533, 84);
+            this.label2.Size = new System.Drawing.Size(372, 50);
             this.label2.TabIndex = 3;
             this.label2.Text = "Contraseña";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -142,11 +137,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.txtPassword, 2);
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPassword.Location = new System.Drawing.Point(184, 493);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(129, 294);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(533, 49);
+            this.txtPassword.Size = new System.Drawing.Size(372, 35);
             this.txtPassword.TabIndex = 4;
             // 
             // btnLogIn
@@ -159,13 +153,13 @@ namespace ProyectoPOOxBDD
             this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogIn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
-            this.btnLogIn.Location = new System.Drawing.Point(184, 619);
-            this.btnLogIn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogIn.Location = new System.Drawing.Point(129, 369);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(533, 74);
+            this.btnLogIn.Size = new System.Drawing.Size(372, 44);
             this.btnLogIn.TabIndex = 5;
             this.btnLogIn.Text = "Iniciar sesión";
             this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -174,12 +168,11 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(-4, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(-3, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(910, 162);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(637, 97);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // pictureBox1
@@ -189,25 +182,23 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.pictureBox1.Image = global::ProyectoPOOxBDD.Properties.Resources.LogoCovid;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(310, 152);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // frmLogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(906, 1018);
+            this.ClientSize = new System.Drawing.Size(634, 611);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "frmLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
