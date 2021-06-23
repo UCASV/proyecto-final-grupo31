@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoPOOxBDD
 {
-    public partial class Form1 : Form
+    public partial class frmLogIn : Form
     {
-        public Form1()
+        public frmLogIn()
         {
             InitializeComponent();
         }
