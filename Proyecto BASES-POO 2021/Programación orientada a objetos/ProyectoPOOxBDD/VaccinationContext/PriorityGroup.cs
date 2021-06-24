@@ -13,7 +13,7 @@ namespace ProyectoPOOxBDD.VaccinationContext
         }
 
         public int Id { get; set; }
-        public string PriorityGroup1 { get; set; }
+        public string PriorityGroupName { get; set; }
 
         public virtual ICollection<Citizen> Citizens { get; set; }
     }

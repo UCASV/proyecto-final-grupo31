@@ -60,7 +60,7 @@ CREATE TABLE LogInHistory(
 
 CREATE TABLE Disease(
 	Id INT PRIMARY KEY IDENTITY,
-	Disease VARCHAR(50) NOT NULL,
+	DiseaseName VARCHAR(50) NOT NULL,
 	IdCitizen INT NOT NULL
 );
 
@@ -71,7 +71,7 @@ CREATE TABLE Institution(
 
 CREATE TABLE PriorityGroup(
 	Id INT PRIMARY KEY IDENTITY,
-	PriorityGroup Varchar(50) NOT NULL
+	PriorityGroupName Varchar(50) NOT NULL
 );
 
 CREATE TABLE VaccinationPlace(
@@ -81,17 +81,17 @@ CREATE TABLE VaccinationPlace(
 
 CREATE TABLE AppointmentType(
 	Id INT PRIMARY KEY IDENTITY,
-	AppointmentType VARCHAR(50) NOT NULL
+	TypeName VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE EmployeeType(
 	Id INT PRIMARY KEY IDENTITY,
-	EmployeeType Varchar(50) NOT NULL
+	TypeName Varchar(50) NOT NULL
 );
 
 CREATE TABLE SideEffect(
 	Id INT PRIMARY KEY IDENTITY,
-	SideEffect VARCHAR(50) NOT NULL
+	SideEffectName VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE VaccineReaction(

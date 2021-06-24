@@ -84,11 +84,10 @@ namespace ProyectoPOOxBDD.VaccinationContext
             {
                 entity.ToTable("AppointmentType");
 
-                entity.Property(e => e.AppointmentType1)
+                entity.Property(e => e.TypeName)
                     .IsRequired()
                     .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("AppointmentType");
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Booth>(entity =>
@@ -162,11 +161,10 @@ namespace ProyectoPOOxBDD.VaccinationContext
             {
                 entity.ToTable("Disease");
 
-                entity.Property(e => e.Disease1)
+                entity.Property(e => e.DiseaseName)
                     .IsRequired()
                     .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Disease");
+                    .IsUnicode(false);
 
                 entity.HasOne(d => d.IdCitizenNavigation)
                     .WithMany(p => p.Diseases)
@@ -216,11 +214,10 @@ namespace ProyectoPOOxBDD.VaccinationContext
             {
                 entity.ToTable("EmployeeType");
 
-                entity.Property(e => e.EmployeeType1)
+                entity.Property(e => e.TypeName)
                     .IsRequired()
                     .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("EmployeeType");
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Institution>(entity =>
@@ -265,22 +262,20 @@ namespace ProyectoPOOxBDD.VaccinationContext
             {
                 entity.ToTable("PriorityGroup");
 
-                entity.Property(e => e.PriorityGroup1)
+                entity.Property(e => e.PriorityGroupName)
                     .IsRequired()
                     .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("PriorityGroup");
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<SideEffect>(entity =>
             {
                 entity.ToTable("SideEffect");
 
-                entity.Property(e => e.SideEffect1)
+                entity.Property(e => e.SideEffectName)
                     .IsRequired()
                     .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("SideEffect");
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<VaccinationPlace>(entity =>

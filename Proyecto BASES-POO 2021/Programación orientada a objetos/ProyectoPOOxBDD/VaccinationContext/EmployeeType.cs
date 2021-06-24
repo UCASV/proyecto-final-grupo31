@@ -13,7 +13,7 @@ namespace ProyectoPOOxBDD.VaccinationContext
         }
 
         public int Id { get; set; }
-        public string EmployeeType1 { get; set; }
+        public string TypeName { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
     }

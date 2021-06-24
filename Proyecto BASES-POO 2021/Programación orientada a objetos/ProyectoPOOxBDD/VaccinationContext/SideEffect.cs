@@ -13,7 +13,7 @@ namespace ProyectoPOOxBDD.VaccinationContext
         }
 
         public int Id { get; set; }
-        public string SideEffect1 { get; set; }
+        public string SideEffectName { get; set; }
 
         public virtual ICollection<VaccineReaction> VaccineReactions { get; set; }
     }
