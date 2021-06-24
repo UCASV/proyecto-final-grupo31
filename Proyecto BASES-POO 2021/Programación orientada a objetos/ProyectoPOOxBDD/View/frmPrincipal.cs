@@ -19,5 +19,11 @@ namespace ProyectoPOOxBDD
             InitializeComponent();
             this.manager = manager;
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            //Quitar titulos del tab control
+            tabPrincipal.ItemSize = new Size(0, 1);
+        }
     }
 }
