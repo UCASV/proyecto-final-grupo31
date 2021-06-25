@@ -32,7 +32,7 @@ namespace ProyectoPOOxBDD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.tlpPrincipal = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.mspPrinciapl = new System.Windows.Forms.MenuStrip();
+            this.mspPrincipal = new System.Windows.Forms.MenuStrip();
             this.logOutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boothMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trackingMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,7 +168,7 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.mspPrinciapl.SuspendLayout();
+            this.mspPrincipal.SuspendLayout();
             this.tabPrincipal.SuspendLayout();
             this.tabWelcome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -209,7 +209,7 @@ namespace ProyectoPOOxBDD
             this.tlpPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tlpPrincipal.Controls.Add(this.pictureBox1, 0, 0);
-            this.tlpPrincipal.Controls.Add(this.mspPrinciapl, 1, 0);
+            this.tlpPrincipal.Controls.Add(this.mspPrincipal, 1, 0);
             this.tlpPrincipal.Controls.Add(this.lblUser, 1, 1);
             this.tlpPrincipal.Location = new System.Drawing.Point(-3, -3);
             this.tlpPrincipal.Name = "tlpPrincipal";
@@ -234,21 +234,21 @@ namespace ProyectoPOOxBDD
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // mspPrinciapl
+            // mspPrincipal
             // 
-            this.mspPrinciapl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.mspPrinciapl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mspPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.mspPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logOutMenuItem,
             this.boothMenuItem,
             this.trackingMenuItem,
             this.registerMenuItem,
             this.welcomeMenuItem});
-            this.mspPrinciapl.Location = new System.Drawing.Point(173, 0);
-            this.mspPrinciapl.Name = "mspPrinciapl";
-            this.mspPrinciapl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.mspPrinciapl.Size = new System.Drawing.Size(696, 38);
-            this.mspPrinciapl.TabIndex = 1;
-            this.mspPrinciapl.Text = "menuStrip1";
+            this.mspPrincipal.Location = new System.Drawing.Point(173, 0);
+            this.mspPrincipal.Name = "mspPrincipal";
+            this.mspPrincipal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.mspPrincipal.Size = new System.Drawing.Size(696, 38);
+            this.mspPrincipal.TabIndex = 1;
+            this.mspPrincipal.Text = "menuStrip1";
             // 
             // logOutMenuItem
             // 
@@ -563,6 +563,7 @@ namespace ProyectoPOOxBDD
             this.btnNext.TabIndex = 5;
             this.btnNext.Text = "Siguiente";
             this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // picCitizenImage
             // 
@@ -760,6 +761,7 @@ namespace ProyectoPOOxBDD
             this.radNo.TabStop = true;
             this.radNo.Text = "No";
             this.radNo.UseVisualStyleBackColor = true;
+            this.radNo.CheckedChanged += new System.EventHandler(this.radNo_CheckedChanged);
             // 
             // txtInstitutionIdentification
             // 
@@ -797,6 +799,7 @@ namespace ProyectoPOOxBDD
             this.btnAddDisease.TabIndex = 11;
             this.btnAddDisease.Text = "Agregar";
             this.btnAddDisease.UseVisualStyleBackColor = false;
+            this.btnAddDisease.Click += new System.EventHandler(this.btnAddDisease_Click);
             // 
             // picCitizenImage2
             // 
@@ -842,6 +845,7 @@ namespace ProyectoPOOxBDD
             this.btnFinishRegister.TabIndex = 12;
             this.btnFinishRegister.Text = "Terminar registro";
             this.btnFinishRegister.UseVisualStyleBackColor = false;
+            this.btnFinishRegister.Click += new System.EventHandler(this.btnFinishRegister_Click);
             // 
             // btnBack
             // 
@@ -859,6 +863,7 @@ namespace ProyectoPOOxBDD
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Retroceder";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // tabFirstAppointment
             // 
@@ -1080,6 +1085,7 @@ namespace ProyectoPOOxBDD
             this.btnAddFirstAppointment.TabIndex = 10;
             this.btnAddFirstAppointment.Text = "Agendar cita";
             this.btnAddFirstAppointment.UseVisualStyleBackColor = false;
+            this.btnAddFirstAppointment.Click += new System.EventHandler(this.btnAddFirstAppointment_Click);
             // 
             // lblFirstAppointment
             // 
@@ -1245,6 +1251,7 @@ namespace ProyectoPOOxBDD
             this.btnExitResume.TabIndex = 6;
             this.btnExitResume.Text = "Salir";
             this.btnExitResume.UseVisualStyleBackColor = false;
+            this.btnExitResume.Click += new System.EventHandler(this.btnExitResume_Click);
             // 
             // btnExportPdfResume
             // 
@@ -2297,7 +2304,7 @@ namespace ProyectoPOOxBDD
             this.Controls.Add(this.tabPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.mspPrinciapl;
+            this.MainMenuStrip = this.mspPrincipal;
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2306,8 +2313,8 @@ namespace ProyectoPOOxBDD
             this.tlpPrincipal.ResumeLayout(false);
             this.tlpPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.mspPrinciapl.ResumeLayout(false);
-            this.mspPrinciapl.PerformLayout();
+            this.mspPrincipal.ResumeLayout(false);
+            this.mspPrincipal.PerformLayout();
             this.tabPrincipal.ResumeLayout(false);
             this.tabWelcome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -2359,7 +2366,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.TabControl tabPrincipal;
         private System.Windows.Forms.TabPage tabWelcome;
         private System.Windows.Forms.TabPage tabRegisterPart1;
-        private System.Windows.Forms.MenuStrip mspPrinciapl;
+        private System.Windows.Forms.MenuStrip mspPrincipal;
         private System.Windows.Forms.ToolStripMenuItem logOutMenuItem;
         private System.Windows.Forms.ToolStripMenuItem boothMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trackingMenuItem;
