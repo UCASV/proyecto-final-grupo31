@@ -74,7 +74,7 @@ namespace ProyectoPOOxBDD
             this.picCitizenImage2 = new System.Windows.Forms.PictureBox();
             this.lblCitizenRegister2 = new System.Windows.Forms.Label();
             this.btnFinishRegister = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.tabFirstAppointment = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCitizenNameRegister = new System.Windows.Forms.Label();
@@ -102,6 +102,67 @@ namespace ProyectoPOOxBDD
             this.lblAppointmentTypeResume = new System.Windows.Forms.Label();
             this.picAppointmentResume = new System.Windows.Forms.PictureBox();
             this.lblAppointmentResume = new System.Windows.Forms.Label();
+            this.tabTraking = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblDuiNumberTraking = new System.Windows.Forms.Label();
+            this.lblNameTraking = new System.Windows.Forms.Label();
+            this.lblAddressTraking = new System.Windows.Forms.Label();
+            this.lblPhoneTraking = new System.Windows.Forms.Label();
+            this.lblEmailTraking = new System.Windows.Forms.Label();
+            this.lblPriorityGroupTraking = new System.Windows.Forms.Label();
+            this.lblInstitutionIdentificationTraking = new System.Windows.Forms.Label();
+            this.lblInstitutionTraking = new System.Windows.Forms.Label();
+            this.lblDiseaseTraking = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.dgvAppointment = new System.Windows.Forms.DataGridView();
+            this.btnExportPdfTraking = new System.Windows.Forms.Button();
+            this.lblRegisterInformation = new System.Windows.Forms.Label();
+            this.lblAppointment = new System.Windows.Forms.Label();
+            this.picRegisterTraking = new System.Windows.Forms.PictureBox();
+            this.picAppointmentVisualize = new System.Windows.Forms.PictureBox();
+            this.txtDiseaseTraking = new System.Windows.Forms.TextBox();
+            this.tabVaccinationProcess = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPreCheck = new System.Windows.Forms.Label();
+            this.lblWatingLine = new System.Windows.Forms.Label();
+            this.lblVaccination = new System.Windows.Forms.Label();
+            this.lblObservation = new System.Windows.Forms.Label();
+            this.btnArrivalDateTime = new System.Windows.Forms.Button();
+            this.btnVaccinationDateTime = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.radYesProcess = new System.Windows.Forms.RadioButton();
+            this.lblIndication = new System.Windows.Forms.Label();
+            this.lblSideEffect = new System.Windows.Forms.Label();
+            this.cmbSideEffect = new System.Windows.Forms.ComboBox();
+            this.btnFinishProcess = new System.Windows.Forms.Button();
+            this.radNoProcess = new System.Windows.Forms.RadioButton();
+            this.picVaccine = new System.Windows.Forms.PictureBox();
+            this.cmbSideEffectTime = new System.Windows.Forms.ComboBox();
+            this.lblTimeSideEffect = new System.Windows.Forms.Label();
+            this.lblVaccinationProcess = new System.Windows.Forms.Label();
+            this.btnAddSideEffect = new System.Windows.Forms.Button();
+            this.tabSecondAppointment = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblDateSecondAppointment = new System.Windows.Forms.Label();
+            this.lblCitizenNameRegister2 = new System.Windows.Forms.Label();
+            this.lblCitizenNameSecondAppointment = new System.Windows.Forms.Label();
+            this.lblDateRegister2 = new System.Windows.Forms.Label();
+            this.lblTimeRegister2 = new System.Windows.Forms.Label();
+            this.lblHourSecondAppointment = new System.Windows.Forms.Label();
+            this.lblMinutesSecondAppointment = new System.Windows.Forms.Label();
+            this.lblVaccinationPlaceRegister2 = new System.Windows.Forms.Label();
+            this.lblVaccinationPlaceFirstAppointment = new System.Windows.Forms.Label();
+            this.btnAddSecondAppointment = new System.Windows.Forms.Button();
+            this.lblSecondAppointment = new System.Windows.Forms.Label();
+            this.picAppointmentImage2 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tabBooth = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvBooth = new System.Windows.Forms.DataGridView();
+            this.lblBoothInformation = new System.Windows.Forms.Label();
+            this.picBoothImage = new System.Windows.Forms.PictureBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -123,6 +184,21 @@ namespace ProyectoPOOxBDD
             this.tabAppointmentResume.SuspendLayout();
             this.tlpResume.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentResume)).BeginInit();
+            this.tabTraking.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAppointment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRegisterTraking)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAppointmentVisualize)).BeginInit();
+            this.tabVaccinationProcess.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picVaccine)).BeginInit();
+            this.tabSecondAppointment.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAppointmentImage2)).BeginInit();
+            this.tabBooth.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBooth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoothImage)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -234,6 +310,11 @@ namespace ProyectoPOOxBDD
             this.tabPrincipal.Controls.Add(this.tabRegisterPart2);
             this.tabPrincipal.Controls.Add(this.tabFirstAppointment);
             this.tabPrincipal.Controls.Add(this.tabAppointmentResume);
+            this.tabPrincipal.Controls.Add(this.tabTraking);
+            this.tabPrincipal.Controls.Add(this.tabVaccinationProcess);
+            this.tabPrincipal.Controls.Add(this.tabSecondAppointment);
+            this.tabPrincipal.Controls.Add(this.tabBooth);
+            this.tabPrincipal.ItemSize = new System.Drawing.Size(86, 23);
             this.tabPrincipal.Location = new System.Drawing.Point(-10, 90);
             this.tabPrincipal.Name = "tabPrincipal";
             this.tabPrincipal.SelectedIndex = 0;
@@ -531,7 +612,7 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel1.Controls.Add(this.picCitizenImage2, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblCitizenRegister2, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnFinishRegister, 4, 13);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 13);
+            this.tableLayoutPanel1.Controls.Add(this.btnBack, 1, 13);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 15;
@@ -559,6 +640,7 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.cmbInstitution, 5);
+            this.cmbInstitution.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbInstitution.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbInstitution.FormattingEnabled = true;
             this.cmbInstitution.Location = new System.Drawing.Point(167, 431);
@@ -647,6 +729,7 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.cmbPriorityGroup, 5);
+            this.cmbPriorityGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPriorityGroup.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbPriorityGroup.FormattingEnabled = true;
             this.cmbPriorityGroup.Location = new System.Drawing.Point(167, 170);
@@ -760,22 +843,22 @@ namespace ProyectoPOOxBDD
             this.btnFinishRegister.Text = "Terminar registro";
             this.btnFinishRegister.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.button1, 3);
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(167, 585);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(261, 41);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Retroceder";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.btnBack, 3);
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(167, 585);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(261, 41);
+            this.btnBack.TabIndex = 15;
+            this.btnBack.Text = "Retroceder";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // tabFirstAppointment
             // 
@@ -887,8 +970,22 @@ namespace ProyectoPOOxBDD
             // 
             this.cmbHourFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbHourFirstAppointment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbHourFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbHourFirstAppointment.FormattingEnabled = true;
+            this.cmbHourFirstAppointment.Items.AddRange(new object[] {
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"});
             this.cmbHourFirstAppointment.Location = new System.Drawing.Point(469, 344);
             this.cmbHourFirstAppointment.Name = "cmbHourFirstAppointment";
             this.cmbHourFirstAppointment.Size = new System.Drawing.Size(72, 38);
@@ -912,8 +1009,14 @@ namespace ProyectoPOOxBDD
             // 
             this.cmbMinutesFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmbMinutesFirstAppointment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMinutesFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbMinutesFirstAppointment.FormattingEnabled = true;
+            this.cmbMinutesFirstAppointment.Items.AddRange(new object[] {
+            "00",
+            "15",
+            "30",
+            "45"});
             this.cmbMinutesFirstAppointment.Location = new System.Drawing.Point(581, 344);
             this.cmbMinutesFirstAppointment.Name = "cmbMinutesFirstAppointment";
             this.cmbMinutesFirstAppointment.Size = new System.Drawing.Size(72, 38);
@@ -953,6 +1056,7 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.SetColumnSpan(this.cmbVaccinationPlaceFirstAppo, 5);
+            this.cmbVaccinationPlaceFirstAppo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbVaccinationPlaceFirstAppo.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbVaccinationPlaceFirstAppo.FormattingEnabled = true;
             this.cmbVaccinationPlaceFirstAppo.Location = new System.Drawing.Point(176, 431);
@@ -1200,6 +1304,951 @@ namespace ProyectoPOOxBDD
             this.lblAppointmentResume.Text = "Resumen de cita";
             this.lblAppointmentResume.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tabTraking
+            // 
+            this.tabTraking.BackColor = System.Drawing.Color.White;
+            this.tabTraking.Controls.Add(this.tableLayoutPanel4);
+            this.tabTraking.Location = new System.Drawing.Point(4, 27);
+            this.tabTraking.Name = "tabTraking";
+            this.tabTraking.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTraking.Size = new System.Drawing.Size(878, 676);
+            this.tabTraking.TabIndex = 5;
+            this.tabTraking.Text = "Traking";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 6;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.Controls.Add(this.lblDuiNumberTraking, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.lblNameTraking, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.lblAddressTraking, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.lblPhoneTraking, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.lblEmailTraking, 1, 7);
+            this.tableLayoutPanel4.Controls.Add(this.lblPriorityGroupTraking, 1, 8);
+            this.tableLayoutPanel4.Controls.Add(this.lblInstitutionIdentificationTraking, 1, 9);
+            this.tableLayoutPanel4.Controls.Add(this.lblInstitutionTraking, 1, 10);
+            this.tableLayoutPanel4.Controls.Add(this.lblDiseaseTraking, 1, 11);
+            this.tableLayoutPanel4.Controls.Add(this.btnSearch, 4, 1);
+            this.tableLayoutPanel4.Controls.Add(this.btnClear, 1, 16);
+            this.tableLayoutPanel4.Controls.Add(this.txtSearch, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.dgvAppointment, 1, 14);
+            this.tableLayoutPanel4.Controls.Add(this.btnExportPdfTraking, 3, 16);
+            this.tableLayoutPanel4.Controls.Add(this.lblRegisterInformation, 2, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lblAppointment, 2, 12);
+            this.tableLayoutPanel4.Controls.Add(this.picRegisterTraking, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.picAppointmentVisualize, 1, 12);
+            this.tableLayoutPanel4.Controls.Add(this.txtDiseaseTraking, 2, 11);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 18;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(866, 673);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // lblDuiNumberTraking
+            // 
+            this.lblDuiNumberTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDuiNumberTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblDuiNumberTraking, 4);
+            this.lblDuiNumberTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDuiNumberTraking.Location = new System.Drawing.Point(46, 114);
+            this.lblDuiNumberTraking.Name = "lblDuiNumberTraking";
+            this.lblDuiNumberTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblDuiNumberTraking.TabIndex = 0;
+            this.lblDuiNumberTraking.Text = "Número de DUI: ";
+            this.lblDuiNumberTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblNameTraking
+            // 
+            this.lblNameTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNameTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblNameTraking, 4);
+            this.lblNameTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNameTraking.Location = new System.Drawing.Point(46, 147);
+            this.lblNameTraking.Name = "lblNameTraking";
+            this.lblNameTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblNameTraking.TabIndex = 1;
+            this.lblNameTraking.Text = "Nombre completo: ";
+            this.lblNameTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblAddressTraking
+            // 
+            this.lblAddressTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAddressTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblAddressTraking, 4);
+            this.lblAddressTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddressTraking.Location = new System.Drawing.Point(46, 180);
+            this.lblAddressTraking.Name = "lblAddressTraking";
+            this.lblAddressTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblAddressTraking.TabIndex = 2;
+            this.lblAddressTraking.Text = "Dirección de domicilio:";
+            this.lblAddressTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblPhoneTraking
+            // 
+            this.lblPhoneTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPhoneTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblPhoneTraking, 4);
+            this.lblPhoneTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPhoneTraking.Location = new System.Drawing.Point(46, 213);
+            this.lblPhoneTraking.Name = "lblPhoneTraking";
+            this.lblPhoneTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblPhoneTraking.TabIndex = 3;
+            this.lblPhoneTraking.Text = "Número de teléfono:";
+            this.lblPhoneTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblEmailTraking
+            // 
+            this.lblEmailTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEmailTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblEmailTraking, 4);
+            this.lblEmailTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmailTraking.Location = new System.Drawing.Point(46, 246);
+            this.lblEmailTraking.Name = "lblEmailTraking";
+            this.lblEmailTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblEmailTraking.TabIndex = 4;
+            this.lblEmailTraking.Text = "Correo electrónico: ";
+            this.lblEmailTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblPriorityGroupTraking
+            // 
+            this.lblPriorityGroupTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPriorityGroupTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblPriorityGroupTraking, 4);
+            this.lblPriorityGroupTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPriorityGroupTraking.Location = new System.Drawing.Point(46, 279);
+            this.lblPriorityGroupTraking.Name = "lblPriorityGroupTraking";
+            this.lblPriorityGroupTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblPriorityGroupTraking.TabIndex = 5;
+            this.lblPriorityGroupTraking.Text = "Grupo prioritario:";
+            this.lblPriorityGroupTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblInstitutionIdentificationTraking
+            // 
+            this.lblInstitutionIdentificationTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInstitutionIdentificationTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblInstitutionIdentificationTraking, 4);
+            this.lblInstitutionIdentificationTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInstitutionIdentificationTraking.Location = new System.Drawing.Point(46, 312);
+            this.lblInstitutionIdentificationTraking.Name = "lblInstitutionIdentificationTraking";
+            this.lblInstitutionIdentificationTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblInstitutionIdentificationTraking.TabIndex = 6;
+            this.lblInstitutionIdentificationTraking.Text = "Número identificador de la institución: ";
+            this.lblInstitutionIdentificationTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblInstitutionTraking
+            // 
+            this.lblInstitutionTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInstitutionTraking.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblInstitutionTraking, 4);
+            this.lblInstitutionTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInstitutionTraking.Location = new System.Drawing.Point(46, 345);
+            this.lblInstitutionTraking.Name = "lblInstitutionTraking";
+            this.lblInstitutionTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblInstitutionTraking.TabIndex = 7;
+            this.lblInstitutionTraking.Text = "Institución a la que pertenece:";
+            this.lblInstitutionTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblDiseaseTraking
+            // 
+            this.lblDiseaseTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDiseaseTraking.AutoSize = true;
+            this.lblDiseaseTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDiseaseTraking.Location = new System.Drawing.Point(46, 378);
+            this.lblDiseaseTraking.Name = "lblDiseaseTraking";
+            this.lblDiseaseTraking.Size = new System.Drawing.Size(297, 53);
+            this.lblDiseaseTraking.TabIndex = 8;
+            this.lblDiseaseTraking.Text = "Enfermedad(es) crónica(s):";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(651, 23);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(167, 41);
+            this.btnSearch.TabIndex = 9;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.tableLayoutPanel4.SetColumnSpan(this.btnClear, 2);
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(46, 600);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(383, 41);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "Limpiar información";
+            this.btnClear.UseVisualStyleBackColor = false;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.SetColumnSpan(this.txtSearch, 3);
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSearch.Location = new System.Drawing.Point(46, 26);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(599, 35);
+            this.txtSearch.TabIndex = 12;
+            // 
+            // dgvAppointment
+            // 
+            this.dgvAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvAppointment.BackgroundColor = System.Drawing.Color.White;
+            this.dgvAppointment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel4.SetColumnSpan(this.dgvAppointment, 4);
+            this.dgvAppointment.Location = new System.Drawing.Point(46, 487);
+            this.dgvAppointment.Name = "dgvAppointment";
+            this.dgvAppointment.RowTemplate.Height = 25;
+            this.dgvAppointment.Size = new System.Drawing.Size(772, 94);
+            this.dgvAppointment.TabIndex = 13;
+            // 
+            // btnExportPdfTraking
+            // 
+            this.btnExportPdfTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExportPdfTraking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.tableLayoutPanel4.SetColumnSpan(this.btnExportPdfTraking, 2);
+            this.btnExportPdfTraking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportPdfTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExportPdfTraking.ForeColor = System.Drawing.Color.White;
+            this.btnExportPdfTraking.Location = new System.Drawing.Point(435, 600);
+            this.btnExportPdfTraking.Name = "btnExportPdfTraking";
+            this.btnExportPdfTraking.Size = new System.Drawing.Size(383, 41);
+            this.btnExportPdfTraking.TabIndex = 11;
+            this.btnExportPdfTraking.Text = "Exportar como PDF";
+            this.btnExportPdfTraking.UseVisualStyleBackColor = false;
+            // 
+            // lblRegisterInformation
+            // 
+            this.lblRegisterInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRegisterInformation.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblRegisterInformation, 3);
+            this.lblRegisterInformation.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRegisterInformation.Location = new System.Drawing.Point(349, 67);
+            this.lblRegisterInformation.Name = "lblRegisterInformation";
+            this.lblRegisterInformation.Size = new System.Drawing.Size(469, 47);
+            this.lblRegisterInformation.TabIndex = 16;
+            this.lblRegisterInformation.Text = "Información del registro";
+            this.lblRegisterInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAppointment
+            // 
+            this.lblAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAppointment.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.lblAppointment, 3);
+            this.lblAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAppointment.Location = new System.Drawing.Point(349, 431);
+            this.lblAppointment.Name = "lblAppointment";
+            this.lblAppointment.Size = new System.Drawing.Size(469, 47);
+            this.lblAppointment.TabIndex = 15;
+            this.lblAppointment.Text = "Cita(s) agendada(s)";
+            this.lblAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picRegisterTraking
+            // 
+            this.picRegisterTraking.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picRegisterTraking.Image = global::ProyectoPOOxBDD.Properties.Resources.CitizenSmall;
+            this.picRegisterTraking.Location = new System.Drawing.Point(300, 70);
+            this.picRegisterTraking.Name = "picRegisterTraking";
+            this.picRegisterTraking.Size = new System.Drawing.Size(43, 41);
+            this.picRegisterTraking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRegisterTraking.TabIndex = 17;
+            this.picRegisterTraking.TabStop = false;
+            // 
+            // picAppointmentVisualize
+            // 
+            this.picAppointmentVisualize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picAppointmentVisualize.Image = global::ProyectoPOOxBDD.Properties.Resources.AppointmentVisualize;
+            this.picAppointmentVisualize.Location = new System.Drawing.Point(300, 434);
+            this.picAppointmentVisualize.Name = "picAppointmentVisualize";
+            this.picAppointmentVisualize.Size = new System.Drawing.Size(43, 41);
+            this.picAppointmentVisualize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAppointmentVisualize.TabIndex = 18;
+            this.picAppointmentVisualize.TabStop = false;
+            // 
+            // txtDiseaseTraking
+            // 
+            this.txtDiseaseTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDiseaseTraking.BackColor = System.Drawing.SystemColors.Window;
+            this.tableLayoutPanel4.SetColumnSpan(this.txtDiseaseTraking, 3);
+            this.txtDiseaseTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDiseaseTraking.Location = new System.Drawing.Point(349, 381);
+            this.txtDiseaseTraking.Multiline = true;
+            this.txtDiseaseTraking.Name = "txtDiseaseTraking";
+            this.txtDiseaseTraking.ReadOnly = true;
+            this.txtDiseaseTraking.Size = new System.Drawing.Size(469, 47);
+            this.txtDiseaseTraking.TabIndex = 14;
+            // 
+            // tabVaccinationProcess
+            // 
+            this.tabVaccinationProcess.BackColor = System.Drawing.Color.White;
+            this.tabVaccinationProcess.Controls.Add(this.tableLayoutPanel5);
+            this.tabVaccinationProcess.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabVaccinationProcess.Location = new System.Drawing.Point(4, 27);
+            this.tabVaccinationProcess.Name = "tabVaccinationProcess";
+            this.tabVaccinationProcess.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVaccinationProcess.Size = new System.Drawing.Size(878, 676);
+            this.tabVaccinationProcess.TabIndex = 6;
+            this.tabVaccinationProcess.Text = "VaccineProcess";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 11;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel5.Controls.Add(this.lblPreCheck, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.lblWatingLine, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.lblVaccination, 1, 5);
+            this.tableLayoutPanel5.Controls.Add(this.lblObservation, 1, 7);
+            this.tableLayoutPanel5.Controls.Add(this.btnArrivalDateTime, 2, 4);
+            this.tableLayoutPanel5.Controls.Add(this.btnVaccinationDateTime, 2, 6);
+            this.tableLayoutPanel5.Controls.Add(this.label6, 2, 8);
+            this.tableLayoutPanel5.Controls.Add(this.radYesProcess, 2, 9);
+            this.tableLayoutPanel5.Controls.Add(this.lblIndication, 2, 10);
+            this.tableLayoutPanel5.Controls.Add(this.lblSideEffect, 2, 11);
+            this.tableLayoutPanel5.Controls.Add(this.cmbSideEffect, 2, 12);
+            this.tableLayoutPanel5.Controls.Add(this.btnFinishProcess, 2, 14);
+            this.tableLayoutPanel5.Controls.Add(this.radNoProcess, 3, 9);
+            this.tableLayoutPanel5.Controls.Add(this.picVaccine, 3, 1);
+            this.tableLayoutPanel5.Controls.Add(this.cmbSideEffectTime, 6, 12);
+            this.tableLayoutPanel5.Controls.Add(this.lblTimeSideEffect, 6, 11);
+            this.tableLayoutPanel5.Controls.Add(this.lblVaccinationProcess, 4, 1);
+            this.tableLayoutPanel5.Controls.Add(this.btnAddSideEffect, 8, 12);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 16;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(866, 673);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // lblPreCheck
+            // 
+            this.lblPreCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPreCheck.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblPreCheck, 7);
+            this.lblPreCheck.Location = new System.Drawing.Point(89, 110);
+            this.lblPreCheck.Name = "lblPreCheck";
+            this.lblPreCheck.Size = new System.Drawing.Size(528, 40);
+            this.lblPreCheck.TabIndex = 0;
+            this.lblPreCheck.Text = "Paso 1: Prechequeo listo";
+            this.lblPreCheck.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblWatingLine
+            // 
+            this.lblWatingLine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblWatingLine.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblWatingLine, 7);
+            this.lblWatingLine.Location = new System.Drawing.Point(89, 150);
+            this.lblWatingLine.Name = "lblWatingLine";
+            this.lblWatingLine.Size = new System.Drawing.Size(528, 40);
+            this.lblWatingLine.TabIndex = 1;
+            this.lblWatingLine.Text = "Paso 2: Fila de espera";
+            this.lblWatingLine.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblVaccination
+            // 
+            this.lblVaccination.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVaccination.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblVaccination, 7);
+            this.lblVaccination.Location = new System.Drawing.Point(89, 237);
+            this.lblVaccination.Name = "lblVaccination";
+            this.lblVaccination.Size = new System.Drawing.Size(528, 40);
+            this.lblVaccination.TabIndex = 3;
+            this.lblVaccination.Text = "Paso 3: Vacunación";
+            this.lblVaccination.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblObservation
+            // 
+            this.lblObservation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblObservation.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblObservation, 7);
+            this.lblObservation.Location = new System.Drawing.Point(89, 324);
+            this.lblObservation.Name = "lblObservation";
+            this.lblObservation.Size = new System.Drawing.Size(528, 40);
+            this.lblObservation.TabIndex = 5;
+            this.lblObservation.Text = "Paso 4: Observación del paciente";
+            this.lblObservation.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // btnArrivalDateTime
+            // 
+            this.btnArrivalDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnArrivalDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.tableLayoutPanel5.SetColumnSpan(this.btnArrivalDateTime, 7);
+            this.btnArrivalDateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArrivalDateTime.ForeColor = System.Drawing.Color.White;
+            this.btnArrivalDateTime.Location = new System.Drawing.Point(132, 193);
+            this.btnArrivalDateTime.Name = "btnArrivalDateTime";
+            this.btnArrivalDateTime.Size = new System.Drawing.Size(597, 41);
+            this.btnArrivalDateTime.TabIndex = 2;
+            this.btnArrivalDateTime.Text = "Registrar fecha y hora de llegada";
+            this.btnArrivalDateTime.UseVisualStyleBackColor = false;
+            // 
+            // btnVaccinationDateTime
+            // 
+            this.btnVaccinationDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVaccinationDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.tableLayoutPanel5.SetColumnSpan(this.btnVaccinationDateTime, 7);
+            this.btnVaccinationDateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVaccinationDateTime.ForeColor = System.Drawing.Color.White;
+            this.btnVaccinationDateTime.Location = new System.Drawing.Point(132, 280);
+            this.btnVaccinationDateTime.Name = "btnVaccinationDateTime";
+            this.btnVaccinationDateTime.Size = new System.Drawing.Size(597, 41);
+            this.btnVaccinationDateTime.TabIndex = 4;
+            this.btnVaccinationDateTime.Text = "Registrar fecha y hora de vacunación";
+            this.btnVaccinationDateTime.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.label6, 5);
+            this.label6.Location = new System.Drawing.Point(132, 364);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(442, 40);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "¿El paciente presentó efectos secundarios?";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // radYesProcess
+            // 
+            this.radYesProcess.AutoSize = true;
+            this.radYesProcess.Location = new System.Drawing.Point(132, 407);
+            this.radYesProcess.Name = "radYesProcess";
+            this.radYesProcess.Size = new System.Drawing.Size(47, 34);
+            this.radYesProcess.TabIndex = 7;
+            this.radYesProcess.TabStop = true;
+            this.radYesProcess.Text = "Si";
+            this.radYesProcess.UseVisualStyleBackColor = true;
+            // 
+            // lblIndication
+            // 
+            this.lblIndication.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblIndication.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblIndication, 9);
+            this.lblIndication.Location = new System.Drawing.Point(132, 451);
+            this.lblIndication.Name = "lblIndication";
+            this.lblIndication.Size = new System.Drawing.Size(731, 40);
+            this.lblIndication.TabIndex = 9;
+            this.lblIndication.Text = "Agregue los efectos secundarios uno a uno";
+            this.lblIndication.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblSideEffect
+            // 
+            this.lblSideEffect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSideEffect.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblSideEffect, 2);
+            this.lblSideEffect.Location = new System.Drawing.Point(132, 491);
+            this.lblSideEffect.Name = "lblSideEffect";
+            this.lblSideEffect.Size = new System.Drawing.Size(227, 40);
+            this.lblSideEffect.TabIndex = 10;
+            this.lblSideEffect.Text = "Efecto secundario";
+            this.lblSideEffect.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // cmbSideEffect
+            // 
+            this.cmbSideEffect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.SetColumnSpan(this.cmbSideEffect, 2);
+            this.cmbSideEffect.FormattingEnabled = true;
+            this.cmbSideEffect.Location = new System.Drawing.Point(132, 534);
+            this.cmbSideEffect.Name = "cmbSideEffect";
+            this.cmbSideEffect.Size = new System.Drawing.Size(227, 38);
+            this.cmbSideEffect.TabIndex = 11;
+            // 
+            // btnFinishProcess
+            // 
+            this.btnFinishProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFinishProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.tableLayoutPanel5.SetColumnSpan(this.btnFinishProcess, 7);
+            this.btnFinishProcess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinishProcess.ForeColor = System.Drawing.Color.White;
+            this.btnFinishProcess.Location = new System.Drawing.Point(132, 601);
+            this.btnFinishProcess.Name = "btnFinishProcess";
+            this.btnFinishProcess.Size = new System.Drawing.Size(597, 41);
+            this.btnFinishProcess.TabIndex = 15;
+            this.btnFinishProcess.Text = "Terminar proceso de vacunación";
+            this.btnFinishProcess.UseVisualStyleBackColor = false;
+            // 
+            // radNoProcess
+            // 
+            this.radNoProcess.AutoSize = true;
+            this.radNoProcess.Location = new System.Drawing.Point(218, 407);
+            this.radNoProcess.Name = "radNoProcess";
+            this.radNoProcess.Size = new System.Drawing.Size(59, 34);
+            this.radNoProcess.TabIndex = 8;
+            this.radNoProcess.TabStop = true;
+            this.radNoProcess.Text = "No";
+            this.radNoProcess.UseVisualStyleBackColor = true;
+            // 
+            // picVaccine
+            // 
+            this.picVaccine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picVaccine.Image = global::ProyectoPOOxBDD.Properties.Resources.Vaccine;
+            this.picVaccine.Location = new System.Drawing.Point(275, 26);
+            this.picVaccine.Name = "picVaccine";
+            this.picVaccine.Size = new System.Drawing.Size(84, 81);
+            this.picVaccine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picVaccine.TabIndex = 16;
+            this.picVaccine.TabStop = false;
+            // 
+            // cmbSideEffectTime
+            // 
+            this.cmbSideEffectTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbSideEffectTime.FormattingEnabled = true;
+            this.cmbSideEffectTime.Location = new System.Drawing.Point(407, 534);
+            this.cmbSideEffectTime.Name = "cmbSideEffectTime";
+            this.cmbSideEffectTime.Size = new System.Drawing.Size(167, 38);
+            this.cmbSideEffectTime.TabIndex = 13;
+            // 
+            // lblTimeSideEffect
+            // 
+            this.lblTimeSideEffect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTimeSideEffect.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblTimeSideEffect, 2);
+            this.lblTimeSideEffect.Location = new System.Drawing.Point(407, 491);
+            this.lblTimeSideEffect.Name = "lblTimeSideEffect";
+            this.lblTimeSideEffect.Size = new System.Drawing.Size(210, 40);
+            this.lblTimeSideEffect.TabIndex = 12;
+            this.lblTimeSideEffect.Text = "Tiempo de aparición";
+            this.lblTimeSideEffect.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblVaccinationProcess
+            // 
+            this.lblVaccinationProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVaccinationProcess.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.lblVaccinationProcess, 4);
+            this.lblVaccinationProcess.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVaccinationProcess.Location = new System.Drawing.Point(365, 23);
+            this.lblVaccinationProcess.Name = "lblVaccinationProcess";
+            this.lblVaccinationProcess.Size = new System.Drawing.Size(252, 87);
+            this.lblVaccinationProcess.TabIndex = 2;
+            this.lblVaccinationProcess.Text = "Proceso de vacunación";
+            this.lblVaccinationProcess.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnAddSideEffect
+            // 
+            this.btnAddSideEffect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddSideEffect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.btnAddSideEffect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSideEffect.ForeColor = System.Drawing.Color.White;
+            this.btnAddSideEffect.Location = new System.Drawing.Point(623, 534);
+            this.btnAddSideEffect.Name = "btnAddSideEffect";
+            this.btnAddSideEffect.Size = new System.Drawing.Size(106, 41);
+            this.btnAddSideEffect.TabIndex = 14;
+            this.btnAddSideEffect.Text = "Agregar";
+            this.btnAddSideEffect.UseVisualStyleBackColor = false;
+            // 
+            // tabSecondAppointment
+            // 
+            this.tabSecondAppointment.BackColor = System.Drawing.Color.White;
+            this.tabSecondAppointment.Controls.Add(this.tableLayoutPanel6);
+            this.tabSecondAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabSecondAppointment.Location = new System.Drawing.Point(4, 27);
+            this.tabSecondAppointment.Name = "tabSecondAppointment";
+            this.tabSecondAppointment.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSecondAppointment.Size = new System.Drawing.Size(878, 676);
+            this.tabSecondAppointment.TabIndex = 7;
+            this.tabSecondAppointment.Text = "SecondAppo";
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 7;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.Controls.Add(this.lblDateSecondAppointment, 1, 5);
+            this.tableLayoutPanel6.Controls.Add(this.lblCitizenNameRegister2, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.lblCitizenNameSecondAppointment, 1, 3);
+            this.tableLayoutPanel6.Controls.Add(this.lblDateRegister2, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.lblTimeRegister2, 3, 4);
+            this.tableLayoutPanel6.Controls.Add(this.lblHourSecondAppointment, 3, 5);
+            this.tableLayoutPanel6.Controls.Add(this.lblMinutesSecondAppointment, 5, 5);
+            this.tableLayoutPanel6.Controls.Add(this.lblVaccinationPlaceRegister2, 1, 6);
+            this.tableLayoutPanel6.Controls.Add(this.lblVaccinationPlaceFirstAppointment, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.btnAddSecondAppointment, 1, 9);
+            this.tableLayoutPanel6.Controls.Add(this.lblSecondAppointment, 2, 1);
+            this.tableLayoutPanel6.Controls.Add(this.picAppointmentImage2, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label9, 4, 5);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 11;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(866, 673);
+            this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // lblDateSecondAppointment
+            // 
+            this.lblDateSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDateSecondAppointment.AutoSize = true;
+            this.lblDateSecondAppointment.Location = new System.Drawing.Point(176, 341);
+            this.lblDateSecondAppointment.Name = "lblDateSecondAppointment";
+            this.lblDateSecondAppointment.Size = new System.Drawing.Size(210, 47);
+            this.lblDateSecondAppointment.TabIndex = 3;
+            this.lblDateSecondAppointment.Text = "<Fecha>";
+            // 
+            // lblCitizenNameRegister2
+            // 
+            this.lblCitizenNameRegister2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCitizenNameRegister2.AutoSize = true;
+            this.tableLayoutPanel6.SetColumnSpan(this.lblCitizenNameRegister2, 5);
+            this.lblCitizenNameRegister2.Location = new System.Drawing.Point(176, 214);
+            this.lblCitizenNameRegister2.Name = "lblCitizenNameRegister2";
+            this.lblCitizenNameRegister2.Size = new System.Drawing.Size(511, 40);
+            this.lblCitizenNameRegister2.TabIndex = 0;
+            this.lblCitizenNameRegister2.Text = "Nombre del ciudadano";
+            this.lblCitizenNameRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCitizenNameSecondAppointment
+            // 
+            this.lblCitizenNameSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCitizenNameSecondAppointment.AutoSize = true;
+            this.tableLayoutPanel6.SetColumnSpan(this.lblCitizenNameSecondAppointment, 5);
+            this.lblCitizenNameSecondAppointment.Location = new System.Drawing.Point(176, 254);
+            this.lblCitizenNameSecondAppointment.Name = "lblCitizenNameSecondAppointment";
+            this.lblCitizenNameSecondAppointment.Size = new System.Drawing.Size(511, 47);
+            this.lblCitizenNameSecondAppointment.TabIndex = 1;
+            this.lblCitizenNameSecondAppointment.Text = "<Nombre>";
+            // 
+            // lblDateRegister2
+            // 
+            this.lblDateRegister2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDateRegister2.AutoSize = true;
+            this.lblDateRegister2.Location = new System.Drawing.Point(176, 301);
+            this.lblDateRegister2.Name = "lblDateRegister2";
+            this.lblDateRegister2.Size = new System.Drawing.Size(210, 40);
+            this.lblDateRegister2.TabIndex = 2;
+            this.lblDateRegister2.Text = "Fecha";
+            this.lblDateRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblTimeRegister2
+            // 
+            this.lblTimeRegister2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTimeRegister2.AutoSize = true;
+            this.lblTimeRegister2.Location = new System.Drawing.Point(483, 301);
+            this.lblTimeRegister2.Name = "lblTimeRegister2";
+            this.lblTimeRegister2.Size = new System.Drawing.Size(58, 40);
+            this.lblTimeRegister2.TabIndex = 3;
+            this.lblTimeRegister2.Text = "Hora";
+            this.lblTimeRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblHourSecondAppointment
+            // 
+            this.lblHourSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHourSecondAppointment.AutoSize = true;
+            this.lblHourSecondAppointment.Location = new System.Drawing.Point(435, 341);
+            this.lblHourSecondAppointment.Name = "lblHourSecondAppointment";
+            this.lblHourSecondAppointment.Size = new System.Drawing.Size(106, 47);
+            this.lblHourSecondAppointment.TabIndex = 4;
+            this.lblHourSecondAppointment.Text = "<Hora>";
+            this.lblHourSecondAppointment.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblMinutesSecondAppointment
+            // 
+            this.lblMinutesSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMinutesSecondAppointment.AutoSize = true;
+            this.lblMinutesSecondAppointment.Location = new System.Drawing.Point(581, 341);
+            this.lblMinutesSecondAppointment.Name = "lblMinutesSecondAppointment";
+            this.lblMinutesSecondAppointment.Size = new System.Drawing.Size(106, 47);
+            this.lblMinutesSecondAppointment.TabIndex = 6;
+            this.lblMinutesSecondAppointment.Text = "<Minutos>";
+            // 
+            // lblVaccinationPlaceRegister2
+            // 
+            this.lblVaccinationPlaceRegister2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVaccinationPlaceRegister2.AutoSize = true;
+            this.tableLayoutPanel6.SetColumnSpan(this.lblVaccinationPlaceRegister2, 5);
+            this.lblVaccinationPlaceRegister2.Location = new System.Drawing.Point(176, 388);
+            this.lblVaccinationPlaceRegister2.Name = "lblVaccinationPlaceRegister2";
+            this.lblVaccinationPlaceRegister2.Size = new System.Drawing.Size(511, 40);
+            this.lblVaccinationPlaceRegister2.TabIndex = 7;
+            this.lblVaccinationPlaceRegister2.Text = "Lugar de vacunación";
+            this.lblVaccinationPlaceRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblVaccinationPlaceFirstAppointment
+            // 
+            this.lblVaccinationPlaceFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVaccinationPlaceFirstAppointment.AutoSize = true;
+            this.lblVaccinationPlaceFirstAppointment.Location = new System.Drawing.Point(176, 428);
+            this.lblVaccinationPlaceFirstAppointment.Name = "lblVaccinationPlaceFirstAppointment";
+            this.lblVaccinationPlaceFirstAppointment.Size = new System.Drawing.Size(210, 47);
+            this.lblVaccinationPlaceFirstAppointment.TabIndex = 8;
+            this.lblVaccinationPlaceFirstAppointment.Text = "<Lugar>";
+            // 
+            // btnAddSecondAppointment
+            // 
+            this.btnAddSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddSecondAppointment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.tableLayoutPanel6.SetColumnSpan(this.btnAddSecondAppointment, 5);
+            this.btnAddSecondAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSecondAppointment.ForeColor = System.Drawing.Color.White;
+            this.btnAddSecondAppointment.Location = new System.Drawing.Point(176, 498);
+            this.btnAddSecondAppointment.Name = "btnAddSecondAppointment";
+            this.btnAddSecondAppointment.Size = new System.Drawing.Size(511, 41);
+            this.btnAddSecondAppointment.TabIndex = 9;
+            this.btnAddSecondAppointment.Text = "Agendar cita";
+            this.btnAddSecondAppointment.UseVisualStyleBackColor = false;
+            // 
+            // lblSecondAppointment
+            // 
+            this.lblSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSecondAppointment.AutoSize = true;
+            this.tableLayoutPanel6.SetColumnSpan(this.lblSecondAppointment, 4);
+            this.lblSecondAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSecondAppointment.Location = new System.Drawing.Point(392, 127);
+            this.lblSecondAppointment.Name = "lblSecondAppointment";
+            this.lblSecondAppointment.Size = new System.Drawing.Size(295, 87);
+            this.lblSecondAppointment.TabIndex = 10;
+            this.lblSecondAppointment.Text = "Cita segunda dosis";
+            this.lblSecondAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picAppointmentImage2
+            // 
+            this.picAppointmentImage2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picAppointmentImage2.Image = global::ProyectoPOOxBDD.Properties.Resources.Appointment;
+            this.picAppointmentImage2.Location = new System.Drawing.Point(295, 130);
+            this.picAppointmentImage2.Name = "picAppointmentImage2";
+            this.picAppointmentImage2.Size = new System.Drawing.Size(91, 81);
+            this.picAppointmentImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAppointmentImage2.TabIndex = 11;
+            this.picAppointmentImage2.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(547, 341);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 47);
+            this.label9.TabIndex = 5;
+            this.label9.Text = ":";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tabBooth
+            // 
+            this.tabBooth.BackColor = System.Drawing.Color.White;
+            this.tabBooth.Controls.Add(this.tableLayoutPanel7);
+            this.tabBooth.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabBooth.Location = new System.Drawing.Point(4, 27);
+            this.tabBooth.Name = "tabBooth";
+            this.tabBooth.Padding = new System.Windows.Forms.Padding(3);
+            this.tabBooth.Size = new System.Drawing.Size(878, 676);
+            this.tabBooth.TabIndex = 8;
+            this.tabBooth.Text = "Booth";
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 4;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel7.Controls.Add(this.dgvBooth, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.lblBoothInformation, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.picBoothImage, 1, 1);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.5F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.5F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(866, 673);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // dgvBooth
+            // 
+            this.dgvBooth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvBooth.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBooth.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel7.SetColumnSpan(this.dgvBooth, 2);
+            this.dgvBooth.Location = new System.Drawing.Point(46, 214);
+            this.dgvBooth.Name = "dgvBooth";
+            this.dgvBooth.RowTemplate.Height = 25;
+            this.dgvBooth.Size = new System.Drawing.Size(773, 330);
+            this.dgvBooth.TabIndex = 0;
+            // 
+            // lblBoothInformation
+            // 
+            this.lblBoothInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBoothInformation.AutoSize = true;
+            this.lblBoothInformation.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBoothInformation.Location = new System.Drawing.Point(392, 124);
+            this.lblBoothInformation.Name = "lblBoothInformation";
+            this.lblBoothInformation.Size = new System.Drawing.Size(427, 87);
+            this.lblBoothInformation.TabIndex = 1;
+            this.lblBoothInformation.Text = "Información de cabinas";
+            this.lblBoothInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picBoothImage
+            // 
+            this.picBoothImage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picBoothImage.Image = global::ProyectoPOOxBDD.Properties.Resources.Booth;
+            this.picBoothImage.Location = new System.Drawing.Point(305, 127);
+            this.picBoothImage.Name = "picBoothImage";
+            this.picBoothImage.Size = new System.Drawing.Size(81, 81);
+            this.picBoothImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoothImage.TabIndex = 2;
+            this.picBoothImage.TabStop = false;
+            // 
             // textBox10
             // 
             this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -1278,6 +2327,25 @@ namespace ProyectoPOOxBDD
             this.tlpResume.ResumeLayout(false);
             this.tlpResume.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentResume)).EndInit();
+            this.tabTraking.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAppointment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRegisterTraking)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAppointmentVisualize)).EndInit();
+            this.tabVaccinationProcess.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picVaccine)).EndInit();
+            this.tabSecondAppointment.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAppointmentImage2)).EndInit();
+            this.tabBooth.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBooth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoothImage)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
@@ -1334,7 +2402,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.PictureBox picCitizenImage2;
         private System.Windows.Forms.Label lblCitizenRegister2;
         private System.Windows.Forms.TabPage tabFirstAppointment;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lblCitizenNameRegister;
         private System.Windows.Forms.Label lblCitizenNameFirstAppointment;
@@ -1361,5 +2429,66 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.Label lblAppointmentTypeResume;
         private System.Windows.Forms.PictureBox picAppointmentResume;
         private System.Windows.Forms.Label lblAppointmentResume;
+        private System.Windows.Forms.TabPage tabTraking;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label lblDuiNumberTraking;
+        private System.Windows.Forms.Label lblNameTraking;
+        private System.Windows.Forms.Label lblAddressTraking;
+        private System.Windows.Forms.Label lblPhoneTraking;
+        private System.Windows.Forms.Label lblEmailTraking;
+        private System.Windows.Forms.Label lblPriorityGroupTraking;
+        private System.Windows.Forms.Label lblInstitutionIdentificationTraking;
+        private System.Windows.Forms.Label lblInstitutionTraking;
+        private System.Windows.Forms.Label lblDiseaseTraking;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.DataGridView dgvAppointment;
+        private System.Windows.Forms.TextBox txtDiseaseTraking;
+        private System.Windows.Forms.Button btnExportPdfTraking;
+        private System.Windows.Forms.Label lblRegisterInformation;
+        private System.Windows.Forms.Label lblAppointment;
+        private System.Windows.Forms.PictureBox picRegisterTraking;
+        private System.Windows.Forms.PictureBox picAppointmentVisualize;
+        private System.Windows.Forms.TabPage tabVaccinationProcess;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label lblVaccinationProcess;
+        private System.Windows.Forms.Label lblPreCheck;
+        private System.Windows.Forms.Label lblWatingLine;
+        private System.Windows.Forms.Label lblVaccination;
+        private System.Windows.Forms.Label lblObservation;
+        private System.Windows.Forms.Button btnArrivalDateTime;
+        private System.Windows.Forms.Button btnVaccinationDateTime;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RadioButton radYesProcess;
+        private System.Windows.Forms.Label lblIndication;
+        private System.Windows.Forms.Label lblSideEffect;
+        private System.Windows.Forms.RadioButton radNoProcess;
+        private System.Windows.Forms.ComboBox cmbSideEffect;
+        private System.Windows.Forms.Label lblTimeSideEffect;
+        private System.Windows.Forms.ComboBox cmbSideEffectTime;
+        private System.Windows.Forms.Button btnAddSideEffect;
+        private System.Windows.Forms.Button btnFinishProcess;
+        private System.Windows.Forms.PictureBox picVaccine;
+        private System.Windows.Forms.TabPage tabSecondAppointment;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label lblDateSecondAppointment;
+        private System.Windows.Forms.Label lblCitizenNameRegister2;
+        private System.Windows.Forms.Label lblCitizenNameSecondAppointment;
+        private System.Windows.Forms.Label lblDateRegister2;
+        private System.Windows.Forms.Label lblTimeRegister2;
+        private System.Windows.Forms.Label lblHourSecondAppointment;
+        private System.Windows.Forms.Label lblMinutesSecondAppointment;
+        private System.Windows.Forms.Label lblVaccinationPlaceRegister2;
+        private System.Windows.Forms.Label lblVaccinationPlaceFirstAppointment;
+        private System.Windows.Forms.Button btnAddSecondAppointment;
+        private System.Windows.Forms.Label lblSecondAppointment;
+        private System.Windows.Forms.PictureBox picAppointmentImage2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TabPage tabBooth;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.DataGridView dgvBooth;
+        private System.Windows.Forms.Label lblBoothInformation;
+        private System.Windows.Forms.PictureBox picBoothImage;
     }
 }

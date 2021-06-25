@@ -73,9 +73,39 @@ namespace ProyectoPOOxBDD.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AppointmentVisualize {
+            get {
+                object obj = ResourceManager.GetObject("AppointmentVisualize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Booth {
+            get {
+                object obj = ResourceManager.GetObject("Booth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Citizen {
             get {
                 object obj = ResourceManager.GetObject("Citizen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CitizenSmall {
+            get {
+                object obj = ResourceManager.GetObject("CitizenSmall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +146,16 @@ namespace ProyectoPOOxBDD.Properties {
         internal static System.Drawing.Bitmap LogoCovidPrincipal {
             get {
                 object obj = ResourceManager.GetObject("LogoCovidPrincipal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vaccine {
+            get {
+                object obj = ResourceManager.GetObject("Vaccine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
