@@ -257,6 +257,7 @@ namespace ProyectoPOOxBDD
             this.logOutMenuItem.Name = "logOutMenuItem";
             this.logOutMenuItem.Size = new System.Drawing.Size(145, 34);
             this.logOutMenuItem.Text = "&Cerrar sesión";
+            this.logOutMenuItem.Click += new System.EventHandler(this.logOutMenuItem_Click);
             // 
             // boothMenuItem
             // 
@@ -265,6 +266,7 @@ namespace ProyectoPOOxBDD
             this.boothMenuItem.Name = "boothMenuItem";
             this.boothMenuItem.Size = new System.Drawing.Size(98, 34);
             this.boothMenuItem.Text = "&Cabinas";
+            this.boothMenuItem.Click += new System.EventHandler(this.boothMenuItem_Click);
             // 
             // trackingMenuItem
             // 
@@ -273,6 +275,7 @@ namespace ProyectoPOOxBDD
             this.trackingMenuItem.Name = "trackingMenuItem";
             this.trackingMenuItem.Size = new System.Drawing.Size(141, 34);
             this.trackingMenuItem.Text = "&Seguimiento";
+            this.trackingMenuItem.Click += new System.EventHandler(this.trackingMenuItem_Click);
             // 
             // registerMenuItem
             // 
@@ -281,6 +284,7 @@ namespace ProyectoPOOxBDD
             this.registerMenuItem.Name = "registerMenuItem";
             this.registerMenuItem.Size = new System.Drawing.Size(100, 34);
             this.registerMenuItem.Text = "&Registro";
+            this.registerMenuItem.Click += new System.EventHandler(this.registerMenuItem_Click);
             // 
             // welcomeMenuItem
             // 
@@ -289,6 +293,7 @@ namespace ProyectoPOOxBDD
             this.welcomeMenuItem.Name = "welcomeMenuItem";
             this.welcomeMenuItem.Size = new System.Drawing.Size(75, 34);
             this.welcomeMenuItem.Text = "&Inicio";
+            this.welcomeMenuItem.Click += new System.EventHandler(this.welcomeMenuItem_Click);
             // 
             // lblUser
             // 
@@ -647,7 +652,7 @@ namespace ProyectoPOOxBDD
             this.cmbInstitution.Location = new System.Drawing.Point(167, 431);
             this.cmbInstitution.Name = "cmbInstitution";
             this.cmbInstitution.Size = new System.Drawing.Size(529, 38);
-            this.cmbInstitution.TabIndex = 7;
+            this.cmbInstitution.TabIndex = 10;
             // 
             // lblQuestion
             // 
@@ -783,7 +788,7 @@ namespace ProyectoPOOxBDD
             this.txtDisease.Location = new System.Drawing.Point(167, 521);
             this.txtDisease.Name = "txtDisease";
             this.txtDisease.Size = new System.Drawing.Size(356, 35);
-            this.txtDisease.TabIndex = 10;
+            this.txtDisease.TabIndex = 11;
             // 
             // btnAddDisease
             // 
@@ -796,7 +801,7 @@ namespace ProyectoPOOxBDD
             this.btnAddDisease.Location = new System.Drawing.Point(544, 518);
             this.btnAddDisease.Name = "btnAddDisease";
             this.btnAddDisease.Size = new System.Drawing.Size(152, 41);
-            this.btnAddDisease.TabIndex = 11;
+            this.btnAddDisease.TabIndex = 12;
             this.btnAddDisease.Text = "Agregar";
             this.btnAddDisease.UseVisualStyleBackColor = false;
             this.btnAddDisease.Click += new System.EventHandler(this.btnAddDisease_Click);
@@ -842,7 +847,7 @@ namespace ProyectoPOOxBDD
             this.btnFinishRegister.Location = new System.Drawing.Point(434, 585);
             this.btnFinishRegister.Name = "btnFinishRegister";
             this.btnFinishRegister.Size = new System.Drawing.Size(262, 41);
-            this.btnFinishRegister.TabIndex = 12;
+            this.btnFinishRegister.TabIndex = 14;
             this.btnFinishRegister.Text = "Terminar registro";
             this.btnFinishRegister.UseVisualStyleBackColor = false;
             this.btnFinishRegister.Click += new System.EventHandler(this.btnFinishRegister_Click);
@@ -860,7 +865,7 @@ namespace ProyectoPOOxBDD
             this.btnBack.Location = new System.Drawing.Point(167, 585);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(261, 41);
-            this.btnBack.TabIndex = 15;
+            this.btnBack.TabIndex = 13;
             this.btnBack.Text = "Retroceder";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -969,7 +974,7 @@ namespace ProyectoPOOxBDD
             this.dtpDateFirstAppointment.Location = new System.Drawing.Point(176, 347);
             this.dtpDateFirstAppointment.Name = "dtpDateFirstAppointment";
             this.dtpDateFirstAppointment.Size = new System.Drawing.Size(210, 35);
-            this.dtpDateFirstAppointment.TabIndex = 3;
+            this.dtpDateFirstAppointment.TabIndex = 15;
             // 
             // cmbHourFirstAppointment
             // 
@@ -994,7 +999,7 @@ namespace ProyectoPOOxBDD
             this.cmbHourFirstAppointment.Location = new System.Drawing.Point(469, 344);
             this.cmbHourFirstAppointment.Name = "cmbHourFirstAppointment";
             this.cmbHourFirstAppointment.Size = new System.Drawing.Size(72, 38);
-            this.cmbHourFirstAppointment.TabIndex = 4;
+            this.cmbHourFirstAppointment.TabIndex = 16;
             // 
             // lblTimeRegister
             // 
@@ -1025,7 +1030,7 @@ namespace ProyectoPOOxBDD
             this.cmbMinutesFirstAppointment.Location = new System.Drawing.Point(581, 344);
             this.cmbMinutesFirstAppointment.Name = "cmbMinutesFirstAppointment";
             this.cmbMinutesFirstAppointment.Size = new System.Drawing.Size(72, 38);
-            this.cmbMinutesFirstAppointment.TabIndex = 6;
+            this.cmbMinutesFirstAppointment.TabIndex = 17;
             // 
             // label5
             // 
@@ -1067,7 +1072,7 @@ namespace ProyectoPOOxBDD
             this.cmbVaccinationPlaceFirstAppo.Location = new System.Drawing.Point(176, 431);
             this.cmbVaccinationPlaceFirstAppo.Name = "cmbVaccinationPlaceFirstAppo";
             this.cmbVaccinationPlaceFirstAppo.Size = new System.Drawing.Size(511, 38);
-            this.cmbVaccinationPlaceFirstAppo.TabIndex = 9;
+            this.cmbVaccinationPlaceFirstAppo.TabIndex = 18;
             // 
             // btnAddFirstAppointment
             // 
@@ -1082,7 +1087,7 @@ namespace ProyectoPOOxBDD
             this.btnAddFirstAppointment.Location = new System.Drawing.Point(176, 498);
             this.btnAddFirstAppointment.Name = "btnAddFirstAppointment";
             this.btnAddFirstAppointment.Size = new System.Drawing.Size(511, 41);
-            this.btnAddFirstAppointment.TabIndex = 10;
+            this.btnAddFirstAppointment.TabIndex = 19;
             this.btnAddFirstAppointment.Text = "Agendar cita";
             this.btnAddFirstAppointment.UseVisualStyleBackColor = false;
             this.btnAddFirstAppointment.Click += new System.EventHandler(this.btnAddFirstAppointment_Click);
@@ -1248,7 +1253,7 @@ namespace ProyectoPOOxBDD
             this.btnExitResume.Location = new System.Drawing.Point(89, 512);
             this.btnExitResume.Name = "btnExitResume";
             this.btnExitResume.Size = new System.Drawing.Size(340, 41);
-            this.btnExitResume.TabIndex = 6;
+            this.btnExitResume.TabIndex = 20;
             this.btnExitResume.Text = "Salir";
             this.btnExitResume.UseVisualStyleBackColor = false;
             this.btnExitResume.Click += new System.EventHandler(this.btnExitResume_Click);
@@ -1265,7 +1270,7 @@ namespace ProyectoPOOxBDD
             this.btnExportPdfResume.Location = new System.Drawing.Point(435, 512);
             this.btnExportPdfResume.Name = "btnExportPdfResume";
             this.btnExportPdfResume.Size = new System.Drawing.Size(340, 41);
-            this.btnExportPdfResume.TabIndex = 7;
+            this.btnExportPdfResume.TabIndex = 21;
             this.btnExportPdfResume.Text = "Exportar como PDF";
             this.btnExportPdfResume.UseVisualStyleBackColor = false;
             // 
@@ -1519,7 +1524,7 @@ namespace ProyectoPOOxBDD
             this.btnSearch.Location = new System.Drawing.Point(651, 23);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(167, 41);
-            this.btnSearch.TabIndex = 9;
+            this.btnSearch.TabIndex = 23;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
@@ -1536,7 +1541,7 @@ namespace ProyectoPOOxBDD
             this.btnClear.Location = new System.Drawing.Point(46, 600);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(383, 41);
-            this.btnClear.TabIndex = 10;
+            this.btnClear.TabIndex = 26;
             this.btnClear.Text = "Limpiar información";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
@@ -1548,7 +1553,7 @@ namespace ProyectoPOOxBDD
             this.txtSearch.Location = new System.Drawing.Point(46, 26);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(599, 35);
-            this.txtSearch.TabIndex = 12;
+            this.txtSearch.TabIndex = 22;
             // 
             // dgvAppointment
             // 
@@ -1562,7 +1567,7 @@ namespace ProyectoPOOxBDD
             this.dgvAppointment.Name = "dgvAppointment";
             this.dgvAppointment.RowTemplate.Height = 25;
             this.dgvAppointment.Size = new System.Drawing.Size(772, 94);
-            this.dgvAppointment.TabIndex = 13;
+            this.dgvAppointment.TabIndex = 25;
             // 
             // btnExportPdfTraking
             // 
@@ -1577,7 +1582,7 @@ namespace ProyectoPOOxBDD
             this.btnExportPdfTraking.Location = new System.Drawing.Point(435, 600);
             this.btnExportPdfTraking.Name = "btnExportPdfTraking";
             this.btnExportPdfTraking.Size = new System.Drawing.Size(383, 41);
-            this.btnExportPdfTraking.TabIndex = 11;
+            this.btnExportPdfTraking.TabIndex = 27;
             this.btnExportPdfTraking.Text = "Exportar como PDF";
             this.btnExportPdfTraking.UseVisualStyleBackColor = false;
             // 
@@ -1648,7 +1653,7 @@ namespace ProyectoPOOxBDD
             this.txtDiseaseTraking.Name = "txtDiseaseTraking";
             this.txtDiseaseTraking.ReadOnly = true;
             this.txtDiseaseTraking.Size = new System.Drawing.Size(469, 47);
-            this.txtDiseaseTraking.TabIndex = 14;
+            this.txtDiseaseTraking.TabIndex = 24;
             // 
             // tabVaccinationProcess
             // 
@@ -1784,7 +1789,7 @@ namespace ProyectoPOOxBDD
             this.btnArrivalDateTime.Location = new System.Drawing.Point(132, 193);
             this.btnArrivalDateTime.Name = "btnArrivalDateTime";
             this.btnArrivalDateTime.Size = new System.Drawing.Size(597, 41);
-            this.btnArrivalDateTime.TabIndex = 2;
+            this.btnArrivalDateTime.TabIndex = 28;
             this.btnArrivalDateTime.Text = "Registrar fecha y hora de llegada";
             this.btnArrivalDateTime.UseVisualStyleBackColor = false;
             // 
@@ -1800,7 +1805,7 @@ namespace ProyectoPOOxBDD
             this.btnVaccinationDateTime.Location = new System.Drawing.Point(132, 280);
             this.btnVaccinationDateTime.Name = "btnVaccinationDateTime";
             this.btnVaccinationDateTime.Size = new System.Drawing.Size(597, 41);
-            this.btnVaccinationDateTime.TabIndex = 4;
+            this.btnVaccinationDateTime.TabIndex = 29;
             this.btnVaccinationDateTime.Text = "Registrar fecha y hora de vacunación";
             this.btnVaccinationDateTime.UseVisualStyleBackColor = false;
             // 
@@ -1824,7 +1829,7 @@ namespace ProyectoPOOxBDD
             this.radYesProcess.Location = new System.Drawing.Point(132, 407);
             this.radYesProcess.Name = "radYesProcess";
             this.radYesProcess.Size = new System.Drawing.Size(47, 34);
-            this.radYesProcess.TabIndex = 7;
+            this.radYesProcess.TabIndex = 30;
             this.radYesProcess.TabStop = true;
             this.radYesProcess.Text = "Si";
             this.radYesProcess.UseVisualStyleBackColor = true;
@@ -1867,7 +1872,7 @@ namespace ProyectoPOOxBDD
             this.cmbSideEffect.Location = new System.Drawing.Point(132, 534);
             this.cmbSideEffect.Name = "cmbSideEffect";
             this.cmbSideEffect.Size = new System.Drawing.Size(227, 38);
-            this.cmbSideEffect.TabIndex = 11;
+            this.cmbSideEffect.TabIndex = 32;
             // 
             // btnFinishProcess
             // 
@@ -1881,7 +1886,7 @@ namespace ProyectoPOOxBDD
             this.btnFinishProcess.Location = new System.Drawing.Point(132, 601);
             this.btnFinishProcess.Name = "btnFinishProcess";
             this.btnFinishProcess.Size = new System.Drawing.Size(597, 41);
-            this.btnFinishProcess.TabIndex = 15;
+            this.btnFinishProcess.TabIndex = 35;
             this.btnFinishProcess.Text = "Terminar proceso de vacunación";
             this.btnFinishProcess.UseVisualStyleBackColor = false;
             // 
@@ -1891,7 +1896,7 @@ namespace ProyectoPOOxBDD
             this.radNoProcess.Location = new System.Drawing.Point(218, 407);
             this.radNoProcess.Name = "radNoProcess";
             this.radNoProcess.Size = new System.Drawing.Size(59, 34);
-            this.radNoProcess.TabIndex = 8;
+            this.radNoProcess.TabIndex = 31;
             this.radNoProcess.TabStop = true;
             this.radNoProcess.Text = "No";
             this.radNoProcess.UseVisualStyleBackColor = true;
@@ -1915,7 +1920,7 @@ namespace ProyectoPOOxBDD
             this.cmbSideEffectTime.Location = new System.Drawing.Point(407, 534);
             this.cmbSideEffectTime.Name = "cmbSideEffectTime";
             this.cmbSideEffectTime.Size = new System.Drawing.Size(167, 38);
-            this.cmbSideEffectTime.TabIndex = 13;
+            this.cmbSideEffectTime.TabIndex = 33;
             // 
             // lblTimeSideEffect
             // 
@@ -1957,7 +1962,7 @@ namespace ProyectoPOOxBDD
             this.btnAddSideEffect.Location = new System.Drawing.Point(623, 534);
             this.btnAddSideEffect.Name = "btnAddSideEffect";
             this.btnAddSideEffect.Size = new System.Drawing.Size(106, 41);
-            this.btnAddSideEffect.TabIndex = 14;
+            this.btnAddSideEffect.TabIndex = 34;
             this.btnAddSideEffect.Text = "Agregar";
             this.btnAddSideEffect.UseVisualStyleBackColor = false;
             // 
@@ -2140,7 +2145,7 @@ namespace ProyectoPOOxBDD
             this.btnAddSecondAppointment.Location = new System.Drawing.Point(176, 498);
             this.btnAddSecondAppointment.Name = "btnAddSecondAppointment";
             this.btnAddSecondAppointment.Size = new System.Drawing.Size(511, 41);
-            this.btnAddSecondAppointment.TabIndex = 9;
+            this.btnAddSecondAppointment.TabIndex = 36;
             this.btnAddSecondAppointment.Text = "Agendar cita";
             this.btnAddSecondAppointment.UseVisualStyleBackColor = false;
             // 
@@ -2228,7 +2233,7 @@ namespace ProyectoPOOxBDD
             this.dgvBooth.Name = "dgvBooth";
             this.dgvBooth.RowTemplate.Height = 25;
             this.dgvBooth.Size = new System.Drawing.Size(773, 330);
-            this.dgvBooth.TabIndex = 0;
+            this.dgvBooth.TabIndex = 37;
             // 
             // lblBoothInformation
             // 

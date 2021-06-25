@@ -38,7 +38,7 @@ namespace ProyectoPOOxBDD
             var db = new VaccinationDBContext();
 
             //Quitar titulos del tab control
-            //tabPrincipal.ItemSize = new Size(0, 1);
+            tabPrincipal.ItemSize = new Size(0, 1);
 
             //Usuario activo en el sistema
             lblUser.Text = "Usuario: " + manager.Username;
@@ -333,6 +333,31 @@ namespace ProyectoPOOxBDD
         private void btnExitResume_Click(object sender, EventArgs e)
         {
             ExitFirstAppointment();
+        }
+
+        private void welcomeMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPrincipal.SelectedIndex = 0;
+        }
+
+        private void registerMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPrincipal.SelectedIndex = 1;
+        }
+
+        private void trackingMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPrincipal.SelectedIndex = 5;
+        }
+
+        private void boothMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPrincipal.SelectedIndex = 8;          
+        }
+
+        private void logOutMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
