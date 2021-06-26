@@ -1561,6 +1561,10 @@ namespace ProyectoPOOxBDD
             // 
             // dgvAppointment
             // 
+            this.dgvAppointment.AllowUserToAddRows = false;
+            this.dgvAppointment.AllowUserToDeleteRows = false;
+            this.dgvAppointment.AllowUserToResizeColumns = false;
+            this.dgvAppointment.AllowUserToResizeRows = false;
             this.dgvAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1568,10 +1572,14 @@ namespace ProyectoPOOxBDD
             this.dgvAppointment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel4.SetColumnSpan(this.dgvAppointment, 4);
             this.dgvAppointment.Location = new System.Drawing.Point(46, 487);
+            this.dgvAppointment.MultiSelect = false;
             this.dgvAppointment.Name = "dgvAppointment";
+            this.dgvAppointment.ReadOnly = true;
             this.dgvAppointment.RowTemplate.Height = 25;
+            this.dgvAppointment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAppointment.Size = new System.Drawing.Size(772, 94);
             this.dgvAppointment.TabIndex = 25;
+            this.dgvAppointment.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAppointment_CellContentDoubleClick);
             // 
             // btnExportPdfTraking
             // 
@@ -1589,6 +1597,7 @@ namespace ProyectoPOOxBDD
             this.btnExportPdfTraking.TabIndex = 27;
             this.btnExportPdfTraking.Text = "Exportar como PDF";
             this.btnExportPdfTraking.UseVisualStyleBackColor = false;
+            this.btnExportPdfTraking.Click += new System.EventHandler(this.btnExportPdfTraking_Click);
             // 
             // lblRegisterInformation
             // 
@@ -1797,6 +1806,7 @@ namespace ProyectoPOOxBDD
             this.btnArrivalDateTime.TabIndex = 28;
             this.btnArrivalDateTime.Text = "Registrar fecha y hora de llegada";
             this.btnArrivalDateTime.UseVisualStyleBackColor = false;
+            this.btnArrivalDateTime.Click += new System.EventHandler(this.btnArrivalDateTime_Click);
             // 
             // btnVaccinationDateTime
             // 
@@ -1813,6 +1823,7 @@ namespace ProyectoPOOxBDD
             this.btnVaccinationDateTime.TabIndex = 29;
             this.btnVaccinationDateTime.Text = "Registrar fecha y hora de vacunación";
             this.btnVaccinationDateTime.UseVisualStyleBackColor = false;
+            this.btnVaccinationDateTime.Click += new System.EventHandler(this.btnVaccinationDateTime_Click);
             // 
             // label6
             // 
@@ -1895,6 +1906,7 @@ namespace ProyectoPOOxBDD
             this.btnFinishProcess.TabIndex = 35;
             this.btnFinishProcess.Text = "Terminar proceso de vacunación";
             this.btnFinishProcess.UseVisualStyleBackColor = false;
+            this.btnFinishProcess.Click += new System.EventHandler(this.btnFinishProcess_Click);
             // 
             // radNoProcess
             // 
@@ -1906,6 +1918,7 @@ namespace ProyectoPOOxBDD
             this.radNoProcess.TabStop = true;
             this.radNoProcess.Text = "No";
             this.radNoProcess.UseVisualStyleBackColor = true;
+            this.radNoProcess.CheckedChanged += new System.EventHandler(this.radNoProcess_CheckedChanged);
             // 
             // picVaccine
             // 
@@ -1924,6 +1937,37 @@ namespace ProyectoPOOxBDD
             this.cmbSideEffectTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cmbSideEffectTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSideEffectTime.FormattingEnabled = true;
+            this.cmbSideEffectTime.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
             this.cmbSideEffectTime.Location = new System.Drawing.Point(407, 534);
             this.cmbSideEffectTime.Name = "cmbSideEffectTime";
             this.cmbSideEffectTime.Size = new System.Drawing.Size(167, 38);
@@ -1972,6 +2016,7 @@ namespace ProyectoPOOxBDD
             this.btnAddSideEffect.TabIndex = 34;
             this.btnAddSideEffect.Text = "Agregar";
             this.btnAddSideEffect.UseVisualStyleBackColor = false;
+            this.btnAddSideEffect.Click += new System.EventHandler(this.btnAddSideEffect_Click);
             // 
             // tabSecondAppointment
             // 

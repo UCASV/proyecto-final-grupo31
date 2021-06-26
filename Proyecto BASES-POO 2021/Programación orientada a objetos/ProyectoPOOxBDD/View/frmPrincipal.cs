@@ -92,8 +92,19 @@ namespace ProyectoPOOxBDD
             cmbInstitution.DisplayMember = "InstitutionName";
             cmbInstitution.ValueMember = "Id";
 
+            //Cargar datos al combobox de efectos secundarios
+            List<SideEffect> sideEffects = db.SideEffects.ToList();
+            cmbSideEffect.DataSource = sideEffects;
+            cmbSideEffect.DisplayMember = "SideEffectName";
+            cmbSideEffect.ValueMember = "Id";
+            cmbSideEffectTime.Text = "1";
+            cmbSideEffect.DropDownWidth = 450;
+
             //Habilitar radio button de institución
             radNo.Checked = true;
+
+            //Habilitar radio button de proceso de vacunación
+            radNoProcess.Checked = true;
 
             //Asignar valores iniciales a los combobox de fecha y hora
             cmbHourFirstAppointment.Text = "07";
@@ -485,6 +496,7 @@ namespace ProyectoPOOxBDD
 
             if (citizens.Count > 0)
             {
+                aCitizen = citizens[0];
 
                 lblDuiNumberTraking.Text = "Número de DUI: " + citizens[0].Dui;
                 lblNameTraking.Text = "Nombre completo: " + citizens[0].FullName;
@@ -516,8 +528,17 @@ namespace ProyectoPOOxBDD
 
                 //Llenar textbox multiline de enfermedades
                 List<String> diseasesNames = new List<string>();
-                citizens[0].Diseases.ToList().ForEach(d => diseasesNames.Add(d.DiseaseName));
-                txtDiseaseTraking.Lines = diseasesNames.ToArray();
+                
+                if(citizens[0].Diseases.ToList().Count != 0 )
+                {
+                    citizens[0].Diseases.ToList().ForEach(d => diseasesNames.Add(d.DiseaseName));
+                    txtDiseaseTraking.Lines = diseasesNames.ToArray();
+
+                }
+                else
+                {
+                    txtDiseaseTraking.Text = "N/A";
+                }
 
                 //Creando lista de citas
                 List<Appointment> appointmentList = db.Appointments
@@ -549,14 +570,189 @@ namespace ProyectoPOOxBDD
             }
             else
             {
+                //Cuando se ingresa un DUI que no ha sido registrado
                 MessageBox.Show("No se ha encontrado el DUI ingresado", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-           
-
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnExportPdfTraking_Click(object sender, EventArgs e)
+        {
+            if (aCitizen == null)
+                MessageBox.Show("No hay datos que exportar", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else
+                CreatePDFTracking(aCitizen.Dui, aCitizen.FullName, aCitizen.HomeAddress, aCitizen.PhoneNumber, aCitizen.EmailAddress,
+                    aCitizen.IdPriorityGroupNavigation.PriorityGroupName, aCitizen.InstitutionIdentification,
+                    aCitizen.IdInstitutionNavigation.InstitutionName, aCitizen.Diseases.ToList());
+        }
+
+        private void CreatePDFTracking(string dui, string fullName, string address, string phone, string email, string priorityGroup,
+            string institutionIdentification, string institution, List<Disease> citizenDiseases)
+        {
+            // Asignar la ruta en la que se guardará el PDF
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            //Crear instancias para la creación del PDF
+            PdfWriter pdfWriter = new PdfWriter(path + $"\\{dui} informacion.pdf");
+            PdfDocument pdf = new PdfDocument(pdfWriter);
+            Document document = new Document(pdf, PageSize.LETTER);
+
+            //Margenes del documento
+            document.SetMargins(70, 70, 70, 70);
+
+            //Creación de fuentes para el documento
+            PdfFont boldFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
+            PdfFont font = PdfFontFactory.CreateFont(StandardFonts.HELVETICA);
+
+            //Convertir logo de formato bitmap a byte[]
+            byte[] data = default(byte[]);
+
+            using (System.IO.MemoryStream sampleStream = new System.IO.MemoryStream())
+
+            {
+                //save to stream.
+                Resources.VaccinationLogo.Save(sampleStream, System.Drawing.Imaging.ImageFormat.Bmp);
+                //the byte array
+                data = sampleStream.ToArray();
+            }
+
+            //Logo del documento
+            iText.Layout.Element.Image logo = new iText.Layout.Element.Image(ImageDataFactory.Create(data)).SetWidth(200);
+
+            //Validando campos vacios
+            if (email == null)
+                email = "N/A";
+            if (institutionIdentification == null)
+                institutionIdentification = "N/A";
+            if (institution == null)
+                institutionIdentification = "N/A";
+
+            //Validando la lista de enfermedades
+            string diseases = String.Empty;
+
+            if (citizenDiseases.Count == 0)
+                diseases = "N/A";
+            else
+            {
+                //Obteniendo nombres de enfermedades de la lista
+                List<String> diseasesNames = new List<string>();
+                citizenDiseases.ForEach(d => diseasesNames.Add(d.DiseaseName));
+
+                foreach (var item in diseasesNames)
+                {
+                    diseases = $"{diseases} {item}, ";
+                }
+
+                diseases = diseases.Remove(diseases.Length - 2);
+            }
+
+            //Estructura del documento
+            document.Add(new Paragraph("").Add(logo).SetTextAlignment(TextAlignment.CENTER));
+
+            document.Add(new LineSeparator(new SolidLine())); //Línea de separación
+
+            document.Add(new Paragraph(new Text("Información del registro").SetFont(boldFont).SetFontSize(20)).SetTextAlignment(TextAlignment.CENTER));
+
+            document.Add(new Paragraph(new Text("Número de DUI: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(dui).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Nombre: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(fullName).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Dirección de domicilio: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(address).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Número de teléfono: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(phone).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Correo electrónico: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(email).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Grupo prioritario: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(priorityGroup).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Número identificador de la institución: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(institutionIdentification).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Institución a la que pertenece: ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(institution).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Enfermedad(es) crónica(s): ").SetFont(boldFont).SetFontSize(16))
+                    .Add(new Text(diseases).SetFont(font).SetFontSize(16)).SetTextAlignment(TextAlignment.JUSTIFIED));
+
+            document.Add(new Paragraph(new Text("Cita(s) agendada(s)").SetFont(boldFont).SetFontSize(20)).SetTextAlignment(TextAlignment.CENTER));
+
+            //Exportando DataGridView
+            Table table = PDFTableFromDGV(dgvAppointment, font, boldFont);
+
+            document.Add(table);
+
+            document.Close();
+
+            //Mensaje de terminado
+            MessageBox.Show($"Pdf exportado correctamente en {path}", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private Table PDFTableFromDGV(DataGridView dgv, PdfFont font, PdfFont boldFont)
+        {
+            // Obteniedo el valor de columnas y filas
+            int dgvrowcount = dgv.Rows.Count;
+            int dgvcolumncount = dgv.Columns.Count;
+
+            // Estableciendo el ancho de celdas
+            float[] size = { 50, 190, 180, 370, 120 };
+
+            Table table = new Table(UnitValue.CreatePercentArray(size));
+            table.SetWidth(iText.Layout.Properties.UnitValue.CreatePercentValue(100));
+
+            // Exportando los header del dgv
+            for (int i = 0; i < dgvcolumncount; i++)
+            {
+                Cell headerCells = new Cell()
+                    .SetBackgroundColor(iText.Kernel.Colors.ColorConstants.LIGHT_GRAY)
+                    .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                    .SetFont(boldFont)
+                    .SetFontSize(16);
+
+                var gteCell = headerCells.Add(new Paragraph(dgv.Columns[i].HeaderText));
+                table.AddHeaderCell(gteCell);
+            }
+
+            // Exportando las celdas del dgv
+            for (int i = 0; i < dgvrowcount; i++)
+            {
+                for (int c = 0; c < dgvcolumncount; c++)
+                {
+                    Cell cells = new Cell()
+                        .SetBackgroundColor(iText.Kernel.Colors.ColorConstants.WHITE)
+                        .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                        .SetFont(font)
+                        .SetFontSize(16);
+
+                    if (c == 4)
+                    {
+                        if (dgv[c, i].Value.Equals(true))
+                        {
+                            var gteCell = cells.Add(new Paragraph("Sí"));
+                            table.AddCell(gteCell);
+                        }
+                        else
+                        {
+                            var gteCell = cells.Add(new Paragraph("No"));
+                            table.AddCell(gteCell);
+                        }
+                    }
+                    else
+                    {
+                        var gteCell = cells.Add(new Paragraph(dgv[c, i].Value.ToString()));
+                        table.AddCell(gteCell);
+                    }
+                }
+            }
+
+            return table;
+        }
+
+        private void ClearTracking()
         {
             //Limpiando labels,textbox y datagrid view
             txtSearch.Text = String.Empty;
@@ -570,6 +766,165 @@ namespace ProyectoPOOxBDD
             lblInstitutionTraking.Text = "Institución a la que pertenece: ";
             txtDiseaseTraking.Text = String.Empty;
             dgvAppointment.DataSource = null;
+            aCitizen = null;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearTracking();
+        }
+
+        private void dgvAppointment_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                AppointmentVm aVm = dgvAppointment.SelectedRows[0].DataBoundItem as AppointmentVm;
+
+                if (!aVm.Attendance)
+                {
+                   DialogResult result = MessageBox.Show("¿Acepta seguir con el proceso de vacunación?", "Vacunación Covid-19", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                   if (result == DialogResult.Yes)
+                   {
+                        var db = new VaccinationDBContext();
+
+                        //Obteniendo la cita de la base de datos
+                        List<Appointment> appointment = db.Appointments
+                            .Include(a => a.IdVaccinationPlaceNavigation)
+                            .Include(a => a.IdAppointmentTypeNavigation)
+                            .Where(a => a.Id.Equals(aVm.Id))
+                            .ToList();
+
+                        anAppointment = appointment[0];
+
+                        //Bloquear el menu y evitar que se cierre el programa
+                        mspPrincipal.Enabled = false;
+                        this.ControlBox = false;
+
+                        tabPrincipal.SelectedIndex = 6;
+                   }
+                   else
+                   {
+                       //Cuando el ciudadano decide no seguir con el proceso de vacunación
+                        MessageBox.Show("El proceso se ha cancelado", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                   }
+                }
+                else
+                {
+                    //Cuando se intenta atender a una cita ya atendida
+                    MessageBox.Show("La cita ya ha sido atendida", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        }
+
+        private void radNoProcess_CheckedChanged(object sender, EventArgs e)
+        {
+            //Habilitar o deshabilitar los datos de efecto secundario
+            cmbSideEffect.Enabled = !cmbSideEffect.Enabled;
+            cmbSideEffectTime.Enabled = !cmbSideEffectTime.Enabled;
+            btnAddSideEffect.Enabled = !btnAddSideEffect.Enabled;
+        }
+
+        private void btnArrivalDateTime_Click(object sender, EventArgs e)
+        {
+            
+            var db = new VaccinationDBContext();
+
+            //Actualizando hora de llegada a la cita
+            
+            Appointment a = (from x in db.Appointments
+                              where x.Id == anAppointment.Id
+                              select x).First();
+            if (a.ArrivalDateTime == null)
+            {
+                a.ArrivalDateTime = DateTime.Now;
+
+                MessageBox.Show("Se registro su hora de llegada", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                db.SaveChanges();
+            }
+            else
+                MessageBox.Show("Su hora de llegada ya ha sido registrada", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void btnVaccinationDateTime_Click(object sender, EventArgs e)
+        {
+            var db = new VaccinationDBContext();
+
+            //Actualizando hora de vacunación
+
+            Appointment a = (from x in db.Appointments
+                             where x.Id == anAppointment.Id
+                             select x).First();
+            if (a.VaccinationDateTime == null)
+            {
+                a.VaccinationDateTime = DateTime.Now;
+
+                MessageBox.Show("Se registro su hora de vacunación", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                db.SaveChanges();
+            }
+            else
+                MessageBox.Show("Su hora de vacunación ya ha sido registrada", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void btnAddSideEffect_Click(object sender, EventArgs e)
+        {
+            var db = new VaccinationDBContext();
+
+            SideEffect s = (SideEffect) cmbSideEffect.SelectedItem;
+
+            List<VaccineReaction> existingReaction = db.VaccineReactions
+                        .Where(r => r.IdSideEffect == s.Id && r.IdAppointment == anAppointment.Id)
+                        .ToList();
+            if(existingReaction.Count == 0)
+            {
+                db.Add(new VaccineReaction()
+                {
+                    IdAppointment = anAppointment.Id,
+                    IdSideEffect = s.Id,
+                    AppearenceTime = Int32.Parse(cmbSideEffectTime.Text)
+                });
+                MessageBox.Show("Efecto secundario registrado con exito", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                db.SaveChanges();
+            } 
+            else
+                MessageBox.Show("El efecto secundario seleccionado ya ha sido registrado", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private void btnFinishProcess_Click(object sender, EventArgs e)
+        {
+            var db = new VaccinationDBContext();
+
+            //Consiguiendo cita actual
+
+            Appointment a = (from x in db.Appointments
+                             where x.Id == anAppointment.Id
+                             select x).First();
+            //Validando que se completen los pasos
+            if (a.VaccinationDateTime != null && a.ArrivalDateTime != null)
+            {
+                if (anAppointment.IdAppointmentType == 2)
+                {
+                    //Regresando a pestaña de inicio
+                    tabPrincipal.SelectedIndex = 0;
+
+                    anAppointment = null;
+                    this.ControlBox = true;
+                    mspPrincipal.Enabled = true;
+                    ClearTracking();
+                }
+                else
+                {
+                    //Avanzando a registro de segunda cita
+                    tabPrincipal.SelectedIndex = 7;
+                }
+            }
+            else
+            {
+                //Si no se ha registrado la hora de llegada y vacunación
+                MessageBox.Show("La fecha de llegada y vacunacion no han sido registradas", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
