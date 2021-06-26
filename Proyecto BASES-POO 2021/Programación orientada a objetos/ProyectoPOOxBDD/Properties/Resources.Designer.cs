@@ -153,6 +153,16 @@ namespace ProyectoPOOxBDD.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap VaccinationLogo {
+            get {
+                object obj = ResourceManager.GetObject("VaccinationLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Vaccine {
             get {
                 object obj = ResourceManager.GetObject("Vaccine", resourceCulture);

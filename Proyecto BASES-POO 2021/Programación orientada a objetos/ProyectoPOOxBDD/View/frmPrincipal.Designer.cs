@@ -1273,6 +1273,7 @@ namespace ProyectoPOOxBDD
             this.btnExportPdfResume.TabIndex = 21;
             this.btnExportPdfResume.Text = "Exportar como PDF";
             this.btnExportPdfResume.UseVisualStyleBackColor = false;
+            this.btnExportPdfResume.Click += new System.EventHandler(this.btnExportPdfResume_Click);
             // 
             // lblAppointmentTypeResume
             // 
@@ -1355,6 +1356,7 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel4.Controls.Add(this.picRegisterTraking, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.picAppointmentVisualize, 1, 12);
             this.tableLayoutPanel4.Controls.Add(this.txtDiseaseTraking, 2, 11);
+            this.tableLayoutPanel4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 18;
@@ -1527,6 +1529,7 @@ namespace ProyectoPOOxBDD
             this.btnSearch.TabIndex = 23;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnClear
             // 
@@ -1544,6 +1547,7 @@ namespace ProyectoPOOxBDD
             this.btnClear.TabIndex = 26;
             this.btnClear.Text = "Limpiar información";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // txtSearch
             // 
@@ -1652,6 +1656,7 @@ namespace ProyectoPOOxBDD
             this.txtDiseaseTraking.Multiline = true;
             this.txtDiseaseTraking.Name = "txtDiseaseTraking";
             this.txtDiseaseTraking.ReadOnly = true;
+            this.txtDiseaseTraking.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDiseaseTraking.Size = new System.Drawing.Size(469, 47);
             this.txtDiseaseTraking.TabIndex = 24;
             // 
@@ -1868,6 +1873,7 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.SetColumnSpan(this.cmbSideEffect, 2);
+            this.cmbSideEffect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSideEffect.FormattingEnabled = true;
             this.cmbSideEffect.Location = new System.Drawing.Point(132, 534);
             this.cmbSideEffect.Name = "cmbSideEffect";
@@ -1916,6 +1922,7 @@ namespace ProyectoPOOxBDD
             // cmbSideEffectTime
             // 
             this.cmbSideEffectTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbSideEffectTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSideEffectTime.FormattingEnabled = true;
             this.cmbSideEffectTime.Location = new System.Drawing.Point(407, 534);
             this.cmbSideEffectTime.Name = "cmbSideEffectTime";
@@ -2223,6 +2230,10 @@ namespace ProyectoPOOxBDD
             // 
             // dgvBooth
             // 
+            this.dgvBooth.AllowUserToAddRows = false;
+            this.dgvBooth.AllowUserToDeleteRows = false;
+            this.dgvBooth.AllowUserToResizeColumns = false;
+            this.dgvBooth.AllowUserToResizeRows = false;
             this.dgvBooth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2231,6 +2242,7 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel7.SetColumnSpan(this.dgvBooth, 2);
             this.dgvBooth.Location = new System.Drawing.Point(46, 214);
             this.dgvBooth.Name = "dgvBooth";
+            this.dgvBooth.ReadOnly = true;
             this.dgvBooth.RowTemplate.Height = 25;
             this.dgvBooth.Size = new System.Drawing.Size(773, 330);
             this.dgvBooth.TabIndex = 37;
