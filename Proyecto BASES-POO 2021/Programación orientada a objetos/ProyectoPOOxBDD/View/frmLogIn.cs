@@ -19,6 +19,12 @@ namespace ProyectoPOOxBDD
             InitializeComponent();
         }
 
+        private void frmLogIn_Load(object sender, EventArgs e)
+        {
+            //Adjustar tamaño de texto según resolución de pantalla
+            AdjustResolution(this);
+        }
+
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             try
@@ -90,6 +96,43 @@ namespace ProyectoPOOxBDD
             {
                 MessageBox.Show("Error al conectar con la base de datos", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        public void AdjustResolution(System.Windows.Forms.Form form)
+        {
+            String widthScreen = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size.Width.ToString(); //Obtener el ancho de la pantalla
+            String heightScreen = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size.Height.ToString(); //obtener el alto de la pantalla
+            String tamano = widthScreen + "x" + heightScreen;
+
+            int width = 0;
+            int height = 0;
+            int size = 0;
+
+            switch (tamano)
+            {
+                case "1920x1080":
+                    size = 16;
+                    break;
+
+                case "1366x768":
+                    size = 12;
+                    break;
+
+                default:
+                    size = 12;
+                    break;
+            }
+
+            ChangeResolution(form, size);
+        }
+
+        public void ChangeResolution(System.Windows.Forms.Form form, int size)
+        {
+            //Fuente a utilzar
+            Font font = new Font("Segoe UI", size, FontStyle.Regular, GraphicsUnit.Point);
+
+            //Cambiar el tamaño de la fuentte
+            tlpLogin.Font = font;
         }
     }
 }

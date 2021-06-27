@@ -30,7 +30,7 @@ namespace ProyectoPOOxBDD
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogIn));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpLogin = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -39,47 +39,48 @@ namespace ProyectoPOOxBDD
             this.btnLogIn = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tlpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tlpLogin
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtUser, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txtPassword, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.btnLogIn, 1, 7);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 103);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(633, 509);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tlpLogin.ColumnCount = 4;
+            this.tlpLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tlpLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tlpLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpLogin.Controls.Add(this.pictureBox2, 1, 1);
+            this.tlpLogin.Controls.Add(this.label1, 1, 2);
+            this.tlpLogin.Controls.Add(this.txtUser, 1, 3);
+            this.tlpLogin.Controls.Add(this.label2, 1, 4);
+            this.tlpLogin.Controls.Add(this.txtPassword, 1, 5);
+            this.tlpLogin.Controls.Add(this.btnLogIn, 1, 7);
+            this.tlpLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpLogin.Location = new System.Drawing.Point(1, 103);
+            this.tlpLogin.Name = "tlpLogin";
+            this.tlpLogin.RowCount = 9;
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tlpLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpLogin.Size = new System.Drawing.Size(633, 509);
+            this.tlpLogin.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox2, 2);
+            this.tlpLogin.SetColumnSpan(this.pictureBox2, 2);
             this.pictureBox2.Image = global::ProyectoPOOxBDD.Properties.Resources.LogIn;
             this.pictureBox2.Location = new System.Drawing.Point(129, 53);
             this.pictureBox2.Name = "pictureBox2";
@@ -94,8 +95,7 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpLogin.SetColumnSpan(this.label1, 2);
             this.label1.Location = new System.Drawing.Point(129, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(372, 50);
@@ -108,11 +108,10 @@ namespace ProyectoPOOxBDD
             this.txtUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.txtUser, 2);
-            this.txtUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpLogin.SetColumnSpan(this.txtUser, 2);
             this.txtUser.Location = new System.Drawing.Point(129, 194);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(372, 35);
+            this.txtUser.Size = new System.Drawing.Size(372, 33);
             this.txtUser.TabIndex = 2;
             // 
             // label2
@@ -121,8 +120,7 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpLogin.SetColumnSpan(this.label2, 2);
             this.label2.Location = new System.Drawing.Point(129, 241);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(372, 50);
@@ -135,12 +133,11 @@ namespace ProyectoPOOxBDD
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.txtPassword, 2);
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpLogin.SetColumnSpan(this.txtPassword, 2);
             this.txtPassword.Location = new System.Drawing.Point(129, 294);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(372, 35);
+            this.txtPassword.Size = new System.Drawing.Size(372, 33);
             this.txtPassword.TabIndex = 4;
             // 
             // btnLogIn
@@ -149,9 +146,8 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.btnLogIn, 2);
+            this.tlpLogin.SetColumnSpan(this.btnLogIn, 2);
             this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogIn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
             this.btnLogIn.Location = new System.Drawing.Point(129, 369);
             this.btnLogIn.Name = "btnLogIn";
@@ -196,15 +192,16 @@ namespace ProyectoPOOxBDD
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(634, 611);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tlpLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesión";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.Load += new System.EventHandler(this.frmLogIn_Load);
+            this.tlpLogin.ResumeLayout(false);
+            this.tlpLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -214,7 +211,7 @@ namespace ProyectoPOOxBDD
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tlpLogin;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

@@ -58,7 +58,7 @@ namespace ProyectoPOOxBDD
             this.btnNext = new System.Windows.Forms.Button();
             this.picCitizenImage = new System.Windows.Forms.PictureBox();
             this.tabRegisterPart2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpRegisterP2 = new System.Windows.Forms.TableLayoutPanel();
             this.cmbInstitution = new System.Windows.Forms.ComboBox();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblPriorityGroupRegister = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@ namespace ProyectoPOOxBDD
             this.btnFinishRegister = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.tabFirstAppointment = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpFirstAppointment = new System.Windows.Forms.TableLayoutPanel();
             this.lblCitizenNameRegister = new System.Windows.Forms.Label();
             this.lblCitizenNameFirstAppointment = new System.Windows.Forms.Label();
             this.lblDateRegister = new System.Windows.Forms.Label();
@@ -103,7 +103,7 @@ namespace ProyectoPOOxBDD
             this.picAppointmentResume = new System.Windows.Forms.PictureBox();
             this.lblAppointmentResume = new System.Windows.Forms.Label();
             this.tabTraking = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpTraking = new System.Windows.Forms.TableLayoutPanel();
             this.lblDuiNumberTraking = new System.Windows.Forms.Label();
             this.lblNameTraking = new System.Windows.Forms.Label();
             this.lblAddressTraking = new System.Windows.Forms.Label();
@@ -124,7 +124,7 @@ namespace ProyectoPOOxBDD
             this.picAppointmentVisualize = new System.Windows.Forms.PictureBox();
             this.txtDiseaseTraking = new System.Windows.Forms.TextBox();
             this.tabVaccinationProcess = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpVaccination = new System.Windows.Forms.TableLayoutPanel();
             this.lblPreCheck = new System.Windows.Forms.Label();
             this.lblWatingLine = new System.Windows.Forms.Label();
             this.lblVaccination = new System.Windows.Forms.Label();
@@ -144,22 +144,21 @@ namespace ProyectoPOOxBDD
             this.lblVaccinationProcess = new System.Windows.Forms.Label();
             this.btnAddSideEffect = new System.Windows.Forms.Button();
             this.tabSecondAppointment = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpSecondAppointment = new System.Windows.Forms.TableLayoutPanel();
+            this.lblHourSecondAppointment = new System.Windows.Forms.Label();
             this.lblDateSecondAppointment = new System.Windows.Forms.Label();
             this.lblCitizenNameRegister2 = new System.Windows.Forms.Label();
             this.lblCitizenNameSecondAppointment = new System.Windows.Forms.Label();
             this.lblDateRegister2 = new System.Windows.Forms.Label();
-            this.lblTimeRegister2 = new System.Windows.Forms.Label();
-            this.lblHourSecondAppointment = new System.Windows.Forms.Label();
-            this.lblMinutesSecondAppointment = new System.Windows.Forms.Label();
             this.lblVaccinationPlaceRegister2 = new System.Windows.Forms.Label();
             this.lblVaccinationPlaceSecondAppointment = new System.Windows.Forms.Label();
             this.btnAddSecondAppointment = new System.Windows.Forms.Button();
             this.lblSecondAppointment = new System.Windows.Forms.Label();
             this.picAppointmentImage2 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblMinutesSecondAppointment = new System.Windows.Forms.Label();
+            this.lblTimeRegister2 = new System.Windows.Forms.Label();
             this.tabBooth = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpBooth = new System.Windows.Forms.TableLayoutPanel();
             this.dgvBooth = new System.Windows.Forms.DataGridView();
             this.lblBoothInformation = new System.Windows.Forms.Label();
             this.picBoothImage = new System.Windows.Forms.PictureBox();
@@ -176,27 +175,27 @@ namespace ProyectoPOOxBDD
             this.tlpRegisterP1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCitizenImage)).BeginInit();
             this.tabRegisterPart2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tlpRegisterP2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCitizenImage2)).BeginInit();
             this.tabFirstAppointment.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tlpFirstAppointment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentImage)).BeginInit();
             this.tabAppointmentResume.SuspendLayout();
             this.tlpResume.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentResume)).BeginInit();
             this.tabTraking.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.tlpTraking.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppointment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRegisterTraking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentVisualize)).BeginInit();
             this.tabVaccinationProcess.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
+            this.tlpVaccination.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picVaccine)).BeginInit();
             this.tabSecondAppointment.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
+            this.tlpSecondAppointment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentImage2)).BeginInit();
             this.tabBooth.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
+            this.tlpBooth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoothImage)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -204,6 +203,8 @@ namespace ProyectoPOOxBDD
             // 
             // tlpPrincipal
             // 
+            this.tlpPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.tlpPrincipal.ColumnCount = 2;
             this.tlpPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -211,6 +212,7 @@ namespace ProyectoPOOxBDD
             this.tlpPrincipal.Controls.Add(this.pictureBox1, 0, 0);
             this.tlpPrincipal.Controls.Add(this.mspPrincipal, 1, 0);
             this.tlpPrincipal.Controls.Add(this.lblUser, 1, 1);
+            this.tlpPrincipal.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tlpPrincipal.Location = new System.Drawing.Point(-3, -3);
             this.tlpPrincipal.Name = "tlpPrincipal";
             this.tlpPrincipal.RowCount = 2;
@@ -237,6 +239,7 @@ namespace ProyectoPOOxBDD
             // mspPrincipal
             // 
             this.mspPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
+            this.mspPrincipal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mspPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logOutMenuItem,
             this.boothMenuItem,
@@ -246,52 +249,47 @@ namespace ProyectoPOOxBDD
             this.mspPrincipal.Location = new System.Drawing.Point(173, 0);
             this.mspPrincipal.Name = "mspPrincipal";
             this.mspPrincipal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.mspPrincipal.Size = new System.Drawing.Size(696, 38);
+            this.mspPrincipal.Size = new System.Drawing.Size(696, 33);
             this.mspPrincipal.TabIndex = 1;
             this.mspPrincipal.Text = "menuStrip1";
             // 
             // logOutMenuItem
             // 
-            this.logOutMenuItem.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.logOutMenuItem.ForeColor = System.Drawing.Color.White;
             this.logOutMenuItem.Name = "logOutMenuItem";
-            this.logOutMenuItem.Size = new System.Drawing.Size(145, 34);
+            this.logOutMenuItem.Size = new System.Drawing.Size(135, 29);
             this.logOutMenuItem.Text = "&Cerrar sesión";
             this.logOutMenuItem.Click += new System.EventHandler(this.logOutMenuItem_Click);
             // 
             // boothMenuItem
             // 
-            this.boothMenuItem.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.boothMenuItem.ForeColor = System.Drawing.Color.White;
             this.boothMenuItem.Name = "boothMenuItem";
-            this.boothMenuItem.Size = new System.Drawing.Size(98, 34);
+            this.boothMenuItem.Size = new System.Drawing.Size(91, 29);
             this.boothMenuItem.Text = "&Cabinas";
             this.boothMenuItem.Click += new System.EventHandler(this.boothMenuItem_Click);
             // 
             // trackingMenuItem
             // 
-            this.trackingMenuItem.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.trackingMenuItem.ForeColor = System.Drawing.Color.White;
             this.trackingMenuItem.Name = "trackingMenuItem";
-            this.trackingMenuItem.Size = new System.Drawing.Size(141, 34);
+            this.trackingMenuItem.Size = new System.Drawing.Size(130, 29);
             this.trackingMenuItem.Text = "&Seguimiento";
             this.trackingMenuItem.Click += new System.EventHandler(this.trackingMenuItem_Click);
             // 
             // registerMenuItem
             // 
-            this.registerMenuItem.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.registerMenuItem.ForeColor = System.Drawing.Color.White;
             this.registerMenuItem.Name = "registerMenuItem";
-            this.registerMenuItem.Size = new System.Drawing.Size(100, 34);
+            this.registerMenuItem.Size = new System.Drawing.Size(92, 29);
             this.registerMenuItem.Text = "&Registro";
             this.registerMenuItem.Click += new System.EventHandler(this.registerMenuItem_Click);
             // 
             // welcomeMenuItem
             // 
-            this.welcomeMenuItem.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.welcomeMenuItem.ForeColor = System.Drawing.Color.White;
             this.welcomeMenuItem.Name = "welcomeMenuItem";
-            this.welcomeMenuItem.Size = new System.Drawing.Size(75, 34);
+            this.welcomeMenuItem.Size = new System.Drawing.Size(70, 29);
             this.welcomeMenuItem.Text = "&Inicio";
             this.welcomeMenuItem.Click += new System.EventHandler(this.welcomeMenuItem_Click);
             // 
@@ -299,7 +297,6 @@ namespace ProyectoPOOxBDD
             // 
             this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblUser.ForeColor = System.Drawing.Color.White;
             this.lblUser.Location = new System.Drawing.Point(784, 60);
             this.lblUser.Name = "lblUser";
@@ -309,6 +306,9 @@ namespace ProyectoPOOxBDD
             // 
             // tabPrincipal
             // 
+            this.tabPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabPrincipal.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabPrincipal.Controls.Add(this.tabWelcome);
             this.tabPrincipal.Controls.Add(this.tabRegisterPart1);
@@ -323,7 +323,7 @@ namespace ProyectoPOOxBDD
             this.tabPrincipal.Location = new System.Drawing.Point(-10, 90);
             this.tabPrincipal.Name = "tabPrincipal";
             this.tabPrincipal.SelectedIndex = 0;
-            this.tabPrincipal.Size = new System.Drawing.Size(886, 707);
+            this.tabPrincipal.Size = new System.Drawing.Size(886, 669);
             this.tabPrincipal.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabPrincipal.TabIndex = 1;
             this.tabPrincipal.TabStop = false;
@@ -334,17 +334,20 @@ namespace ProyectoPOOxBDD
             this.tabWelcome.Location = new System.Drawing.Point(4, 27);
             this.tabWelcome.Name = "tabWelcome";
             this.tabWelcome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabWelcome.Size = new System.Drawing.Size(878, 676);
+            this.tabWelcome.Size = new System.Drawing.Size(878, 638);
             this.tabWelcome.TabIndex = 0;
             this.tabWelcome.Text = "Welcome";
             this.tabWelcome.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::ProyectoPOOxBDD.Properties.Resources.Welcome;
-            this.pictureBox2.Location = new System.Drawing.Point(-11, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(-13, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(900, 694);
+            this.pictureBox2.Size = new System.Drawing.Size(902, 650);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -353,15 +356,19 @@ namespace ProyectoPOOxBDD
             // 
             this.tabRegisterPart1.BackColor = System.Drawing.Color.White;
             this.tabRegisterPart1.Controls.Add(this.tlpRegisterP1);
+            this.tabRegisterPart1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabRegisterPart1.Location = new System.Drawing.Point(4, 27);
             this.tabRegisterPart1.Name = "tabRegisterPart1";
             this.tabRegisterPart1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRegisterPart1.Size = new System.Drawing.Size(878, 676);
+            this.tabRegisterPart1.Size = new System.Drawing.Size(878, 638);
             this.tabRegisterPart1.TabIndex = 1;
             this.tabRegisterPart1.Text = "RegisterP1";
             // 
             // tlpRegisterP1
             // 
+            this.tlpRegisterP1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpRegisterP1.ColumnCount = 4;
             this.tlpRegisterP1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpRegisterP1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -380,6 +387,7 @@ namespace ProyectoPOOxBDD
             this.tlpRegisterP1.Controls.Add(this.txtEmail, 1, 11);
             this.tlpRegisterP1.Controls.Add(this.btnNext, 1, 13);
             this.tlpRegisterP1.Controls.Add(this.picCitizenImage, 1, 1);
+            this.tlpRegisterP1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tlpRegisterP1.Location = new System.Drawing.Point(6, 0);
             this.tlpRegisterP1.Name = "tlpRegisterP1";
             this.tlpRegisterP1.RowCount = 15;
@@ -398,7 +406,7 @@ namespace ProyectoPOOxBDD
             this.tlpRegisterP1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.tlpRegisterP1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tlpRegisterP1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tlpRegisterP1.Size = new System.Drawing.Size(866, 673);
+            this.tlpRegisterP1.Size = new System.Drawing.Size(866, 638);
             this.tlpRegisterP1.TabIndex = 0;
             // 
             // lblCitizenRegister
@@ -409,9 +417,9 @@ namespace ProyectoPOOxBDD
             this.lblCitizenRegister.AutoSize = true;
             this.lblCitizenRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCitizenRegister.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lblCitizenRegister.Location = new System.Drawing.Point(348, 40);
+            this.lblCitizenRegister.Location = new System.Drawing.Point(348, 38);
             this.lblCitizenRegister.Name = "lblCitizenRegister";
-            this.lblCitizenRegister.Size = new System.Drawing.Size(297, 87);
+            this.lblCitizenRegister.Size = new System.Drawing.Size(297, 82);
             this.lblCitizenRegister.TabIndex = 2;
             this.lblCitizenRegister.Text = "Registro de ciudadanos";
             this.lblCitizenRegister.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -423,11 +431,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDuiNumberRegister.AutoSize = true;
             this.tlpRegisterP1.SetColumnSpan(this.lblDuiNumberRegister, 2);
-            this.lblDuiNumberRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDuiNumberRegister.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lblDuiNumberRegister.Location = new System.Drawing.Point(219, 127);
+            this.lblDuiNumberRegister.Location = new System.Drawing.Point(219, 120);
             this.lblDuiNumberRegister.Name = "lblDuiNumberRegister";
-            this.lblDuiNumberRegister.Size = new System.Drawing.Size(426, 40);
+            this.lblDuiNumberRegister.Size = new System.Drawing.Size(426, 38);
             this.lblDuiNumberRegister.TabIndex = 1;
             this.lblDuiNumberRegister.Text = "Número de DUI:";
             this.lblDuiNumberRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -438,10 +445,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpRegisterP1.SetColumnSpan(this.txtDuiNumber, 2);
-            this.txtDuiNumber.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDuiNumber.Location = new System.Drawing.Point(219, 170);
+            this.txtDuiNumber.Location = new System.Drawing.Point(219, 161);
             this.txtDuiNumber.Name = "txtDuiNumber";
-            this.txtDuiNumber.Size = new System.Drawing.Size(426, 35);
+            this.txtDuiNumber.Size = new System.Drawing.Size(426, 29);
             this.txtDuiNumber.TabIndex = 0;
             // 
             // lblNameRegister
@@ -451,10 +457,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNameRegister.AutoSize = true;
             this.tlpRegisterP1.SetColumnSpan(this.lblNameRegister, 2);
-            this.lblNameRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNameRegister.Location = new System.Drawing.Point(219, 214);
+            this.lblNameRegister.Location = new System.Drawing.Point(219, 202);
             this.lblNameRegister.Name = "lblNameRegister";
-            this.lblNameRegister.Size = new System.Drawing.Size(426, 40);
+            this.lblNameRegister.Size = new System.Drawing.Size(426, 38);
             this.lblNameRegister.TabIndex = 2;
             this.lblNameRegister.Text = "Nombre completo: ";
             this.lblNameRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -465,10 +470,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpRegisterP1.SetColumnSpan(this.txtName, 2);
-            this.txtName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtName.Location = new System.Drawing.Point(219, 257);
+            this.txtName.Location = new System.Drawing.Point(219, 243);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(426, 35);
+            this.txtName.Size = new System.Drawing.Size(426, 29);
             this.txtName.TabIndex = 1;
             // 
             // lblAddressRegister
@@ -478,10 +482,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAddressRegister.AutoSize = true;
             this.tlpRegisterP1.SetColumnSpan(this.lblAddressRegister, 2);
-            this.lblAddressRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAddressRegister.Location = new System.Drawing.Point(219, 301);
+            this.lblAddressRegister.Location = new System.Drawing.Point(219, 284);
             this.lblAddressRegister.Name = "lblAddressRegister";
-            this.lblAddressRegister.Size = new System.Drawing.Size(426, 40);
+            this.lblAddressRegister.Size = new System.Drawing.Size(426, 38);
             this.lblAddressRegister.TabIndex = 3;
             this.lblAddressRegister.Text = "Dirección de domicilio:";
             this.lblAddressRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -492,10 +495,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpRegisterP1.SetColumnSpan(this.txtAddress, 2);
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtAddress.Location = new System.Drawing.Point(219, 344);
+            this.txtAddress.Location = new System.Drawing.Point(219, 325);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(426, 35);
+            this.txtAddress.Size = new System.Drawing.Size(426, 29);
             this.txtAddress.TabIndex = 2;
             // 
             // lblPhoneNumberRegister
@@ -505,10 +507,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPhoneNumberRegister.AutoSize = true;
             this.tlpRegisterP1.SetColumnSpan(this.lblPhoneNumberRegister, 2);
-            this.lblPhoneNumberRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNumberRegister.Location = new System.Drawing.Point(219, 388);
+            this.lblPhoneNumberRegister.Location = new System.Drawing.Point(219, 366);
             this.lblPhoneNumberRegister.Name = "lblPhoneNumberRegister";
-            this.lblPhoneNumberRegister.Size = new System.Drawing.Size(426, 40);
+            this.lblPhoneNumberRegister.Size = new System.Drawing.Size(426, 38);
             this.lblPhoneNumberRegister.TabIndex = 4;
             this.lblPhoneNumberRegister.Text = "Número de teléfono:";
             this.lblPhoneNumberRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -519,10 +520,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpRegisterP1.SetColumnSpan(this.txtPhoneNumber, 2);
-            this.txtPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPhoneNumber.Location = new System.Drawing.Point(219, 431);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(219, 407);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(426, 35);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(426, 29);
             this.txtPhoneNumber.TabIndex = 3;
             // 
             // lblEmailRegister
@@ -532,10 +532,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEmailRegister.AutoSize = true;
             this.tlpRegisterP1.SetColumnSpan(this.lblEmailRegister, 2);
-            this.lblEmailRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmailRegister.Location = new System.Drawing.Point(219, 475);
+            this.lblEmailRegister.Location = new System.Drawing.Point(219, 448);
             this.lblEmailRegister.Name = "lblEmailRegister";
-            this.lblEmailRegister.Size = new System.Drawing.Size(426, 40);
+            this.lblEmailRegister.Size = new System.Drawing.Size(426, 38);
             this.lblEmailRegister.TabIndex = 5;
             this.lblEmailRegister.Text = "Correo electrónico:";
             this.lblEmailRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -546,10 +545,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpRegisterP1.SetColumnSpan(this.txtEmail, 2);
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtEmail.Location = new System.Drawing.Point(219, 518);
+            this.txtEmail.Location = new System.Drawing.Point(219, 489);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(426, 35);
+            this.txtEmail.Size = new System.Drawing.Size(426, 29);
             this.txtEmail.TabIndex = 4;
             // 
             // btnNext
@@ -560,11 +558,10 @@ namespace ProyectoPOOxBDD
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.tlpRegisterP1.SetColumnSpan(this.btnNext, 2);
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(219, 585);
+            this.btnNext.Location = new System.Drawing.Point(219, 552);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(426, 41);
+            this.btnNext.Size = new System.Drawing.Size(426, 38);
             this.btnNext.TabIndex = 5;
             this.btnNext.Text = "Siguiente";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -575,9 +572,9 @@ namespace ProyectoPOOxBDD
             this.picCitizenImage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picCitizenImage.Image = global::ProyectoPOOxBDD.Properties.Resources.Citizen;
-            this.picCitizenImage.Location = new System.Drawing.Point(260, 43);
+            this.picCitizenImage.Location = new System.Drawing.Point(260, 41);
             this.picCitizenImage.Name = "picCitizenImage";
-            this.picCitizenImage.Size = new System.Drawing.Size(82, 81);
+            this.picCitizenImage.Size = new System.Drawing.Size(82, 76);
             this.picCitizenImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCitizenImage.TabIndex = 12;
             this.picCitizenImage.TabStop = false;
@@ -585,73 +582,76 @@ namespace ProyectoPOOxBDD
             // tabRegisterPart2
             // 
             this.tabRegisterPart2.BackColor = System.Drawing.Color.White;
-            this.tabRegisterPart2.Controls.Add(this.tableLayoutPanel1);
+            this.tabRegisterPart2.Controls.Add(this.tlpRegisterP2);
             this.tabRegisterPart2.Location = new System.Drawing.Point(4, 27);
             this.tabRegisterPart2.Name = "tabRegisterPart2";
             this.tabRegisterPart2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRegisterPart2.Size = new System.Drawing.Size(878, 676);
+            this.tabRegisterPart2.Size = new System.Drawing.Size(878, 638);
             this.tabRegisterPart2.TabIndex = 2;
             this.tabRegisterPart2.Text = "RegisterP2";
             // 
-            // tableLayoutPanel1
+            // tlpRegisterP2
             // 
-            this.tableLayoutPanel1.ColumnCount = 7;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel1.Controls.Add(this.cmbInstitution, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.lblQuestion, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lblPriorityGroupRegister, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblInstitutionIdentificationRegister, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lblInstitutionRegister, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.lblDiseaseRegister, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.cmbPriorityGroup, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.radYes, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.radNo, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txtInstitutionIdentification, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.txtDisease, 1, 11);
-            this.tableLayoutPanel1.Controls.Add(this.btnAddDisease, 5, 11);
-            this.tableLayoutPanel1.Controls.Add(this.picCitizenImage2, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblCitizenRegister2, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnFinishRegister, 4, 13);
-            this.tableLayoutPanel1.Controls.Add(this.btnBack, 1, 13);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 15;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(866, 673);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tlpRegisterP2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpRegisterP2.ColumnCount = 7;
+            this.tlpRegisterP2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tlpRegisterP2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpRegisterP2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpRegisterP2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11F));
+            this.tlpRegisterP2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11F));
+            this.tlpRegisterP2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpRegisterP2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tlpRegisterP2.Controls.Add(this.cmbInstitution, 1, 9);
+            this.tlpRegisterP2.Controls.Add(this.lblQuestion, 1, 4);
+            this.tlpRegisterP2.Controls.Add(this.lblPriorityGroupRegister, 1, 2);
+            this.tlpRegisterP2.Controls.Add(this.lblInstitutionIdentificationRegister, 1, 6);
+            this.tlpRegisterP2.Controls.Add(this.lblInstitutionRegister, 1, 8);
+            this.tlpRegisterP2.Controls.Add(this.lblDiseaseRegister, 1, 10);
+            this.tlpRegisterP2.Controls.Add(this.cmbPriorityGroup, 1, 3);
+            this.tlpRegisterP2.Controls.Add(this.radYes, 1, 5);
+            this.tlpRegisterP2.Controls.Add(this.radNo, 2, 5);
+            this.tlpRegisterP2.Controls.Add(this.txtInstitutionIdentification, 1, 7);
+            this.tlpRegisterP2.Controls.Add(this.txtDisease, 1, 11);
+            this.tlpRegisterP2.Controls.Add(this.btnAddDisease, 5, 11);
+            this.tlpRegisterP2.Controls.Add(this.picCitizenImage2, 2, 1);
+            this.tlpRegisterP2.Controls.Add(this.lblCitizenRegister2, 3, 1);
+            this.tlpRegisterP2.Controls.Add(this.btnFinishRegister, 4, 13);
+            this.tlpRegisterP2.Controls.Add(this.btnBack, 1, 13);
+            this.tlpRegisterP2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpRegisterP2.Location = new System.Drawing.Point(6, 0);
+            this.tlpRegisterP2.Name = "tlpRegisterP2";
+            this.tlpRegisterP2.RowCount = 15;
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpRegisterP2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpRegisterP2.Size = new System.Drawing.Size(866, 635);
+            this.tlpRegisterP2.TabIndex = 0;
             // 
             // cmbInstitution
             // 
             this.cmbInstitution.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.cmbInstitution, 5);
+            this.tlpRegisterP2.SetColumnSpan(this.cmbInstitution, 5);
             this.cmbInstitution.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbInstitution.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbInstitution.FormattingEnabled = true;
-            this.cmbInstitution.Location = new System.Drawing.Point(167, 431);
+            this.cmbInstitution.Location = new System.Drawing.Point(167, 407);
             this.cmbInstitution.Name = "cmbInstitution";
-            this.cmbInstitution.Size = new System.Drawing.Size(529, 38);
+            this.cmbInstitution.Size = new System.Drawing.Size(529, 29);
             this.cmbInstitution.TabIndex = 10;
             // 
             // lblQuestion
@@ -660,11 +660,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblQuestion.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblQuestion, 5);
-            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblQuestion.Location = new System.Drawing.Point(167, 214);
+            this.tlpRegisterP2.SetColumnSpan(this.lblQuestion, 5);
+            this.lblQuestion.Location = new System.Drawing.Point(167, 202);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(529, 40);
+            this.lblQuestion.Size = new System.Drawing.Size(529, 38);
             this.lblQuestion.TabIndex = 2;
             this.lblQuestion.Text = "¿Pertenece a una institución esencial?";
             this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -675,11 +674,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPriorityGroupRegister.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblPriorityGroupRegister, 5);
-            this.lblPriorityGroupRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPriorityGroupRegister.Location = new System.Drawing.Point(167, 127);
+            this.tlpRegisterP2.SetColumnSpan(this.lblPriorityGroupRegister, 5);
+            this.lblPriorityGroupRegister.Location = new System.Drawing.Point(167, 120);
             this.lblPriorityGroupRegister.Name = "lblPriorityGroupRegister";
-            this.lblPriorityGroupRegister.Size = new System.Drawing.Size(529, 40);
+            this.lblPriorityGroupRegister.Size = new System.Drawing.Size(529, 38);
             this.lblPriorityGroupRegister.TabIndex = 0;
             this.lblPriorityGroupRegister.Text = "Grupo prioritario al que pertenece";
             this.lblPriorityGroupRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -690,11 +688,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInstitutionIdentificationRegister.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblInstitutionIdentificationRegister, 5);
-            this.lblInstitutionIdentificationRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblInstitutionIdentificationRegister.Location = new System.Drawing.Point(167, 301);
+            this.tlpRegisterP2.SetColumnSpan(this.lblInstitutionIdentificationRegister, 5);
+            this.lblInstitutionIdentificationRegister.Location = new System.Drawing.Point(167, 284);
             this.lblInstitutionIdentificationRegister.Name = "lblInstitutionIdentificationRegister";
-            this.lblInstitutionIdentificationRegister.Size = new System.Drawing.Size(529, 40);
+            this.lblInstitutionIdentificationRegister.Size = new System.Drawing.Size(529, 38);
             this.lblInstitutionIdentificationRegister.TabIndex = 3;
             this.lblInstitutionIdentificationRegister.Text = "Número identificador de la institución";
             this.lblInstitutionIdentificationRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -705,11 +702,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInstitutionRegister.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblInstitutionRegister, 5);
-            this.lblInstitutionRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblInstitutionRegister.Location = new System.Drawing.Point(167, 388);
+            this.tlpRegisterP2.SetColumnSpan(this.lblInstitutionRegister, 5);
+            this.lblInstitutionRegister.Location = new System.Drawing.Point(167, 366);
             this.lblInstitutionRegister.Name = "lblInstitutionRegister";
-            this.lblInstitutionRegister.Size = new System.Drawing.Size(529, 40);
+            this.lblInstitutionRegister.Size = new System.Drawing.Size(529, 38);
             this.lblInstitutionRegister.TabIndex = 4;
             this.lblInstitutionRegister.Text = "Institución a la que pertenece";
             this.lblInstitutionRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -720,11 +716,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDiseaseRegister.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblDiseaseRegister, 5);
-            this.lblDiseaseRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDiseaseRegister.Location = new System.Drawing.Point(167, 475);
+            this.tlpRegisterP2.SetColumnSpan(this.lblDiseaseRegister, 5);
+            this.lblDiseaseRegister.Location = new System.Drawing.Point(167, 448);
             this.lblDiseaseRegister.Name = "lblDiseaseRegister";
-            this.lblDiseaseRegister.Size = new System.Drawing.Size(529, 40);
+            this.lblDiseaseRegister.Size = new System.Drawing.Size(529, 38);
             this.lblDiseaseRegister.TabIndex = 5;
             this.lblDiseaseRegister.Text = "Si posee enfermedades crónicas agreguelas una a una";
             this.lblDiseaseRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -734,22 +729,20 @@ namespace ProyectoPOOxBDD
             this.cmbPriorityGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.cmbPriorityGroup, 5);
+            this.tlpRegisterP2.SetColumnSpan(this.cmbPriorityGroup, 5);
             this.cmbPriorityGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPriorityGroup.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbPriorityGroup.FormattingEnabled = true;
-            this.cmbPriorityGroup.Location = new System.Drawing.Point(167, 170);
+            this.cmbPriorityGroup.Location = new System.Drawing.Point(167, 161);
             this.cmbPriorityGroup.Name = "cmbPriorityGroup";
-            this.cmbPriorityGroup.Size = new System.Drawing.Size(529, 38);
+            this.cmbPriorityGroup.Size = new System.Drawing.Size(529, 29);
             this.cmbPriorityGroup.TabIndex = 6;
             // 
             // radYes
             // 
             this.radYes.AutoSize = true;
-            this.radYes.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radYes.Location = new System.Drawing.Point(167, 257);
+            this.radYes.Location = new System.Drawing.Point(167, 243);
             this.radYes.Name = "radYes";
-            this.radYes.Size = new System.Drawing.Size(47, 34);
+            this.radYes.Size = new System.Drawing.Size(41, 25);
             this.radYes.TabIndex = 7;
             this.radYes.TabStop = true;
             this.radYes.Text = "Si";
@@ -758,10 +751,9 @@ namespace ProyectoPOOxBDD
             // radNo
             // 
             this.radNo.AutoSize = true;
-            this.radNo.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radNo.Location = new System.Drawing.Point(253, 257);
+            this.radNo.Location = new System.Drawing.Point(253, 243);
             this.radNo.Name = "radNo";
-            this.radNo.Size = new System.Drawing.Size(59, 34);
+            this.radNo.Size = new System.Drawing.Size(49, 25);
             this.radNo.TabIndex = 8;
             this.radNo.TabStop = true;
             this.radNo.Text = "No";
@@ -773,21 +765,19 @@ namespace ProyectoPOOxBDD
             this.txtInstitutionIdentification.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.txtInstitutionIdentification, 5);
-            this.txtInstitutionIdentification.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtInstitutionIdentification.Location = new System.Drawing.Point(167, 344);
+            this.tlpRegisterP2.SetColumnSpan(this.txtInstitutionIdentification, 5);
+            this.txtInstitutionIdentification.Location = new System.Drawing.Point(167, 325);
             this.txtInstitutionIdentification.Name = "txtInstitutionIdentification";
-            this.txtInstitutionIdentification.Size = new System.Drawing.Size(529, 35);
+            this.txtInstitutionIdentification.Size = new System.Drawing.Size(529, 29);
             this.txtInstitutionIdentification.TabIndex = 9;
             // 
             // txtDisease
             // 
             this.txtDisease.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.txtDisease, 4);
-            this.txtDisease.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDisease.Location = new System.Drawing.Point(167, 521);
+            this.tlpRegisterP2.SetColumnSpan(this.txtDisease, 4);
+            this.txtDisease.Location = new System.Drawing.Point(167, 493);
             this.txtDisease.Name = "txtDisease";
-            this.txtDisease.Size = new System.Drawing.Size(356, 35);
+            this.txtDisease.Size = new System.Drawing.Size(356, 29);
             this.txtDisease.TabIndex = 11;
             // 
             // btnAddDisease
@@ -796,11 +786,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddDisease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.btnAddDisease.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddDisease.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddDisease.ForeColor = System.Drawing.Color.White;
-            this.btnAddDisease.Location = new System.Drawing.Point(544, 518);
+            this.btnAddDisease.Location = new System.Drawing.Point(544, 489);
             this.btnAddDisease.Name = "btnAddDisease";
-            this.btnAddDisease.Size = new System.Drawing.Size(152, 41);
+            this.btnAddDisease.Size = new System.Drawing.Size(152, 38);
             this.btnAddDisease.TabIndex = 12;
             this.btnAddDisease.Text = "Agregar";
             this.btnAddDisease.UseVisualStyleBackColor = false;
@@ -812,9 +801,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picCitizenImage2.Image = global::ProyectoPOOxBDD.Properties.Resources.Citizen;
-            this.picCitizenImage2.Location = new System.Drawing.Point(253, 43);
+            this.picCitizenImage2.Location = new System.Drawing.Point(253, 41);
             this.picCitizenImage2.Name = "picCitizenImage2";
-            this.picCitizenImage2.Size = new System.Drawing.Size(80, 81);
+            this.picCitizenImage2.Size = new System.Drawing.Size(80, 76);
             this.picCitizenImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCitizenImage2.TabIndex = 13;
             this.picCitizenImage2.TabStop = false;
@@ -825,11 +814,11 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCitizenRegister2.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblCitizenRegister2, 3);
+            this.tlpRegisterP2.SetColumnSpan(this.lblCitizenRegister2, 3);
             this.lblCitizenRegister2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCitizenRegister2.Location = new System.Drawing.Point(339, 40);
+            this.lblCitizenRegister2.Location = new System.Drawing.Point(339, 38);
             this.lblCitizenRegister2.Name = "lblCitizenRegister2";
-            this.lblCitizenRegister2.Size = new System.Drawing.Size(357, 87);
+            this.lblCitizenRegister2.Size = new System.Drawing.Size(357, 82);
             this.lblCitizenRegister2.TabIndex = 14;
             this.lblCitizenRegister2.Text = "Registro de ciudadanos";
             this.lblCitizenRegister2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -840,13 +829,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFinishRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.btnFinishRegister, 2);
+            this.tlpRegisterP2.SetColumnSpan(this.btnFinishRegister, 2);
             this.btnFinishRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinishRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnFinishRegister.ForeColor = System.Drawing.Color.White;
-            this.btnFinishRegister.Location = new System.Drawing.Point(434, 585);
+            this.btnFinishRegister.Location = new System.Drawing.Point(434, 552);
             this.btnFinishRegister.Name = "btnFinishRegister";
-            this.btnFinishRegister.Size = new System.Drawing.Size(262, 41);
+            this.btnFinishRegister.Size = new System.Drawing.Size(262, 38);
             this.btnFinishRegister.TabIndex = 14;
             this.btnFinishRegister.Text = "Terminar registro";
             this.btnFinishRegister.UseVisualStyleBackColor = false;
@@ -858,13 +846,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.btnBack, 3);
+            this.tlpRegisterP2.SetColumnSpan(this.btnBack, 3);
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(167, 585);
+            this.btnBack.Location = new System.Drawing.Point(167, 552);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(261, 41);
+            this.btnBack.Size = new System.Drawing.Size(261, 38);
             this.btnBack.TabIndex = 13;
             this.btnBack.Text = "Retroceder";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -872,55 +859,59 @@ namespace ProyectoPOOxBDD
             // 
             // tabFirstAppointment
             // 
-            this.tabFirstAppointment.Controls.Add(this.tableLayoutPanel2);
+            this.tabFirstAppointment.Controls.Add(this.tlpFirstAppointment);
             this.tabFirstAppointment.Location = new System.Drawing.Point(4, 27);
             this.tabFirstAppointment.Name = "tabFirstAppointment";
             this.tabFirstAppointment.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFirstAppointment.Size = new System.Drawing.Size(878, 676);
+            this.tabFirstAppointment.Size = new System.Drawing.Size(878, 638);
             this.tabFirstAppointment.TabIndex = 3;
             this.tabFirstAppointment.Text = "FirstAppo";
             this.tabFirstAppointment.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel2
+            // tlpFirstAppointment
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel2.ColumnCount = 7;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.lblCitizenNameRegister, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblCitizenNameFirstAppointment, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lblDateRegister, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.dtpDateFirstAppointment, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.cmbHourFirstAppointment, 3, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblTimeRegister, 3, 4);
-            this.tableLayoutPanel2.Controls.Add(this.cmbMinutesFirstAppointment, 5, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 4, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblVaccinationPlaceRegister, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.cmbVaccinationPlaceFirstAppo, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.btnAddFirstAppointment, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.lblFirstAppointment, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.picAppointmentImage, 1, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 11;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(866, 673);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.tlpFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpFirstAppointment.BackColor = System.Drawing.Color.White;
+            this.tlpFirstAppointment.ColumnCount = 7;
+            this.tlpFirstAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpFirstAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpFirstAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpFirstAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpFirstAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.tlpFirstAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpFirstAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpFirstAppointment.Controls.Add(this.lblCitizenNameRegister, 1, 2);
+            this.tlpFirstAppointment.Controls.Add(this.lblCitizenNameFirstAppointment, 1, 3);
+            this.tlpFirstAppointment.Controls.Add(this.lblDateRegister, 1, 4);
+            this.tlpFirstAppointment.Controls.Add(this.dtpDateFirstAppointment, 1, 5);
+            this.tlpFirstAppointment.Controls.Add(this.cmbHourFirstAppointment, 3, 5);
+            this.tlpFirstAppointment.Controls.Add(this.lblTimeRegister, 3, 4);
+            this.tlpFirstAppointment.Controls.Add(this.cmbMinutesFirstAppointment, 5, 5);
+            this.tlpFirstAppointment.Controls.Add(this.label5, 4, 5);
+            this.tlpFirstAppointment.Controls.Add(this.lblVaccinationPlaceRegister, 1, 6);
+            this.tlpFirstAppointment.Controls.Add(this.cmbVaccinationPlaceFirstAppo, 1, 7);
+            this.tlpFirstAppointment.Controls.Add(this.btnAddFirstAppointment, 1, 9);
+            this.tlpFirstAppointment.Controls.Add(this.lblFirstAppointment, 2, 1);
+            this.tlpFirstAppointment.Controls.Add(this.picAppointmentImage, 1, 1);
+            this.tlpFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpFirstAppointment.Location = new System.Drawing.Point(6, 0);
+            this.tlpFirstAppointment.Name = "tlpFirstAppointment";
+            this.tlpFirstAppointment.RowCount = 11;
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpFirstAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tlpFirstAppointment.Size = new System.Drawing.Size(866, 635);
+            this.tlpFirstAppointment.TabIndex = 0;
             // 
             // lblCitizenNameRegister
             // 
@@ -928,11 +919,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCitizenNameRegister.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.lblCitizenNameRegister, 5);
-            this.lblCitizenNameRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCitizenNameRegister.Location = new System.Drawing.Point(176, 214);
+            this.tlpFirstAppointment.SetColumnSpan(this.lblCitizenNameRegister, 5);
+            this.lblCitizenNameRegister.Location = new System.Drawing.Point(176, 202);
             this.lblCitizenNameRegister.Name = "lblCitizenNameRegister";
-            this.lblCitizenNameRegister.Size = new System.Drawing.Size(511, 40);
+            this.lblCitizenNameRegister.Size = new System.Drawing.Size(511, 38);
             this.lblCitizenNameRegister.TabIndex = 0;
             this.lblCitizenNameRegister.Text = "Nombre del ciudadano";
             this.lblCitizenNameRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -943,11 +933,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCitizenNameFirstAppointment.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.lblCitizenNameFirstAppointment, 5);
-            this.lblCitizenNameFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCitizenNameFirstAppointment.Location = new System.Drawing.Point(176, 254);
+            this.tlpFirstAppointment.SetColumnSpan(this.lblCitizenNameFirstAppointment, 5);
+            this.lblCitizenNameFirstAppointment.Location = new System.Drawing.Point(176, 240);
             this.lblCitizenNameFirstAppointment.Name = "lblCitizenNameFirstAppointment";
-            this.lblCitizenNameFirstAppointment.Size = new System.Drawing.Size(511, 47);
+            this.lblCitizenNameFirstAppointment.Size = new System.Drawing.Size(511, 44);
             this.lblCitizenNameFirstAppointment.TabIndex = 1;
             this.lblCitizenNameFirstAppointment.Text = "<Nombre>";
             // 
@@ -957,10 +946,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDateRegister.AutoSize = true;
-            this.lblDateRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateRegister.Location = new System.Drawing.Point(176, 301);
+            this.lblDateRegister.Location = new System.Drawing.Point(176, 284);
             this.lblDateRegister.Name = "lblDateRegister";
-            this.lblDateRegister.Size = new System.Drawing.Size(210, 40);
+            this.lblDateRegister.Size = new System.Drawing.Size(210, 38);
             this.lblDateRegister.TabIndex = 2;
             this.lblDateRegister.Text = "Fecha";
             this.lblDateRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -969,11 +957,10 @@ namespace ProyectoPOOxBDD
             // 
             this.dtpDateFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpDateFirstAppointment.CalendarFont = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDateFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDateFirstAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDateFirstAppointment.Location = new System.Drawing.Point(176, 347);
+            this.dtpDateFirstAppointment.Location = new System.Drawing.Point(176, 329);
             this.dtpDateFirstAppointment.Name = "dtpDateFirstAppointment";
-            this.dtpDateFirstAppointment.Size = new System.Drawing.Size(210, 35);
+            this.dtpDateFirstAppointment.Size = new System.Drawing.Size(210, 29);
             this.dtpDateFirstAppointment.TabIndex = 15;
             // 
             // cmbHourFirstAppointment
@@ -981,7 +968,6 @@ namespace ProyectoPOOxBDD
             this.cmbHourFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbHourFirstAppointment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHourFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbHourFirstAppointment.FormattingEnabled = true;
             this.cmbHourFirstAppointment.Items.AddRange(new object[] {
             "07",
@@ -996,9 +982,9 @@ namespace ProyectoPOOxBDD
             "16",
             "17",
             "18"});
-            this.cmbHourFirstAppointment.Location = new System.Drawing.Point(469, 344);
+            this.cmbHourFirstAppointment.Location = new System.Drawing.Point(469, 325);
             this.cmbHourFirstAppointment.Name = "cmbHourFirstAppointment";
-            this.cmbHourFirstAppointment.Size = new System.Drawing.Size(72, 38);
+            this.cmbHourFirstAppointment.Size = new System.Drawing.Size(72, 29);
             this.cmbHourFirstAppointment.TabIndex = 16;
             // 
             // lblTimeRegister
@@ -1007,10 +993,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTimeRegister.AutoSize = true;
-            this.lblTimeRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTimeRegister.Location = new System.Drawing.Point(435, 301);
+            this.lblTimeRegister.Location = new System.Drawing.Point(435, 284);
             this.lblTimeRegister.Name = "lblTimeRegister";
-            this.lblTimeRegister.Size = new System.Drawing.Size(106, 40);
+            this.lblTimeRegister.Size = new System.Drawing.Size(106, 38);
             this.lblTimeRegister.TabIndex = 5;
             this.lblTimeRegister.Text = "Hora";
             this.lblTimeRegister.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1020,16 +1005,15 @@ namespace ProyectoPOOxBDD
             this.cmbMinutesFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbMinutesFirstAppointment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMinutesFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbMinutesFirstAppointment.FormattingEnabled = true;
             this.cmbMinutesFirstAppointment.Items.AddRange(new object[] {
             "00",
             "15",
             "30",
             "45"});
-            this.cmbMinutesFirstAppointment.Location = new System.Drawing.Point(581, 344);
+            this.cmbMinutesFirstAppointment.Location = new System.Drawing.Point(581, 325);
             this.cmbMinutesFirstAppointment.Name = "cmbMinutesFirstAppointment";
-            this.cmbMinutesFirstAppointment.Size = new System.Drawing.Size(72, 38);
+            this.cmbMinutesFirstAppointment.Size = new System.Drawing.Size(72, 29);
             this.cmbMinutesFirstAppointment.TabIndex = 17;
             // 
             // label5
@@ -1039,9 +1023,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(547, 341);
+            this.label5.Location = new System.Drawing.Point(547, 322);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 47);
+            this.label5.Size = new System.Drawing.Size(28, 44);
             this.label5.TabIndex = 7;
             this.label5.Text = ":";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1052,10 +1036,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVaccinationPlaceRegister.AutoSize = true;
-            this.lblVaccinationPlaceRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVaccinationPlaceRegister.Location = new System.Drawing.Point(176, 388);
+            this.lblVaccinationPlaceRegister.Location = new System.Drawing.Point(176, 366);
             this.lblVaccinationPlaceRegister.Name = "lblVaccinationPlaceRegister";
-            this.lblVaccinationPlaceRegister.Size = new System.Drawing.Size(210, 40);
+            this.lblVaccinationPlaceRegister.Size = new System.Drawing.Size(210, 38);
             this.lblVaccinationPlaceRegister.TabIndex = 8;
             this.lblVaccinationPlaceRegister.Text = "Lugar de vacunación";
             this.lblVaccinationPlaceRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1065,13 +1048,12 @@ namespace ProyectoPOOxBDD
             this.cmbVaccinationPlaceFirstAppo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.SetColumnSpan(this.cmbVaccinationPlaceFirstAppo, 5);
+            this.tlpFirstAppointment.SetColumnSpan(this.cmbVaccinationPlaceFirstAppo, 5);
             this.cmbVaccinationPlaceFirstAppo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbVaccinationPlaceFirstAppo.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbVaccinationPlaceFirstAppo.FormattingEnabled = true;
-            this.cmbVaccinationPlaceFirstAppo.Location = new System.Drawing.Point(176, 431);
+            this.cmbVaccinationPlaceFirstAppo.Location = new System.Drawing.Point(176, 407);
             this.cmbVaccinationPlaceFirstAppo.Name = "cmbVaccinationPlaceFirstAppo";
-            this.cmbVaccinationPlaceFirstAppo.Size = new System.Drawing.Size(511, 38);
+            this.cmbVaccinationPlaceFirstAppo.Size = new System.Drawing.Size(511, 29);
             this.cmbVaccinationPlaceFirstAppo.TabIndex = 18;
             // 
             // btnAddFirstAppointment
@@ -1080,13 +1062,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddFirstAppointment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel2.SetColumnSpan(this.btnAddFirstAppointment, 5);
+            this.tlpFirstAppointment.SetColumnSpan(this.btnAddFirstAppointment, 5);
             this.btnAddFirstAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddFirstAppointment.ForeColor = System.Drawing.Color.White;
-            this.btnAddFirstAppointment.Location = new System.Drawing.Point(176, 498);
+            this.btnAddFirstAppointment.Location = new System.Drawing.Point(176, 470);
             this.btnAddFirstAppointment.Name = "btnAddFirstAppointment";
-            this.btnAddFirstAppointment.Size = new System.Drawing.Size(511, 41);
+            this.btnAddFirstAppointment.Size = new System.Drawing.Size(511, 38);
             this.btnAddFirstAppointment.TabIndex = 19;
             this.btnAddFirstAppointment.Text = "Agendar cita";
             this.btnAddFirstAppointment.UseVisualStyleBackColor = false;
@@ -1098,11 +1079,11 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFirstAppointment.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.lblFirstAppointment, 4);
+            this.tlpFirstAppointment.SetColumnSpan(this.lblFirstAppointment, 4);
             this.lblFirstAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstAppointment.Location = new System.Drawing.Point(392, 127);
+            this.lblFirstAppointment.Location = new System.Drawing.Point(392, 120);
             this.lblFirstAppointment.Name = "lblFirstAppointment";
-            this.lblFirstAppointment.Size = new System.Drawing.Size(295, 87);
+            this.lblFirstAppointment.Size = new System.Drawing.Size(295, 82);
             this.lblFirstAppointment.TabIndex = 11;
             this.lblFirstAppointment.Text = "Cita primera dosis";
             this.lblFirstAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1112,9 +1093,9 @@ namespace ProyectoPOOxBDD
             this.picAppointmentImage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picAppointmentImage.Image = global::ProyectoPOOxBDD.Properties.Resources.Appointment;
-            this.picAppointmentImage.Location = new System.Drawing.Point(296, 130);
+            this.picAppointmentImage.Location = new System.Drawing.Point(296, 123);
             this.picAppointmentImage.Name = "picAppointmentImage";
-            this.picAppointmentImage.Size = new System.Drawing.Size(90, 81);
+            this.picAppointmentImage.Size = new System.Drawing.Size(90, 76);
             this.picAppointmentImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAppointmentImage.TabIndex = 12;
             this.picAppointmentImage.TabStop = false;
@@ -1126,12 +1107,15 @@ namespace ProyectoPOOxBDD
             this.tabAppointmentResume.Location = new System.Drawing.Point(4, 27);
             this.tabAppointmentResume.Name = "tabAppointmentResume";
             this.tabAppointmentResume.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAppointmentResume.Size = new System.Drawing.Size(878, 676);
+            this.tabAppointmentResume.Size = new System.Drawing.Size(878, 638);
             this.tabAppointmentResume.TabIndex = 4;
             this.tabAppointmentResume.Text = "Resume";
             // 
             // tlpResume
             // 
+            this.tlpResume.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpResume.ColumnCount = 5;
             this.tlpResume.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tlpResume.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
@@ -1148,6 +1132,7 @@ namespace ProyectoPOOxBDD
             this.tlpResume.Controls.Add(this.lblAppointmentTypeResume, 1, 7);
             this.tlpResume.Controls.Add(this.picAppointmentResume, 1, 1);
             this.tlpResume.Controls.Add(this.lblAppointmentResume, 2, 1);
+            this.tlpResume.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tlpResume.Location = new System.Drawing.Point(6, 0);
             this.tlpResume.Name = "tlpResume";
             this.tlpResume.RowCount = 11;
@@ -1162,7 +1147,7 @@ namespace ProyectoPOOxBDD
             this.tlpResume.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
             this.tlpResume.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tlpResume.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tlpResume.Size = new System.Drawing.Size(866, 673);
+            this.tlpResume.Size = new System.Drawing.Size(866, 635);
             this.tlpResume.TabIndex = 0;
             // 
             // lblNameResume
@@ -1172,10 +1157,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNameResume.AutoSize = true;
             this.tlpResume.SetColumnSpan(this.lblNameResume, 3);
-            this.lblNameResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNameResume.Location = new System.Drawing.Point(89, 248);
+            this.lblNameResume.Location = new System.Drawing.Point(89, 233);
             this.lblNameResume.Name = "lblNameResume";
-            this.lblNameResume.Size = new System.Drawing.Size(686, 47);
+            this.lblNameResume.Size = new System.Drawing.Size(686, 44);
             this.lblNameResume.TabIndex = 1;
             this.lblNameResume.Text = "Nombre: ";
             this.lblNameResume.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1187,10 +1171,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDuiResume.AutoSize = true;
             this.tlpResume.SetColumnSpan(this.lblDuiResume, 3);
-            this.lblDuiResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDuiResume.Location = new System.Drawing.Point(89, 201);
+            this.lblDuiResume.Location = new System.Drawing.Point(89, 189);
             this.lblDuiResume.Name = "lblDuiResume";
-            this.lblDuiResume.Size = new System.Drawing.Size(686, 47);
+            this.lblDuiResume.Size = new System.Drawing.Size(686, 44);
             this.lblDuiResume.TabIndex = 2;
             this.lblDuiResume.Text = "Número de DUI: ";
             this.lblDuiResume.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1202,10 +1185,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDateResume.AutoSize = true;
             this.tlpResume.SetColumnSpan(this.lblDateResume, 3);
-            this.lblDateResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateResume.Location = new System.Drawing.Point(89, 295);
+            this.lblDateResume.Location = new System.Drawing.Point(89, 277);
             this.lblDateResume.Name = "lblDateResume";
-            this.lblDateResume.Size = new System.Drawing.Size(686, 47);
+            this.lblDateResume.Size = new System.Drawing.Size(686, 44);
             this.lblDateResume.TabIndex = 3;
             this.lblDateResume.Text = "Fecha: ";
             this.lblDateResume.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1217,10 +1199,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTimeResume.AutoSize = true;
             this.tlpResume.SetColumnSpan(this.lblTimeResume, 3);
-            this.lblTimeResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTimeResume.Location = new System.Drawing.Point(89, 342);
+            this.lblTimeResume.Location = new System.Drawing.Point(89, 321);
             this.lblTimeResume.Name = "lblTimeResume";
-            this.lblTimeResume.Size = new System.Drawing.Size(686, 47);
+            this.lblTimeResume.Size = new System.Drawing.Size(686, 44);
             this.lblTimeResume.TabIndex = 4;
             this.lblTimeResume.Text = "Hora: ";
             this.lblTimeResume.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1232,10 +1213,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVaccinationPlaceResume.AutoSize = true;
             this.tlpResume.SetColumnSpan(this.lblVaccinationPlaceResume, 3);
-            this.lblVaccinationPlaceResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVaccinationPlaceResume.Location = new System.Drawing.Point(89, 389);
+            this.lblVaccinationPlaceResume.Location = new System.Drawing.Point(89, 365);
             this.lblVaccinationPlaceResume.Name = "lblVaccinationPlaceResume";
-            this.lblVaccinationPlaceResume.Size = new System.Drawing.Size(686, 47);
+            this.lblVaccinationPlaceResume.Size = new System.Drawing.Size(686, 44);
             this.lblVaccinationPlaceResume.TabIndex = 5;
             this.lblVaccinationPlaceResume.Text = "Lugar de vacunación: ";
             this.lblVaccinationPlaceResume.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1248,11 +1228,10 @@ namespace ProyectoPOOxBDD
             this.btnExitResume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.tlpResume.SetColumnSpan(this.btnExitResume, 2);
             this.btnExitResume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExitResume.ForeColor = System.Drawing.Color.White;
-            this.btnExitResume.Location = new System.Drawing.Point(89, 512);
+            this.btnExitResume.Location = new System.Drawing.Point(89, 481);
             this.btnExitResume.Name = "btnExitResume";
-            this.btnExitResume.Size = new System.Drawing.Size(340, 41);
+            this.btnExitResume.Size = new System.Drawing.Size(340, 38);
             this.btnExitResume.TabIndex = 20;
             this.btnExitResume.Text = "Salir";
             this.btnExitResume.UseVisualStyleBackColor = false;
@@ -1265,11 +1244,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExportPdfResume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.btnExportPdfResume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportPdfResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExportPdfResume.ForeColor = System.Drawing.Color.White;
-            this.btnExportPdfResume.Location = new System.Drawing.Point(435, 512);
+            this.btnExportPdfResume.Location = new System.Drawing.Point(435, 481);
             this.btnExportPdfResume.Name = "btnExportPdfResume";
-            this.btnExportPdfResume.Size = new System.Drawing.Size(340, 41);
+            this.btnExportPdfResume.Size = new System.Drawing.Size(340, 38);
             this.btnExportPdfResume.TabIndex = 21;
             this.btnExportPdfResume.Text = "Exportar como PDF";
             this.btnExportPdfResume.UseVisualStyleBackColor = false;
@@ -1282,10 +1260,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAppointmentTypeResume.AutoSize = true;
             this.tlpResume.SetColumnSpan(this.lblAppointmentTypeResume, 3);
-            this.lblAppointmentTypeResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAppointmentTypeResume.Location = new System.Drawing.Point(89, 436);
+            this.lblAppointmentTypeResume.Location = new System.Drawing.Point(89, 409);
             this.lblAppointmentTypeResume.Name = "lblAppointmentTypeResume";
-            this.lblAppointmentTypeResume.Size = new System.Drawing.Size(686, 47);
+            this.lblAppointmentTypeResume.Size = new System.Drawing.Size(686, 44);
             this.lblAppointmentTypeResume.TabIndex = 8;
             this.lblAppointmentTypeResume.Text = "Tipo de cita: ";
             this.lblAppointmentTypeResume.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1295,9 +1272,9 @@ namespace ProyectoPOOxBDD
             this.picAppointmentResume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picAppointmentResume.Image = global::ProyectoPOOxBDD.Properties.Resources.Appointment;
-            this.picAppointmentResume.Location = new System.Drawing.Point(289, 117);
+            this.picAppointmentResume.Location = new System.Drawing.Point(289, 110);
             this.picAppointmentResume.Name = "picAppointmentResume";
-            this.picAppointmentResume.Size = new System.Drawing.Size(97, 81);
+            this.picAppointmentResume.Size = new System.Drawing.Size(97, 76);
             this.picAppointmentResume.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAppointmentResume.TabIndex = 10;
             this.picAppointmentResume.TabStop = false;
@@ -1310,9 +1287,9 @@ namespace ProyectoPOOxBDD
             this.lblAppointmentResume.AutoSize = true;
             this.tlpResume.SetColumnSpan(this.lblAppointmentResume, 2);
             this.lblAppointmentResume.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAppointmentResume.Location = new System.Drawing.Point(392, 114);
+            this.lblAppointmentResume.Location = new System.Drawing.Point(392, 107);
             this.lblAppointmentResume.Name = "lblAppointmentResume";
-            this.lblAppointmentResume.Size = new System.Drawing.Size(383, 87);
+            this.lblAppointmentResume.Size = new System.Drawing.Size(383, 82);
             this.lblAppointmentResume.TabIndex = 9;
             this.lblAppointmentResume.Text = "Resumen de cita";
             this.lblAppointmentResume.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1320,66 +1297,69 @@ namespace ProyectoPOOxBDD
             // tabTraking
             // 
             this.tabTraking.BackColor = System.Drawing.Color.White;
-            this.tabTraking.Controls.Add(this.tableLayoutPanel4);
+            this.tabTraking.Controls.Add(this.tlpTraking);
             this.tabTraking.Location = new System.Drawing.Point(4, 27);
             this.tabTraking.Name = "tabTraking";
             this.tabTraking.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTraking.Size = new System.Drawing.Size(878, 676);
+            this.tabTraking.Size = new System.Drawing.Size(878, 638);
             this.tabTraking.TabIndex = 5;
             this.tabTraking.Text = "Traking";
             // 
-            // tableLayoutPanel4
+            // tlpTraking
             // 
-            this.tableLayoutPanel4.ColumnCount = 6;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.Controls.Add(this.lblDuiNumberTraking, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.lblNameTraking, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.lblAddressTraking, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.lblPhoneTraking, 1, 6);
-            this.tableLayoutPanel4.Controls.Add(this.lblEmailTraking, 1, 7);
-            this.tableLayoutPanel4.Controls.Add(this.lblPriorityGroupTraking, 1, 8);
-            this.tableLayoutPanel4.Controls.Add(this.lblInstitutionIdentificationTraking, 1, 9);
-            this.tableLayoutPanel4.Controls.Add(this.lblInstitutionTraking, 1, 10);
-            this.tableLayoutPanel4.Controls.Add(this.lblDiseaseTraking, 1, 11);
-            this.tableLayoutPanel4.Controls.Add(this.btnSearch, 4, 1);
-            this.tableLayoutPanel4.Controls.Add(this.btnClear, 1, 16);
-            this.tableLayoutPanel4.Controls.Add(this.txtSearch, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.dgvAppointment, 1, 14);
-            this.tableLayoutPanel4.Controls.Add(this.btnExportPdfTraking, 3, 16);
-            this.tableLayoutPanel4.Controls.Add(this.lblRegisterInformation, 2, 2);
-            this.tableLayoutPanel4.Controls.Add(this.lblAppointment, 2, 12);
-            this.tableLayoutPanel4.Controls.Add(this.picRegisterTraking, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.picAppointmentVisualize, 1, 12);
-            this.tableLayoutPanel4.Controls.Add(this.txtDiseaseTraking, 2, 11);
-            this.tableLayoutPanel4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 18;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(866, 673);
-            this.tableLayoutPanel4.TabIndex = 0;
+            this.tlpTraking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpTraking.ColumnCount = 6;
+            this.tlpTraking.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tlpTraking.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpTraking.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpTraking.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpTraking.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.Controls.Add(this.lblDuiNumberTraking, 1, 3);
+            this.tlpTraking.Controls.Add(this.lblNameTraking, 1, 4);
+            this.tlpTraking.Controls.Add(this.lblAddressTraking, 1, 5);
+            this.tlpTraking.Controls.Add(this.lblPhoneTraking, 1, 6);
+            this.tlpTraking.Controls.Add(this.lblEmailTraking, 1, 7);
+            this.tlpTraking.Controls.Add(this.lblPriorityGroupTraking, 1, 8);
+            this.tlpTraking.Controls.Add(this.lblInstitutionIdentificationTraking, 1, 9);
+            this.tlpTraking.Controls.Add(this.lblInstitutionTraking, 1, 10);
+            this.tlpTraking.Controls.Add(this.lblDiseaseTraking, 1, 11);
+            this.tlpTraking.Controls.Add(this.btnSearch, 4, 1);
+            this.tlpTraking.Controls.Add(this.btnClear, 1, 16);
+            this.tlpTraking.Controls.Add(this.txtSearch, 1, 1);
+            this.tlpTraking.Controls.Add(this.dgvAppointment, 1, 14);
+            this.tlpTraking.Controls.Add(this.btnExportPdfTraking, 3, 16);
+            this.tlpTraking.Controls.Add(this.lblRegisterInformation, 2, 2);
+            this.tlpTraking.Controls.Add(this.lblAppointment, 2, 12);
+            this.tlpTraking.Controls.Add(this.picRegisterTraking, 1, 2);
+            this.tlpTraking.Controls.Add(this.picAppointmentVisualize, 1, 12);
+            this.tlpTraking.Controls.Add(this.txtDiseaseTraking, 2, 11);
+            this.tlpTraking.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpTraking.Location = new System.Drawing.Point(6, 0);
+            this.tlpTraking.Name = "tlpTraking";
+            this.tlpTraking.RowCount = 18;
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpTraking.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tlpTraking.Size = new System.Drawing.Size(866, 635);
+            this.tlpTraking.TabIndex = 0;
             // 
             // lblDuiNumberTraking
             // 
@@ -1387,11 +1367,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDuiNumberTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblDuiNumberTraking, 4);
-            this.lblDuiNumberTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDuiNumberTraking.Location = new System.Drawing.Point(46, 114);
+            this.tlpTraking.SetColumnSpan(this.lblDuiNumberTraking, 4);
+            this.lblDuiNumberTraking.Location = new System.Drawing.Point(46, 107);
             this.lblDuiNumberTraking.Name = "lblDuiNumberTraking";
-            this.lblDuiNumberTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblDuiNumberTraking.Size = new System.Drawing.Size(772, 31);
             this.lblDuiNumberTraking.TabIndex = 0;
             this.lblDuiNumberTraking.Text = "Número de DUI: ";
             this.lblDuiNumberTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1402,11 +1381,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNameTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblNameTraking, 4);
-            this.lblNameTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNameTraking.Location = new System.Drawing.Point(46, 147);
+            this.tlpTraking.SetColumnSpan(this.lblNameTraking, 4);
+            this.lblNameTraking.Location = new System.Drawing.Point(46, 138);
             this.lblNameTraking.Name = "lblNameTraking";
-            this.lblNameTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblNameTraking.Size = new System.Drawing.Size(772, 31);
             this.lblNameTraking.TabIndex = 1;
             this.lblNameTraking.Text = "Nombre completo: ";
             this.lblNameTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1417,11 +1395,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAddressTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblAddressTraking, 4);
-            this.lblAddressTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAddressTraking.Location = new System.Drawing.Point(46, 180);
+            this.tlpTraking.SetColumnSpan(this.lblAddressTraking, 4);
+            this.lblAddressTraking.Location = new System.Drawing.Point(46, 169);
             this.lblAddressTraking.Name = "lblAddressTraking";
-            this.lblAddressTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblAddressTraking.Size = new System.Drawing.Size(772, 31);
             this.lblAddressTraking.TabIndex = 2;
             this.lblAddressTraking.Text = "Dirección de domicilio:";
             this.lblAddressTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1432,11 +1409,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPhoneTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblPhoneTraking, 4);
-            this.lblPhoneTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneTraking.Location = new System.Drawing.Point(46, 213);
+            this.tlpTraking.SetColumnSpan(this.lblPhoneTraking, 4);
+            this.lblPhoneTraking.Location = new System.Drawing.Point(46, 200);
             this.lblPhoneTraking.Name = "lblPhoneTraking";
-            this.lblPhoneTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblPhoneTraking.Size = new System.Drawing.Size(772, 31);
             this.lblPhoneTraking.TabIndex = 3;
             this.lblPhoneTraking.Text = "Número de teléfono:";
             this.lblPhoneTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1447,11 +1423,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEmailTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblEmailTraking, 4);
-            this.lblEmailTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmailTraking.Location = new System.Drawing.Point(46, 246);
+            this.tlpTraking.SetColumnSpan(this.lblEmailTraking, 4);
+            this.lblEmailTraking.Location = new System.Drawing.Point(46, 231);
             this.lblEmailTraking.Name = "lblEmailTraking";
-            this.lblEmailTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblEmailTraking.Size = new System.Drawing.Size(772, 31);
             this.lblEmailTraking.TabIndex = 4;
             this.lblEmailTraking.Text = "Correo electrónico: ";
             this.lblEmailTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1462,11 +1437,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPriorityGroupTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblPriorityGroupTraking, 4);
-            this.lblPriorityGroupTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPriorityGroupTraking.Location = new System.Drawing.Point(46, 279);
+            this.tlpTraking.SetColumnSpan(this.lblPriorityGroupTraking, 4);
+            this.lblPriorityGroupTraking.Location = new System.Drawing.Point(46, 262);
             this.lblPriorityGroupTraking.Name = "lblPriorityGroupTraking";
-            this.lblPriorityGroupTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblPriorityGroupTraking.Size = new System.Drawing.Size(772, 31);
             this.lblPriorityGroupTraking.TabIndex = 5;
             this.lblPriorityGroupTraking.Text = "Grupo prioritario:";
             this.lblPriorityGroupTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1477,11 +1451,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInstitutionIdentificationTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblInstitutionIdentificationTraking, 4);
-            this.lblInstitutionIdentificationTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblInstitutionIdentificationTraking.Location = new System.Drawing.Point(46, 312);
+            this.tlpTraking.SetColumnSpan(this.lblInstitutionIdentificationTraking, 4);
+            this.lblInstitutionIdentificationTraking.Location = new System.Drawing.Point(46, 293);
             this.lblInstitutionIdentificationTraking.Name = "lblInstitutionIdentificationTraking";
-            this.lblInstitutionIdentificationTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblInstitutionIdentificationTraking.Size = new System.Drawing.Size(772, 31);
             this.lblInstitutionIdentificationTraking.TabIndex = 6;
             this.lblInstitutionIdentificationTraking.Text = "Número identificador de la institución: ";
             this.lblInstitutionIdentificationTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1492,11 +1465,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInstitutionTraking.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblInstitutionTraking, 4);
-            this.lblInstitutionTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblInstitutionTraking.Location = new System.Drawing.Point(46, 345);
+            this.tlpTraking.SetColumnSpan(this.lblInstitutionTraking, 4);
+            this.lblInstitutionTraking.Location = new System.Drawing.Point(46, 324);
             this.lblInstitutionTraking.Name = "lblInstitutionTraking";
-            this.lblInstitutionTraking.Size = new System.Drawing.Size(772, 33);
+            this.lblInstitutionTraking.Size = new System.Drawing.Size(772, 31);
             this.lblInstitutionTraking.TabIndex = 7;
             this.lblInstitutionTraking.Text = "Institución a la que pertenece:";
             this.lblInstitutionTraking.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1507,10 +1479,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDiseaseTraking.AutoSize = true;
-            this.lblDiseaseTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDiseaseTraking.Location = new System.Drawing.Point(46, 378);
+            this.lblDiseaseTraking.Location = new System.Drawing.Point(46, 355);
             this.lblDiseaseTraking.Name = "lblDiseaseTraking";
-            this.lblDiseaseTraking.Size = new System.Drawing.Size(297, 53);
+            this.lblDiseaseTraking.Size = new System.Drawing.Size(297, 50);
             this.lblDiseaseTraking.TabIndex = 8;
             this.lblDiseaseTraking.Text = "Enfermedad(es) crónica(s):";
             // 
@@ -1521,11 +1492,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(651, 23);
+            this.btnSearch.Location = new System.Drawing.Point(651, 22);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(167, 41);
+            this.btnSearch.Size = new System.Drawing.Size(167, 38);
             this.btnSearch.TabIndex = 23;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -1537,13 +1507,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel4.SetColumnSpan(this.btnClear, 2);
+            this.tlpTraking.SetColumnSpan(this.btnClear, 2);
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(46, 600);
+            this.btnClear.Location = new System.Drawing.Point(46, 565);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(383, 41);
+            this.btnClear.Size = new System.Drawing.Size(383, 38);
             this.btnClear.TabIndex = 26;
             this.btnClear.Text = "Limpiar información";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -1552,11 +1521,10 @@ namespace ProyectoPOOxBDD
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel4.SetColumnSpan(this.txtSearch, 3);
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpTraking.SetColumnSpan(this.txtSearch, 3);
             this.txtSearch.Location = new System.Drawing.Point(46, 26);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(599, 35);
+            this.txtSearch.Size = new System.Drawing.Size(599, 29);
             this.txtSearch.TabIndex = 22;
             // 
             // dgvAppointment
@@ -1570,14 +1538,14 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAppointment.BackgroundColor = System.Drawing.Color.White;
             this.dgvAppointment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel4.SetColumnSpan(this.dgvAppointment, 4);
-            this.dgvAppointment.Location = new System.Drawing.Point(46, 487);
+            this.tlpTraking.SetColumnSpan(this.dgvAppointment, 4);
+            this.dgvAppointment.Location = new System.Drawing.Point(46, 458);
             this.dgvAppointment.MultiSelect = false;
             this.dgvAppointment.Name = "dgvAppointment";
             this.dgvAppointment.ReadOnly = true;
             this.dgvAppointment.RowTemplate.Height = 25;
             this.dgvAppointment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAppointment.Size = new System.Drawing.Size(772, 94);
+            this.dgvAppointment.Size = new System.Drawing.Size(772, 89);
             this.dgvAppointment.TabIndex = 25;
             this.dgvAppointment.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAppointment_CellContentDoubleClick);
             // 
@@ -1587,13 +1555,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExportPdfTraking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel4.SetColumnSpan(this.btnExportPdfTraking, 2);
+            this.tlpTraking.SetColumnSpan(this.btnExportPdfTraking, 2);
             this.btnExportPdfTraking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportPdfTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExportPdfTraking.ForeColor = System.Drawing.Color.White;
-            this.btnExportPdfTraking.Location = new System.Drawing.Point(435, 600);
+            this.btnExportPdfTraking.Location = new System.Drawing.Point(435, 565);
             this.btnExportPdfTraking.Name = "btnExportPdfTraking";
-            this.btnExportPdfTraking.Size = new System.Drawing.Size(383, 41);
+            this.btnExportPdfTraking.Size = new System.Drawing.Size(383, 38);
             this.btnExportPdfTraking.TabIndex = 27;
             this.btnExportPdfTraking.Text = "Exportar como PDF";
             this.btnExportPdfTraking.UseVisualStyleBackColor = false;
@@ -1605,11 +1572,11 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRegisterInformation.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblRegisterInformation, 3);
+            this.tlpTraking.SetColumnSpan(this.lblRegisterInformation, 3);
             this.lblRegisterInformation.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblRegisterInformation.Location = new System.Drawing.Point(349, 67);
+            this.lblRegisterInformation.Location = new System.Drawing.Point(349, 63);
             this.lblRegisterInformation.Name = "lblRegisterInformation";
-            this.lblRegisterInformation.Size = new System.Drawing.Size(469, 47);
+            this.lblRegisterInformation.Size = new System.Drawing.Size(469, 44);
             this.lblRegisterInformation.TabIndex = 16;
             this.lblRegisterInformation.Text = "Información del registro";
             this.lblRegisterInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1620,11 +1587,11 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAppointment.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.lblAppointment, 3);
+            this.tlpTraking.SetColumnSpan(this.lblAppointment, 3);
             this.lblAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAppointment.Location = new System.Drawing.Point(349, 431);
+            this.lblAppointment.Location = new System.Drawing.Point(349, 405);
             this.lblAppointment.Name = "lblAppointment";
-            this.lblAppointment.Size = new System.Drawing.Size(469, 47);
+            this.lblAppointment.Size = new System.Drawing.Size(469, 44);
             this.lblAppointment.TabIndex = 15;
             this.lblAppointment.Text = "Cita(s) agendada(s)";
             this.lblAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1634,9 +1601,9 @@ namespace ProyectoPOOxBDD
             this.picRegisterTraking.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picRegisterTraking.Image = global::ProyectoPOOxBDD.Properties.Resources.CitizenSmall;
-            this.picRegisterTraking.Location = new System.Drawing.Point(300, 70);
+            this.picRegisterTraking.Location = new System.Drawing.Point(300, 66);
             this.picRegisterTraking.Name = "picRegisterTraking";
-            this.picRegisterTraking.Size = new System.Drawing.Size(43, 41);
+            this.picRegisterTraking.Size = new System.Drawing.Size(43, 38);
             this.picRegisterTraking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picRegisterTraking.TabIndex = 17;
             this.picRegisterTraking.TabStop = false;
@@ -1646,9 +1613,9 @@ namespace ProyectoPOOxBDD
             this.picAppointmentVisualize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picAppointmentVisualize.Image = global::ProyectoPOOxBDD.Properties.Resources.AppointmentVisualize;
-            this.picAppointmentVisualize.Location = new System.Drawing.Point(300, 434);
+            this.picAppointmentVisualize.Location = new System.Drawing.Point(300, 408);
             this.picAppointmentVisualize.Name = "picAppointmentVisualize";
-            this.picAppointmentVisualize.Size = new System.Drawing.Size(43, 41);
+            this.picAppointmentVisualize.Size = new System.Drawing.Size(43, 38);
             this.picAppointmentVisualize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAppointmentVisualize.TabIndex = 18;
             this.picAppointmentVisualize.TabStop = false;
@@ -1659,81 +1626,84 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiseaseTraking.BackColor = System.Drawing.SystemColors.Window;
-            this.tableLayoutPanel4.SetColumnSpan(this.txtDiseaseTraking, 3);
-            this.txtDiseaseTraking.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDiseaseTraking.Location = new System.Drawing.Point(349, 381);
+            this.tlpTraking.SetColumnSpan(this.txtDiseaseTraking, 3);
+            this.txtDiseaseTraking.Location = new System.Drawing.Point(349, 358);
             this.txtDiseaseTraking.Multiline = true;
             this.txtDiseaseTraking.Name = "txtDiseaseTraking";
             this.txtDiseaseTraking.ReadOnly = true;
             this.txtDiseaseTraking.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDiseaseTraking.Size = new System.Drawing.Size(469, 47);
+            this.txtDiseaseTraking.Size = new System.Drawing.Size(469, 44);
             this.txtDiseaseTraking.TabIndex = 24;
             // 
             // tabVaccinationProcess
             // 
             this.tabVaccinationProcess.BackColor = System.Drawing.Color.White;
-            this.tabVaccinationProcess.Controls.Add(this.tableLayoutPanel5);
+            this.tabVaccinationProcess.Controls.Add(this.tlpVaccination);
             this.tabVaccinationProcess.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabVaccinationProcess.Location = new System.Drawing.Point(4, 27);
             this.tabVaccinationProcess.Name = "tabVaccinationProcess";
             this.tabVaccinationProcess.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVaccinationProcess.Size = new System.Drawing.Size(878, 676);
+            this.tabVaccinationProcess.Size = new System.Drawing.Size(878, 638);
             this.tabVaccinationProcess.TabIndex = 6;
             this.tabVaccinationProcess.Text = "VaccineProcess";
             // 
-            // tableLayoutPanel5
+            // tlpVaccination
             // 
-            this.tableLayoutPanel5.ColumnCount = 11;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel5.Controls.Add(this.lblPreCheck, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.lblWatingLine, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.lblVaccination, 1, 5);
-            this.tableLayoutPanel5.Controls.Add(this.lblObservation, 1, 7);
-            this.tableLayoutPanel5.Controls.Add(this.btnArrivalDateTime, 2, 4);
-            this.tableLayoutPanel5.Controls.Add(this.btnVaccinationDateTime, 2, 6);
-            this.tableLayoutPanel5.Controls.Add(this.label6, 2, 8);
-            this.tableLayoutPanel5.Controls.Add(this.radYesProcess, 2, 9);
-            this.tableLayoutPanel5.Controls.Add(this.lblIndication, 2, 10);
-            this.tableLayoutPanel5.Controls.Add(this.lblSideEffect, 2, 11);
-            this.tableLayoutPanel5.Controls.Add(this.cmbSideEffect, 2, 12);
-            this.tableLayoutPanel5.Controls.Add(this.btnFinishProcess, 2, 14);
-            this.tableLayoutPanel5.Controls.Add(this.radNoProcess, 3, 9);
-            this.tableLayoutPanel5.Controls.Add(this.picVaccine, 3, 1);
-            this.tableLayoutPanel5.Controls.Add(this.cmbSideEffectTime, 6, 12);
-            this.tableLayoutPanel5.Controls.Add(this.lblTimeSideEffect, 6, 11);
-            this.tableLayoutPanel5.Controls.Add(this.lblVaccinationProcess, 4, 1);
-            this.tableLayoutPanel5.Controls.Add(this.btnAddSideEffect, 8, 12);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 16;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(866, 673);
-            this.tableLayoutPanel5.TabIndex = 0;
+            this.tlpVaccination.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpVaccination.ColumnCount = 11;
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpVaccination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpVaccination.Controls.Add(this.lblPreCheck, 1, 2);
+            this.tlpVaccination.Controls.Add(this.lblWatingLine, 1, 3);
+            this.tlpVaccination.Controls.Add(this.lblVaccination, 1, 5);
+            this.tlpVaccination.Controls.Add(this.lblObservation, 1, 7);
+            this.tlpVaccination.Controls.Add(this.btnArrivalDateTime, 2, 4);
+            this.tlpVaccination.Controls.Add(this.btnVaccinationDateTime, 2, 6);
+            this.tlpVaccination.Controls.Add(this.label6, 2, 8);
+            this.tlpVaccination.Controls.Add(this.radYesProcess, 2, 9);
+            this.tlpVaccination.Controls.Add(this.lblIndication, 2, 10);
+            this.tlpVaccination.Controls.Add(this.lblSideEffect, 2, 11);
+            this.tlpVaccination.Controls.Add(this.cmbSideEffect, 2, 12);
+            this.tlpVaccination.Controls.Add(this.btnFinishProcess, 2, 14);
+            this.tlpVaccination.Controls.Add(this.radNoProcess, 3, 9);
+            this.tlpVaccination.Controls.Add(this.picVaccine, 3, 1);
+            this.tlpVaccination.Controls.Add(this.cmbSideEffectTime, 6, 12);
+            this.tlpVaccination.Controls.Add(this.lblTimeSideEffect, 6, 11);
+            this.tlpVaccination.Controls.Add(this.lblVaccinationProcess, 4, 1);
+            this.tlpVaccination.Controls.Add(this.btnAddSideEffect, 8, 12);
+            this.tlpVaccination.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpVaccination.Location = new System.Drawing.Point(6, 0);
+            this.tlpVaccination.Name = "tlpVaccination";
+            this.tlpVaccination.RowCount = 16;
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpVaccination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
+            this.tlpVaccination.Size = new System.Drawing.Size(866, 635);
+            this.tlpVaccination.TabIndex = 0;
             // 
             // lblPreCheck
             // 
@@ -1741,10 +1711,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreCheck.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblPreCheck, 7);
-            this.lblPreCheck.Location = new System.Drawing.Point(89, 110);
+            this.tlpVaccination.SetColumnSpan(this.lblPreCheck, 7);
+            this.lblPreCheck.Location = new System.Drawing.Point(89, 104);
             this.lblPreCheck.Name = "lblPreCheck";
-            this.lblPreCheck.Size = new System.Drawing.Size(528, 40);
+            this.lblPreCheck.Size = new System.Drawing.Size(528, 38);
             this.lblPreCheck.TabIndex = 0;
             this.lblPreCheck.Text = "Paso 1: Prechequeo listo";
             this.lblPreCheck.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1755,10 +1725,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWatingLine.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblWatingLine, 7);
-            this.lblWatingLine.Location = new System.Drawing.Point(89, 150);
+            this.tlpVaccination.SetColumnSpan(this.lblWatingLine, 7);
+            this.lblWatingLine.Location = new System.Drawing.Point(89, 142);
             this.lblWatingLine.Name = "lblWatingLine";
-            this.lblWatingLine.Size = new System.Drawing.Size(528, 40);
+            this.lblWatingLine.Size = new System.Drawing.Size(528, 38);
             this.lblWatingLine.TabIndex = 1;
             this.lblWatingLine.Text = "Paso 2: Fila de espera";
             this.lblWatingLine.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1769,10 +1739,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVaccination.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblVaccination, 7);
-            this.lblVaccination.Location = new System.Drawing.Point(89, 237);
+            this.tlpVaccination.SetColumnSpan(this.lblVaccination, 7);
+            this.lblVaccination.Location = new System.Drawing.Point(89, 224);
             this.lblVaccination.Name = "lblVaccination";
-            this.lblVaccination.Size = new System.Drawing.Size(528, 40);
+            this.lblVaccination.Size = new System.Drawing.Size(528, 38);
             this.lblVaccination.TabIndex = 3;
             this.lblVaccination.Text = "Paso 3: Vacunación";
             this.lblVaccination.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1783,10 +1753,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblObservation.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblObservation, 7);
-            this.lblObservation.Location = new System.Drawing.Point(89, 324);
+            this.tlpVaccination.SetColumnSpan(this.lblObservation, 7);
+            this.lblObservation.Location = new System.Drawing.Point(89, 306);
             this.lblObservation.Name = "lblObservation";
-            this.lblObservation.Size = new System.Drawing.Size(528, 40);
+            this.lblObservation.Size = new System.Drawing.Size(528, 38);
             this.lblObservation.TabIndex = 5;
             this.lblObservation.Text = "Paso 4: Observación del paciente";
             this.lblObservation.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1797,12 +1767,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnArrivalDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel5.SetColumnSpan(this.btnArrivalDateTime, 7);
+            this.tlpVaccination.SetColumnSpan(this.btnArrivalDateTime, 7);
             this.btnArrivalDateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArrivalDateTime.ForeColor = System.Drawing.Color.White;
-            this.btnArrivalDateTime.Location = new System.Drawing.Point(132, 193);
+            this.btnArrivalDateTime.Location = new System.Drawing.Point(132, 183);
             this.btnArrivalDateTime.Name = "btnArrivalDateTime";
-            this.btnArrivalDateTime.Size = new System.Drawing.Size(597, 41);
+            this.btnArrivalDateTime.Size = new System.Drawing.Size(597, 38);
             this.btnArrivalDateTime.TabIndex = 28;
             this.btnArrivalDateTime.Text = "Registrar fecha y hora de llegada";
             this.btnArrivalDateTime.UseVisualStyleBackColor = false;
@@ -1814,12 +1784,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVaccinationDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel5.SetColumnSpan(this.btnVaccinationDateTime, 7);
+            this.tlpVaccination.SetColumnSpan(this.btnVaccinationDateTime, 7);
             this.btnVaccinationDateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVaccinationDateTime.ForeColor = System.Drawing.Color.White;
-            this.btnVaccinationDateTime.Location = new System.Drawing.Point(132, 280);
+            this.btnVaccinationDateTime.Location = new System.Drawing.Point(132, 265);
             this.btnVaccinationDateTime.Name = "btnVaccinationDateTime";
-            this.btnVaccinationDateTime.Size = new System.Drawing.Size(597, 41);
+            this.btnVaccinationDateTime.Size = new System.Drawing.Size(597, 38);
             this.btnVaccinationDateTime.TabIndex = 29;
             this.btnVaccinationDateTime.Text = "Registrar fecha y hora de vacunación";
             this.btnVaccinationDateTime.UseVisualStyleBackColor = false;
@@ -1831,10 +1801,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.label6, 5);
-            this.label6.Location = new System.Drawing.Point(132, 364);
+            this.tlpVaccination.SetColumnSpan(this.label6, 5);
+            this.label6.Location = new System.Drawing.Point(132, 344);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(442, 40);
+            this.label6.Size = new System.Drawing.Size(442, 38);
             this.label6.TabIndex = 6;
             this.label6.Text = "¿El paciente presentó efectos secundarios?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1842,9 +1812,9 @@ namespace ProyectoPOOxBDD
             // radYesProcess
             // 
             this.radYesProcess.AutoSize = true;
-            this.radYesProcess.Location = new System.Drawing.Point(132, 407);
+            this.radYesProcess.Location = new System.Drawing.Point(132, 385);
             this.radYesProcess.Name = "radYesProcess";
-            this.radYesProcess.Size = new System.Drawing.Size(47, 34);
+            this.radYesProcess.Size = new System.Drawing.Size(41, 25);
             this.radYesProcess.TabIndex = 30;
             this.radYesProcess.TabStop = true;
             this.radYesProcess.Text = "Si";
@@ -1856,10 +1826,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblIndication.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblIndication, 9);
-            this.lblIndication.Location = new System.Drawing.Point(132, 451);
+            this.tlpVaccination.SetColumnSpan(this.lblIndication, 9);
+            this.lblIndication.Location = new System.Drawing.Point(132, 426);
             this.lblIndication.Name = "lblIndication";
-            this.lblIndication.Size = new System.Drawing.Size(731, 40);
+            this.lblIndication.Size = new System.Drawing.Size(731, 38);
             this.lblIndication.TabIndex = 9;
             this.lblIndication.Text = "Agregue los efectos secundarios uno a uno";
             this.lblIndication.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1870,10 +1840,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSideEffect.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblSideEffect, 2);
-            this.lblSideEffect.Location = new System.Drawing.Point(132, 491);
+            this.tlpVaccination.SetColumnSpan(this.lblSideEffect, 2);
+            this.lblSideEffect.Location = new System.Drawing.Point(132, 464);
             this.lblSideEffect.Name = "lblSideEffect";
-            this.lblSideEffect.Size = new System.Drawing.Size(227, 40);
+            this.lblSideEffect.Size = new System.Drawing.Size(227, 38);
             this.lblSideEffect.TabIndex = 10;
             this.lblSideEffect.Text = "Efecto secundario";
             this.lblSideEffect.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1883,12 +1853,12 @@ namespace ProyectoPOOxBDD
             this.cmbSideEffect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel5.SetColumnSpan(this.cmbSideEffect, 2);
+            this.tlpVaccination.SetColumnSpan(this.cmbSideEffect, 2);
             this.cmbSideEffect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSideEffect.FormattingEnabled = true;
-            this.cmbSideEffect.Location = new System.Drawing.Point(132, 534);
+            this.cmbSideEffect.Location = new System.Drawing.Point(132, 505);
             this.cmbSideEffect.Name = "cmbSideEffect";
-            this.cmbSideEffect.Size = new System.Drawing.Size(227, 38);
+            this.cmbSideEffect.Size = new System.Drawing.Size(227, 29);
             this.cmbSideEffect.TabIndex = 32;
             // 
             // btnFinishProcess
@@ -1897,12 +1867,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFinishProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel5.SetColumnSpan(this.btnFinishProcess, 7);
+            this.tlpVaccination.SetColumnSpan(this.btnFinishProcess, 7);
             this.btnFinishProcess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinishProcess.ForeColor = System.Drawing.Color.White;
-            this.btnFinishProcess.Location = new System.Drawing.Point(132, 601);
+            this.btnFinishProcess.Location = new System.Drawing.Point(132, 568);
             this.btnFinishProcess.Name = "btnFinishProcess";
-            this.btnFinishProcess.Size = new System.Drawing.Size(597, 41);
+            this.btnFinishProcess.Size = new System.Drawing.Size(597, 38);
             this.btnFinishProcess.TabIndex = 35;
             this.btnFinishProcess.Text = "Terminar proceso de vacunación";
             this.btnFinishProcess.UseVisualStyleBackColor = false;
@@ -1911,9 +1881,9 @@ namespace ProyectoPOOxBDD
             // radNoProcess
             // 
             this.radNoProcess.AutoSize = true;
-            this.radNoProcess.Location = new System.Drawing.Point(218, 407);
+            this.radNoProcess.Location = new System.Drawing.Point(218, 385);
             this.radNoProcess.Name = "radNoProcess";
-            this.radNoProcess.Size = new System.Drawing.Size(59, 34);
+            this.radNoProcess.Size = new System.Drawing.Size(49, 25);
             this.radNoProcess.TabIndex = 31;
             this.radNoProcess.TabStop = true;
             this.radNoProcess.Text = "No";
@@ -1925,9 +1895,9 @@ namespace ProyectoPOOxBDD
             this.picVaccine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picVaccine.Image = global::ProyectoPOOxBDD.Properties.Resources.Vaccine;
-            this.picVaccine.Location = new System.Drawing.Point(275, 26);
+            this.picVaccine.Location = new System.Drawing.Point(275, 25);
             this.picVaccine.Name = "picVaccine";
-            this.picVaccine.Size = new System.Drawing.Size(84, 81);
+            this.picVaccine.Size = new System.Drawing.Size(84, 76);
             this.picVaccine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picVaccine.TabIndex = 16;
             this.picVaccine.TabStop = false;
@@ -1968,9 +1938,9 @@ namespace ProyectoPOOxBDD
             "28",
             "29",
             "30"});
-            this.cmbSideEffectTime.Location = new System.Drawing.Point(407, 534);
+            this.cmbSideEffectTime.Location = new System.Drawing.Point(407, 505);
             this.cmbSideEffectTime.Name = "cmbSideEffectTime";
-            this.cmbSideEffectTime.Size = new System.Drawing.Size(167, 38);
+            this.cmbSideEffectTime.Size = new System.Drawing.Size(167, 29);
             this.cmbSideEffectTime.TabIndex = 33;
             // 
             // lblTimeSideEffect
@@ -1979,10 +1949,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTimeSideEffect.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblTimeSideEffect, 2);
-            this.lblTimeSideEffect.Location = new System.Drawing.Point(407, 491);
+            this.tlpVaccination.SetColumnSpan(this.lblTimeSideEffect, 2);
+            this.lblTimeSideEffect.Location = new System.Drawing.Point(407, 464);
             this.lblTimeSideEffect.Name = "lblTimeSideEffect";
-            this.lblTimeSideEffect.Size = new System.Drawing.Size(210, 40);
+            this.lblTimeSideEffect.Size = new System.Drawing.Size(210, 38);
             this.lblTimeSideEffect.TabIndex = 12;
             this.lblTimeSideEffect.Text = "Tiempo de aparición";
             this.lblTimeSideEffect.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1993,11 +1963,11 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVaccinationProcess.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.lblVaccinationProcess, 4);
+            this.tlpVaccination.SetColumnSpan(this.lblVaccinationProcess, 4);
             this.lblVaccinationProcess.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblVaccinationProcess.Location = new System.Drawing.Point(365, 23);
+            this.lblVaccinationProcess.Location = new System.Drawing.Point(365, 22);
             this.lblVaccinationProcess.Name = "lblVaccinationProcess";
-            this.lblVaccinationProcess.Size = new System.Drawing.Size(252, 87);
+            this.lblVaccinationProcess.Size = new System.Drawing.Size(252, 82);
             this.lblVaccinationProcess.TabIndex = 2;
             this.lblVaccinationProcess.Text = "Proceso de vacunación";
             this.lblVaccinationProcess.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2010,9 +1980,9 @@ namespace ProyectoPOOxBDD
             this.btnAddSideEffect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
             this.btnAddSideEffect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSideEffect.ForeColor = System.Drawing.Color.White;
-            this.btnAddSideEffect.Location = new System.Drawing.Point(623, 534);
+            this.btnAddSideEffect.Location = new System.Drawing.Point(623, 505);
             this.btnAddSideEffect.Name = "btnAddSideEffect";
-            this.btnAddSideEffect.Size = new System.Drawing.Size(106, 41);
+            this.btnAddSideEffect.Size = new System.Drawing.Size(106, 38);
             this.btnAddSideEffect.TabIndex = 34;
             this.btnAddSideEffect.Text = "Agregar";
             this.btnAddSideEffect.UseVisualStyleBackColor = false;
@@ -2021,54 +1991,70 @@ namespace ProyectoPOOxBDD
             // tabSecondAppointment
             // 
             this.tabSecondAppointment.BackColor = System.Drawing.Color.White;
-            this.tabSecondAppointment.Controls.Add(this.tableLayoutPanel6);
+            this.tabSecondAppointment.Controls.Add(this.tlpSecondAppointment);
             this.tabSecondAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabSecondAppointment.Location = new System.Drawing.Point(4, 27);
             this.tabSecondAppointment.Name = "tabSecondAppointment";
             this.tabSecondAppointment.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSecondAppointment.Size = new System.Drawing.Size(878, 676);
+            this.tabSecondAppointment.Size = new System.Drawing.Size(878, 638);
             this.tabSecondAppointment.TabIndex = 7;
             this.tabSecondAppointment.Text = "SecondAppo";
             // 
-            // tableLayoutPanel6
+            // tlpSecondAppointment
             // 
-            this.tableLayoutPanel6.ColumnCount = 7;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.5F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.Controls.Add(this.lblDateSecondAppointment, 1, 5);
-            this.tableLayoutPanel6.Controls.Add(this.lblCitizenNameRegister2, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.lblCitizenNameSecondAppointment, 1, 3);
-            this.tableLayoutPanel6.Controls.Add(this.lblDateRegister2, 1, 4);
-            this.tableLayoutPanel6.Controls.Add(this.lblTimeRegister2, 3, 4);
-            this.tableLayoutPanel6.Controls.Add(this.lblHourSecondAppointment, 3, 5);
-            this.tableLayoutPanel6.Controls.Add(this.lblMinutesSecondAppointment, 5, 5);
-            this.tableLayoutPanel6.Controls.Add(this.lblVaccinationPlaceRegister2, 1, 6);
-            this.tableLayoutPanel6.Controls.Add(this.lblVaccinationPlaceSecondAppointment, 1, 7);
-            this.tableLayoutPanel6.Controls.Add(this.btnAddSecondAppointment, 1, 9);
-            this.tableLayoutPanel6.Controls.Add(this.lblSecondAppointment, 2, 1);
-            this.tableLayoutPanel6.Controls.Add(this.picAppointmentImage2, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label9, 4, 5);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 0);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 11;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(866, 673);
-            this.tableLayoutPanel6.TabIndex = 0;
+            this.tlpSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpSecondAppointment.ColumnCount = 7;
+            this.tlpSecondAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSecondAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpSecondAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpSecondAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tlpSecondAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpSecondAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tlpSecondAppointment.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSecondAppointment.Controls.Add(this.lblHourSecondAppointment, 3, 5);
+            this.tlpSecondAppointment.Controls.Add(this.lblDateSecondAppointment, 1, 5);
+            this.tlpSecondAppointment.Controls.Add(this.lblCitizenNameRegister2, 1, 2);
+            this.tlpSecondAppointment.Controls.Add(this.lblCitizenNameSecondAppointment, 1, 3);
+            this.tlpSecondAppointment.Controls.Add(this.lblDateRegister2, 1, 4);
+            this.tlpSecondAppointment.Controls.Add(this.lblVaccinationPlaceRegister2, 1, 6);
+            this.tlpSecondAppointment.Controls.Add(this.lblVaccinationPlaceSecondAppointment, 1, 7);
+            this.tlpSecondAppointment.Controls.Add(this.btnAddSecondAppointment, 1, 9);
+            this.tlpSecondAppointment.Controls.Add(this.lblSecondAppointment, 2, 1);
+            this.tlpSecondAppointment.Controls.Add(this.picAppointmentImage2, 1, 1);
+            this.tlpSecondAppointment.Controls.Add(this.lblMinutesSecondAppointment, 4, 5);
+            this.tlpSecondAppointment.Controls.Add(this.lblTimeRegister2, 3, 4);
+            this.tlpSecondAppointment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpSecondAppointment.Location = new System.Drawing.Point(6, 0);
+            this.tlpSecondAppointment.Name = "tlpSecondAppointment";
+            this.tlpSecondAppointment.RowCount = 11;
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpSecondAppointment.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tlpSecondAppointment.Size = new System.Drawing.Size(866, 635);
+            this.tlpSecondAppointment.TabIndex = 0;
+            // 
+            // lblHourSecondAppointment
+            // 
+            this.lblHourSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHourSecondAppointment.AutoSize = true;
+            this.lblHourSecondAppointment.Location = new System.Drawing.Point(435, 322);
+            this.lblHourSecondAppointment.Name = "lblHourSecondAppointment";
+            this.lblHourSecondAppointment.Size = new System.Drawing.Size(97, 44);
+            this.lblHourSecondAppointment.TabIndex = 4;
+            this.lblHourSecondAppointment.Text = "<Hora>";
+            this.lblHourSecondAppointment.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblDateSecondAppointment
             // 
@@ -2076,9 +2062,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDateSecondAppointment.AutoSize = true;
-            this.lblDateSecondAppointment.Location = new System.Drawing.Point(176, 341);
+            this.lblDateSecondAppointment.Location = new System.Drawing.Point(176, 322);
             this.lblDateSecondAppointment.Name = "lblDateSecondAppointment";
-            this.lblDateSecondAppointment.Size = new System.Drawing.Size(210, 47);
+            this.lblDateSecondAppointment.Size = new System.Drawing.Size(210, 44);
             this.lblDateSecondAppointment.TabIndex = 3;
             this.lblDateSecondAppointment.Text = "<Fecha>";
             // 
@@ -2088,10 +2074,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCitizenNameRegister2.AutoSize = true;
-            this.tableLayoutPanel6.SetColumnSpan(this.lblCitizenNameRegister2, 5);
-            this.lblCitizenNameRegister2.Location = new System.Drawing.Point(176, 214);
+            this.tlpSecondAppointment.SetColumnSpan(this.lblCitizenNameRegister2, 5);
+            this.lblCitizenNameRegister2.Location = new System.Drawing.Point(176, 202);
             this.lblCitizenNameRegister2.Name = "lblCitizenNameRegister2";
-            this.lblCitizenNameRegister2.Size = new System.Drawing.Size(511, 40);
+            this.lblCitizenNameRegister2.Size = new System.Drawing.Size(510, 38);
             this.lblCitizenNameRegister2.TabIndex = 0;
             this.lblCitizenNameRegister2.Text = "Nombre del ciudadano";
             this.lblCitizenNameRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -2102,10 +2088,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCitizenNameSecondAppointment.AutoSize = true;
-            this.tableLayoutPanel6.SetColumnSpan(this.lblCitizenNameSecondAppointment, 5);
-            this.lblCitizenNameSecondAppointment.Location = new System.Drawing.Point(176, 254);
+            this.tlpSecondAppointment.SetColumnSpan(this.lblCitizenNameSecondAppointment, 5);
+            this.lblCitizenNameSecondAppointment.Location = new System.Drawing.Point(176, 240);
             this.lblCitizenNameSecondAppointment.Name = "lblCitizenNameSecondAppointment";
-            this.lblCitizenNameSecondAppointment.Size = new System.Drawing.Size(511, 47);
+            this.lblCitizenNameSecondAppointment.Size = new System.Drawing.Size(510, 44);
             this.lblCitizenNameSecondAppointment.TabIndex = 1;
             this.lblCitizenNameSecondAppointment.Text = "<Nombre>";
             // 
@@ -2115,50 +2101,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDateRegister2.AutoSize = true;
-            this.lblDateRegister2.Location = new System.Drawing.Point(176, 301);
+            this.lblDateRegister2.Location = new System.Drawing.Point(176, 284);
             this.lblDateRegister2.Name = "lblDateRegister2";
-            this.lblDateRegister2.Size = new System.Drawing.Size(210, 40);
+            this.lblDateRegister2.Size = new System.Drawing.Size(210, 38);
             this.lblDateRegister2.TabIndex = 2;
             this.lblDateRegister2.Text = "Fecha";
             this.lblDateRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // lblTimeRegister2
-            // 
-            this.lblTimeRegister2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTimeRegister2.AutoSize = true;
-            this.tableLayoutPanel6.SetColumnSpan(this.lblTimeRegister2, 2);
-            this.lblTimeRegister2.Location = new System.Drawing.Point(504, 301);
-            this.lblTimeRegister2.Name = "lblTimeRegister2";
-            this.lblTimeRegister2.Size = new System.Drawing.Size(58, 40);
-            this.lblTimeRegister2.TabIndex = 3;
-            this.lblTimeRegister2.Text = "Hora";
-            this.lblTimeRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // lblHourSecondAppointment
-            // 
-            this.lblHourSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblHourSecondAppointment.AutoSize = true;
-            this.lblHourSecondAppointment.Location = new System.Drawing.Point(435, 341);
-            this.lblHourSecondAppointment.Name = "lblHourSecondAppointment";
-            this.lblHourSecondAppointment.Size = new System.Drawing.Size(106, 47);
-            this.lblHourSecondAppointment.TabIndex = 4;
-            this.lblHourSecondAppointment.Text = "<Hora>";
-            this.lblHourSecondAppointment.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblMinutesSecondAppointment
-            // 
-            this.lblMinutesSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMinutesSecondAppointment.AutoSize = true;
-            this.lblMinutesSecondAppointment.Location = new System.Drawing.Point(568, 341);
-            this.lblMinutesSecondAppointment.Name = "lblMinutesSecondAppointment";
-            this.lblMinutesSecondAppointment.Size = new System.Drawing.Size(119, 47);
-            this.lblMinutesSecondAppointment.TabIndex = 6;
-            this.lblMinutesSecondAppointment.Text = "<Minutos>";
             // 
             // lblVaccinationPlaceRegister2
             // 
@@ -2166,10 +2114,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVaccinationPlaceRegister2.AutoSize = true;
-            this.tableLayoutPanel6.SetColumnSpan(this.lblVaccinationPlaceRegister2, 5);
-            this.lblVaccinationPlaceRegister2.Location = new System.Drawing.Point(176, 388);
+            this.tlpSecondAppointment.SetColumnSpan(this.lblVaccinationPlaceRegister2, 5);
+            this.lblVaccinationPlaceRegister2.Location = new System.Drawing.Point(176, 366);
             this.lblVaccinationPlaceRegister2.Name = "lblVaccinationPlaceRegister2";
-            this.lblVaccinationPlaceRegister2.Size = new System.Drawing.Size(511, 40);
+            this.lblVaccinationPlaceRegister2.Size = new System.Drawing.Size(510, 38);
             this.lblVaccinationPlaceRegister2.TabIndex = 7;
             this.lblVaccinationPlaceRegister2.Text = "Lugar de vacunación";
             this.lblVaccinationPlaceRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -2180,10 +2128,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVaccinationPlaceSecondAppointment.AutoSize = true;
-            this.tableLayoutPanel6.SetColumnSpan(this.lblVaccinationPlaceSecondAppointment, 5);
-            this.lblVaccinationPlaceSecondAppointment.Location = new System.Drawing.Point(176, 428);
+            this.tlpSecondAppointment.SetColumnSpan(this.lblVaccinationPlaceSecondAppointment, 5);
+            this.lblVaccinationPlaceSecondAppointment.Location = new System.Drawing.Point(176, 404);
             this.lblVaccinationPlaceSecondAppointment.Name = "lblVaccinationPlaceSecondAppointment";
-            this.lblVaccinationPlaceSecondAppointment.Size = new System.Drawing.Size(511, 47);
+            this.lblVaccinationPlaceSecondAppointment.Size = new System.Drawing.Size(510, 44);
             this.lblVaccinationPlaceSecondAppointment.TabIndex = 8;
             this.lblVaccinationPlaceSecondAppointment.Text = "<Lugar>";
             // 
@@ -2193,12 +2141,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddSecondAppointment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(183)))));
-            this.tableLayoutPanel6.SetColumnSpan(this.btnAddSecondAppointment, 5);
+            this.tlpSecondAppointment.SetColumnSpan(this.btnAddSecondAppointment, 5);
             this.btnAddSecondAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSecondAppointment.ForeColor = System.Drawing.Color.White;
-            this.btnAddSecondAppointment.Location = new System.Drawing.Point(176, 498);
+            this.btnAddSecondAppointment.Location = new System.Drawing.Point(176, 470);
             this.btnAddSecondAppointment.Name = "btnAddSecondAppointment";
-            this.btnAddSecondAppointment.Size = new System.Drawing.Size(511, 41);
+            this.btnAddSecondAppointment.Size = new System.Drawing.Size(510, 38);
             this.btnAddSecondAppointment.TabIndex = 36;
             this.btnAddSecondAppointment.Text = "Agendar cita";
             this.btnAddSecondAppointment.UseVisualStyleBackColor = false;
@@ -2210,11 +2158,11 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSecondAppointment.AutoSize = true;
-            this.tableLayoutPanel6.SetColumnSpan(this.lblSecondAppointment, 4);
+            this.tlpSecondAppointment.SetColumnSpan(this.lblSecondAppointment, 4);
             this.lblSecondAppointment.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSecondAppointment.Location = new System.Drawing.Point(392, 127);
+            this.lblSecondAppointment.Location = new System.Drawing.Point(392, 120);
             this.lblSecondAppointment.Name = "lblSecondAppointment";
-            this.lblSecondAppointment.Size = new System.Drawing.Size(295, 87);
+            this.lblSecondAppointment.Size = new System.Drawing.Size(294, 82);
             this.lblSecondAppointment.TabIndex = 10;
             this.lblSecondAppointment.Text = "Cita segunda dosis";
             this.lblSecondAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2224,56 +2172,73 @@ namespace ProyectoPOOxBDD
             this.picAppointmentImage2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picAppointmentImage2.Image = global::ProyectoPOOxBDD.Properties.Resources.Appointment;
-            this.picAppointmentImage2.Location = new System.Drawing.Point(295, 130);
+            this.picAppointmentImage2.Location = new System.Drawing.Point(295, 123);
             this.picAppointmentImage2.Name = "picAppointmentImage2";
-            this.picAppointmentImage2.Size = new System.Drawing.Size(91, 81);
+            this.picAppointmentImage2.Size = new System.Drawing.Size(91, 76);
             this.picAppointmentImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAppointmentImage2.TabIndex = 11;
             this.picAppointmentImage2.TabStop = false;
             // 
-            // label9
+            // lblMinutesSecondAppointment
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblMinutesSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(547, 341);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 47);
-            this.label9.TabIndex = 5;
-            this.label9.Text = ":";
+            this.lblMinutesSecondAppointment.AutoSize = true;
+            this.tlpSecondAppointment.SetColumnSpan(this.lblMinutesSecondAppointment, 2);
+            this.lblMinutesSecondAppointment.Location = new System.Drawing.Point(538, 322);
+            this.lblMinutesSecondAppointment.Name = "lblMinutesSecondAppointment";
+            this.lblMinutesSecondAppointment.Size = new System.Drawing.Size(148, 44);
+            this.lblMinutesSecondAppointment.TabIndex = 6;
+            this.lblMinutesSecondAppointment.Text = "<Minutos>";
+            // 
+            // lblTimeRegister2
+            // 
+            this.lblTimeRegister2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTimeRegister2.AutoSize = true;
+            this.lblTimeRegister2.Location = new System.Drawing.Point(488, 284);
+            this.lblTimeRegister2.Name = "lblTimeRegister2";
+            this.lblTimeRegister2.Size = new System.Drawing.Size(44, 38);
+            this.lblTimeRegister2.TabIndex = 3;
+            this.lblTimeRegister2.Text = "Hora";
+            this.lblTimeRegister2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // tabBooth
             // 
             this.tabBooth.BackColor = System.Drawing.Color.White;
-            this.tabBooth.Controls.Add(this.tableLayoutPanel7);
+            this.tabBooth.Controls.Add(this.tlpBooth);
             this.tabBooth.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabBooth.Location = new System.Drawing.Point(4, 27);
             this.tabBooth.Name = "tabBooth";
             this.tabBooth.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBooth.Size = new System.Drawing.Size(878, 676);
+            this.tabBooth.Size = new System.Drawing.Size(878, 638);
             this.tabBooth.TabIndex = 8;
             this.tabBooth.Text = "Booth";
             // 
-            // tableLayoutPanel7
+            // tlpBooth
             // 
-            this.tableLayoutPanel7.ColumnCount = 4;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel7.Controls.Add(this.dgvBooth, 1, 2);
-            this.tableLayoutPanel7.Controls.Add(this.lblBoothInformation, 2, 1);
-            this.tableLayoutPanel7.Controls.Add(this.picBoothImage, 1, 1);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 0);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 4;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.5F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.5F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(866, 673);
-            this.tableLayoutPanel7.TabIndex = 0;
+            this.tlpBooth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBooth.ColumnCount = 4;
+            this.tlpBooth.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpBooth.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tlpBooth.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBooth.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpBooth.Controls.Add(this.dgvBooth, 1, 2);
+            this.tlpBooth.Controls.Add(this.lblBoothInformation, 2, 1);
+            this.tlpBooth.Controls.Add(this.picBoothImage, 1, 1);
+            this.tlpBooth.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tlpBooth.Location = new System.Drawing.Point(6, 0);
+            this.tlpBooth.Name = "tlpBooth";
+            this.tlpBooth.RowCount = 4;
+            this.tlpBooth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.5F));
+            this.tlpBooth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tlpBooth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBooth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.5F));
+            this.tlpBooth.Size = new System.Drawing.Size(866, 635);
+            this.tlpBooth.TabIndex = 0;
             // 
             // dgvBooth
             // 
@@ -2286,12 +2251,12 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvBooth.BackgroundColor = System.Drawing.Color.White;
             this.dgvBooth.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel7.SetColumnSpan(this.dgvBooth, 2);
-            this.dgvBooth.Location = new System.Drawing.Point(46, 214);
+            this.tlpBooth.SetColumnSpan(this.dgvBooth, 2);
+            this.dgvBooth.Location = new System.Drawing.Point(46, 202);
             this.dgvBooth.Name = "dgvBooth";
             this.dgvBooth.ReadOnly = true;
             this.dgvBooth.RowTemplate.Height = 25;
-            this.dgvBooth.Size = new System.Drawing.Size(773, 330);
+            this.dgvBooth.Size = new System.Drawing.Size(773, 311);
             this.dgvBooth.TabIndex = 37;
             // 
             // lblBoothInformation
@@ -2301,9 +2266,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBoothInformation.AutoSize = true;
             this.lblBoothInformation.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBoothInformation.Location = new System.Drawing.Point(392, 124);
+            this.lblBoothInformation.Location = new System.Drawing.Point(392, 117);
             this.lblBoothInformation.Name = "lblBoothInformation";
-            this.lblBoothInformation.Size = new System.Drawing.Size(427, 87);
+            this.lblBoothInformation.Size = new System.Drawing.Size(427, 82);
             this.lblBoothInformation.TabIndex = 1;
             this.lblBoothInformation.Text = "Información de cabinas";
             this.lblBoothInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2313,9 +2278,9 @@ namespace ProyectoPOOxBDD
             this.picBoothImage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picBoothImage.Image = global::ProyectoPOOxBDD.Properties.Resources.Booth;
-            this.picBoothImage.Location = new System.Drawing.Point(305, 127);
+            this.picBoothImage.Location = new System.Drawing.Point(305, 120);
             this.picBoothImage.Name = "picBoothImage";
-            this.picBoothImage.Size = new System.Drawing.Size(81, 81);
+            this.picBoothImage.Size = new System.Drawing.Size(81, 76);
             this.picBoothImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoothImage.TabIndex = 2;
             this.picBoothImage.TabStop = false;
@@ -2363,7 +2328,7 @@ namespace ProyectoPOOxBDD
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(866, 787);
+            this.ClientSize = new System.Drawing.Size(866, 749);
             this.Controls.Add(this.tlpPrincipal);
             this.Controls.Add(this.tabPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -2387,34 +2352,34 @@ namespace ProyectoPOOxBDD
             this.tlpRegisterP1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCitizenImage)).EndInit();
             this.tabRegisterPart2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tlpRegisterP2.ResumeLayout(false);
+            this.tlpRegisterP2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCitizenImage2)).EndInit();
             this.tabFirstAppointment.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            this.tlpFirstAppointment.ResumeLayout(false);
+            this.tlpFirstAppointment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentImage)).EndInit();
             this.tabAppointmentResume.ResumeLayout(false);
             this.tlpResume.ResumeLayout(false);
             this.tlpResume.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentResume)).EndInit();
             this.tabTraking.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.tlpTraking.ResumeLayout(false);
+            this.tlpTraking.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppointment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRegisterTraking)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentVisualize)).EndInit();
             this.tabVaccinationProcess.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
+            this.tlpVaccination.ResumeLayout(false);
+            this.tlpVaccination.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picVaccine)).EndInit();
             this.tabSecondAppointment.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
+            this.tlpSecondAppointment.ResumeLayout(false);
+            this.tlpSecondAppointment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppointmentImage2)).EndInit();
             this.tabBooth.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
+            this.tlpBooth.ResumeLayout(false);
+            this.tlpBooth.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoothImage)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -2456,7 +2421,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lblCitizenRegister;
         private System.Windows.Forms.PictureBox picCitizenImage;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tlpRegisterP2;
         private System.Windows.Forms.ComboBox cmbInstitution;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblPriorityGroupRegister;
@@ -2474,7 +2439,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.Label lblCitizenRegister2;
         private System.Windows.Forms.TabPage tabFirstAppointment;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tlpFirstAppointment;
         private System.Windows.Forms.Label lblCitizenNameRegister;
         private System.Windows.Forms.Label lblCitizenNameFirstAppointment;
         private System.Windows.Forms.Label lblDateRegister;
@@ -2501,7 +2466,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.PictureBox picAppointmentResume;
         private System.Windows.Forms.Label lblAppointmentResume;
         private System.Windows.Forms.TabPage tabTraking;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tlpTraking;
         private System.Windows.Forms.Label lblDuiNumberTraking;
         private System.Windows.Forms.Label lblNameTraking;
         private System.Windows.Forms.Label lblAddressTraking;
@@ -2522,7 +2487,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.PictureBox picRegisterTraking;
         private System.Windows.Forms.PictureBox picAppointmentVisualize;
         private System.Windows.Forms.TabPage tabVaccinationProcess;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tlpVaccination;
         private System.Windows.Forms.Label lblVaccinationProcess;
         private System.Windows.Forms.Label lblPreCheck;
         private System.Windows.Forms.Label lblWatingLine;
@@ -2542,7 +2507,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.Button btnFinishProcess;
         private System.Windows.Forms.PictureBox picVaccine;
         private System.Windows.Forms.TabPage tabSecondAppointment;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tlpSecondAppointment;
         private System.Windows.Forms.Label lblDateSecondAppointment;
         private System.Windows.Forms.Label lblCitizenNameRegister2;
         private System.Windows.Forms.Label lblCitizenNameSecondAppointment;
@@ -2555,9 +2520,8 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.Button btnAddSecondAppointment;
         private System.Windows.Forms.Label lblSecondAppointment;
         private System.Windows.Forms.PictureBox picAppointmentImage2;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabPage tabBooth;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.TableLayoutPanel tlpBooth;
         private System.Windows.Forms.DataGridView dgvBooth;
         private System.Windows.Forms.Label lblBoothInformation;
         private System.Windows.Forms.PictureBox picBoothImage;

@@ -18,6 +18,7 @@ using iText.Layout;
 using iText.Layout.Element;
 using iText.Layout.Properties;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using ProyectoPOOxBDD.Properties;
 using ProyectoPOOxBDD.VaccinationContext;
 using ProyectoPOOxBDD.ViewModels;
@@ -46,6 +47,9 @@ namespace ProyectoPOOxBDD
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+            //Ajustar la resolución del formulario según la resolución de la pantalla
+            AdjustResolution(this);
+
             //Declaracion del context
             var db = new VaccinationDBContext();
 
@@ -109,6 +113,75 @@ namespace ProyectoPOOxBDD
             //Asignar valores iniciales a los combobox de fecha y hora
             cmbHourFirstAppointment.Text = "07";
             cmbMinutesFirstAppointment.Text = "00";
+        }
+
+        public void AdjustResolution(System.Windows.Forms.Form form)
+        {
+            String widthScreen = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size.Width.ToString(); //Obtener el ancho de la pantalla
+            String heightScreen = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size.Height.ToString(); //obtener el alto de la pantalla
+            String tamano = widthScreen + "x" + heightScreen;
+
+            int width = 0;
+            int height = 0;
+            int size = 0;
+
+            switch (tamano)
+            {
+                case "1920x1080":
+                    width = 882;
+                    height = 826;
+                    size = 16;
+                    break;
+
+                case "1366x768":
+                    width = 693;
+                    height = 649;
+                    size = 12;
+                    break;
+
+                default:
+                    width = 693;
+                    height = 649;
+                    size = 12;
+                    break;
+            }
+
+            ChangeResolution(form, width, height, size);
+        }
+
+        public void ChangeResolution(System.Windows.Forms.Form form, int width, int height, int size)
+        {
+            //Cambiar tamaño y posición del formulario
+            form.Width = width;
+            form.Height = height;
+            form.Location = new System.Drawing.Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
+                (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
+            
+            //Fuente a utilzizar
+            Font font = new Font("Segoe UI", size, FontStyle.Regular, GraphicsUnit.Point);
+            Font boldfont = new Font("Segoe UI", size, FontStyle.Bold, GraphicsUnit.Point);
+
+            //Cambiar el tamaño de la fuentte
+            tlpRegisterP1.Font = font;
+            tlpRegisterP2.Font = font;
+            tlpFirstAppointment.Font = font;
+            tlpResume.Font = font;
+            tlpBooth.Font = font;
+            tlpSecondAppointment.Font = font;
+            tlpTraking.Font = font;
+            tlpVaccination.Font = font;
+            tlpPrincipal.Font = font;
+            mspPrincipal.Font = font;
+            lblCitizenRegister.Font = boldfont;
+            lblCitizenRegister2.Font = boldfont;
+            lblFirstAppointment.Font = boldfont;
+            lblAppointmentResume.Font = boldfont;
+            lblAppointmentResume.Font = boldfont;
+            lblVaccinationProcess.Font = boldfont;
+            lblSecondAppointment.Font = boldfont;
+            lblBoothInformation.Font = boldfont;
+            lblRegisterInformation.Font = boldfont;
+            lblAppointment.Font = boldfont;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -585,7 +658,7 @@ namespace ProyectoPOOxBDD
                 appointmentList.ForEach(a => appointmentVmList.Add(VaccinationMapper.MapAppointmentToAppointmentVm(a)));
 
                 //Agregando datos de citas al Datagrid View
-                dgvAppointment.RowTemplate.Height = 40;
+                dgvAppointment.RowTemplate.Height = 30;
                 dgvAppointment.DataSource = null;
                 dgvAppointment.DataSource = appointmentVmList;
 
@@ -839,7 +912,7 @@ namespace ProyectoPOOxBDD
                    else
                    {
                        //Cuando el ciudadano decide no seguir con el proceso de vacunación
-                        MessageBox.Show("El proceso se ha cancelado", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("El proceso se ha cancelado", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
                    }
                 }
                 else
@@ -969,8 +1042,15 @@ namespace ProyectoPOOxBDD
 
                     //Definiendo labels de fecha y hora de segunda cita
                     lblDateSecondAppointment.Text = dateTime.ToShortDateString();
-                    lblHourSecondAppointment.Text = dateTime.Hour.ToString();
-                    lblMinutesSecondAppointment.Text = dateTime.Minute.ToString();
+                    if(dateTime.Hour < 10)
+                        lblHourSecondAppointment.Text = "0"+ dateTime.Hour.ToString() + "   :";
+                    else
+                        lblHourSecondAppointment.Text = dateTime.Hour.ToString();
+
+                    if (dateTime.Minute < 10)
+                        lblMinutesSecondAppointment.Text = "0" + dateTime.Minute.ToString();
+                    else
+                        lblMinutesSecondAppointment.Text = dateTime.Minute.ToString();
 
                     //Avanzando a pestaña de segunda cita
                     tabPrincipal.SelectedIndex = 7;
@@ -989,7 +1069,7 @@ namespace ProyectoPOOxBDD
 
             //Obtener DateTime
             DateTime dateTime = DateTime.Parse(lblDateSecondAppointment.Text);
-            dateTime = dateTime.AddHours(Int32.Parse(lblHourSecondAppointment.Text));
+            dateTime = dateTime.AddHours(Int32.Parse(lblHourSecondAppointment.Text.Remove(lblHourSecondAppointment.Text.Length-1)));
             dateTime = dateTime.AddMinutes(Int32.Parse(lblMinutesSecondAppointment.Text));
 
             //Creamos y llenamos la segunda cita
