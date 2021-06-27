@@ -355,7 +355,11 @@ namespace ProyectoPOOxBDD
             CreatePDF(aCitizen.Dui, aCitizen.FullName, anAppointment.AppointmentDateTime.ToLongDateString(),
                 anAppointment.AppointmentDateTime.ToShortTimeString(), place.Place, appointmentType.TypeName);
 
-            ExitFirstAppointment();
+            if(appointmentType.Id == 1)
+                ExitFirstAppointment();
+            else
+                ExitSecondAppointment();
+
         }
 
         private void ExitFirstAppointment()
@@ -385,7 +389,33 @@ namespace ProyectoPOOxBDD
             cmbHourFirstAppointment.Text = "07";
             cmbMinutesFirstAppointment.Text = "00";
 
-            //Activar el menú y el botóon de cerrar formulario
+            //Activar el menú y el botón de cerrar formulario
+            mspPrincipal.Enabled = true;
+            this.ControlBox = true;
+        }
+
+        private void ExitSecondAppointment()
+        {
+            //Revirtiendo variables gloabales a nulos
+            anAppointment = null;
+            ClearTracking();
+
+            //Vaciando labels anteriores
+            lblCitizenNameSecondAppointment.Text = String.Empty;
+            lblVaccinationPlaceSecondAppointment.Text = String.Empty;
+            lblDateSecondAppointment.Text = String.Empty;
+            lblHourSecondAppointment.Text = String.Empty;
+            lblMinutesSecondAppointment.Text = String.Empty;
+
+            radNoProcess.Checked = true;
+
+            //Regresando a pestaña de inicio
+            tabPrincipal.SelectedIndex = 0;
+
+            //Restablecer valores iniciales al combobox de minutos de aparición
+            cmbSideEffectTime.Text = "1";
+
+            //Activar el menú y el botón de cerrar formulario
             mspPrincipal.Enabled = true;
             this.ControlBox = true;
         }
@@ -454,7 +484,10 @@ namespace ProyectoPOOxBDD
 
         private void btnExitResume_Click(object sender, EventArgs e)
         {
-            ExitFirstAppointment();
+            if (anAppointment.IdAppointmentType == 1)
+                ExitFirstAppointment();
+            else
+                ExitSecondAppointment();
         }
 
         private void welcomeMenuItem_Click(object sender, EventArgs e)
@@ -841,6 +874,8 @@ namespace ProyectoPOOxBDD
 
                 MessageBox.Show("Se registro su hora de llegada", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 db.SaveChanges();
+
+                anAppointment.ArrivalDateTime = a.ArrivalDateTime;
             }
             else
                 MessageBox.Show("Su hora de llegada ya ha sido registrada", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -862,6 +897,8 @@ namespace ProyectoPOOxBDD
 
                 MessageBox.Show("Se registro su hora de vacunación", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 db.SaveChanges();
+
+                anAppointment.VaccinationDateTime = a.VaccinationDateTime;
             }
             else
                 MessageBox.Show("Su hora de vacunación ya ha sido registrada", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -897,7 +934,7 @@ namespace ProyectoPOOxBDD
             var db = new VaccinationDBContext();
 
             //Consiguiendo cita actual
-
+            
             Appointment a = (from x in db.Appointments
                              where x.Id == anAppointment.Id
                              select x).First();
@@ -908,6 +945,7 @@ namespace ProyectoPOOxBDD
                 {
                     //Regresando a pestaña de inicio
                     tabPrincipal.SelectedIndex = 0;
+                    radNoProcess.Checked = true;
 
                     anAppointment = null;
                     this.ControlBox = true;
@@ -916,7 +954,25 @@ namespace ProyectoPOOxBDD
                 }
                 else
                 {
-                    //Avanzando a registro de segunda cita
+
+                    //Definiendo labels de segunda cita
+                    lblCitizenNameSecondAppointment.Text = aCitizen.FullName;
+                    lblVaccinationPlaceSecondAppointment.Text = anAppointment.IdVaccinationPlaceNavigation.Place;
+
+                    //Definiendo fecha para la cita de segunda dósis 
+                    DateTime dateTime = anAppointment.VaccinationDateTime.Value.Date;
+
+                    //Obtener datos para el DateTime
+                    dateTime = dateTime.AddDays(56);
+                    dateTime = dateTime.AddHours(anAppointment.AppointmentDateTime.Hour);
+                    dateTime = dateTime.AddMinutes(anAppointment.AppointmentDateTime.Minute);
+
+                    //Definiendo labels de fecha y hora de segunda cita
+                    lblDateSecondAppointment.Text = dateTime.ToShortDateString();
+                    lblHourSecondAppointment.Text = dateTime.Hour.ToString();
+                    lblMinutesSecondAppointment.Text = dateTime.Minute.ToString();
+
+                    //Avanzando a pestaña de segunda cita
                     tabPrincipal.SelectedIndex = 7;
                 }
             }
@@ -925,6 +981,46 @@ namespace ProyectoPOOxBDD
                 //Si no se ha registrado la hora de llegada y vacunación
                 MessageBox.Show("La fecha de llegada y vacunacion no han sido registradas", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void btnAddSecondAppointment_Click(object sender, EventArgs e)
+        {
+            var db = new VaccinationDBContext();
+
+            //Obtener DateTime
+            DateTime dateTime = DateTime.Parse(lblDateSecondAppointment.Text);
+            dateTime = dateTime.AddHours(Int32.Parse(lblHourSecondAppointment.Text));
+            dateTime = dateTime.AddMinutes(Int32.Parse(lblMinutesSecondAppointment.Text));
+
+            //Creamos y llenamos la segunda cita
+            Appointment aSecondAppointment = new Appointment()
+            {
+                IdCitizen = aCitizen.Id,
+                IdManager = manager.Id,
+                AppointmentDateTime = dateTime,
+                IdVaccinationPlace = anAppointment.IdVaccinationPlace,
+                IdAppointmentType = 2
+            };
+            MessageBox.Show("Cita registrada con exito", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            db.Add(aSecondAppointment);
+            db.SaveChanges();
+            
+            anAppointment = aSecondAppointment;
+
+            //Preparando datos de la siguiente pestaña
+            lblDuiResume.Text = "Número de DUI: " + aCitizen.Dui;
+            lblNameResume.Text = "Nombre: " + aCitizen.FullName;
+            lblDateResume.Text = "Fecha: " + anAppointment.AppointmentDateTime.ToShortDateString();
+            lblTimeResume.Text = "Hora: " + anAppointment.AppointmentDateTime.ToShortTimeString();
+            lblVaccinationPlaceResume.Text = "Lugar de vacunación: " + lblVaccinationPlaceSecondAppointment.Text;
+            lblAppointmentTypeResume.Text = "Tipo de cita: Segunda dosis";
+
+            //Nullificar las variables
+            aSecondAppointment = null;
+
+            //Dirigiendo al resumen de cita
+            tabPrincipal.SelectedIndex = 4;
         }
     }
 }

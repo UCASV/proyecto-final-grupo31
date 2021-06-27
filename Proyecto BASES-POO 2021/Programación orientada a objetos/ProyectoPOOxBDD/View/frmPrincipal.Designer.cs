@@ -153,7 +153,7 @@ namespace ProyectoPOOxBDD
             this.lblHourSecondAppointment = new System.Windows.Forms.Label();
             this.lblMinutesSecondAppointment = new System.Windows.Forms.Label();
             this.lblVaccinationPlaceRegister2 = new System.Windows.Forms.Label();
-            this.lblVaccinationPlaceFirstAppointment = new System.Windows.Forms.Label();
+            this.lblVaccinationPlaceSecondAppointment = new System.Windows.Forms.Label();
             this.btnAddSecondAppointment = new System.Windows.Forms.Button();
             this.lblSecondAppointment = new System.Windows.Forms.Label();
             this.picAppointmentImage2 = new System.Windows.Forms.PictureBox();
@@ -2037,8 +2037,8 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.5F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel6.Controls.Add(this.lblDateSecondAppointment, 1, 5);
             this.tableLayoutPanel6.Controls.Add(this.lblCitizenNameRegister2, 1, 2);
@@ -2048,7 +2048,7 @@ namespace ProyectoPOOxBDD
             this.tableLayoutPanel6.Controls.Add(this.lblHourSecondAppointment, 3, 5);
             this.tableLayoutPanel6.Controls.Add(this.lblMinutesSecondAppointment, 5, 5);
             this.tableLayoutPanel6.Controls.Add(this.lblVaccinationPlaceRegister2, 1, 6);
-            this.tableLayoutPanel6.Controls.Add(this.lblVaccinationPlaceFirstAppointment, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.lblVaccinationPlaceSecondAppointment, 1, 7);
             this.tableLayoutPanel6.Controls.Add(this.btnAddSecondAppointment, 1, 9);
             this.tableLayoutPanel6.Controls.Add(this.lblSecondAppointment, 2, 1);
             this.tableLayoutPanel6.Controls.Add(this.picAppointmentImage2, 1, 1);
@@ -2127,7 +2127,8 @@ namespace ProyectoPOOxBDD
             this.lblTimeRegister2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTimeRegister2.AutoSize = true;
-            this.lblTimeRegister2.Location = new System.Drawing.Point(483, 301);
+            this.tableLayoutPanel6.SetColumnSpan(this.lblTimeRegister2, 2);
+            this.lblTimeRegister2.Location = new System.Drawing.Point(504, 301);
             this.lblTimeRegister2.Name = "lblTimeRegister2";
             this.lblTimeRegister2.Size = new System.Drawing.Size(58, 40);
             this.lblTimeRegister2.TabIndex = 3;
@@ -2153,9 +2154,9 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMinutesSecondAppointment.AutoSize = true;
-            this.lblMinutesSecondAppointment.Location = new System.Drawing.Point(581, 341);
+            this.lblMinutesSecondAppointment.Location = new System.Drawing.Point(568, 341);
             this.lblMinutesSecondAppointment.Name = "lblMinutesSecondAppointment";
-            this.lblMinutesSecondAppointment.Size = new System.Drawing.Size(106, 47);
+            this.lblMinutesSecondAppointment.Size = new System.Drawing.Size(119, 47);
             this.lblMinutesSecondAppointment.TabIndex = 6;
             this.lblMinutesSecondAppointment.Text = "<Minutos>";
             // 
@@ -2173,17 +2174,18 @@ namespace ProyectoPOOxBDD
             this.lblVaccinationPlaceRegister2.Text = "Lugar de vacunación";
             this.lblVaccinationPlaceRegister2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // lblVaccinationPlaceFirstAppointment
+            // lblVaccinationPlaceSecondAppointment
             // 
-            this.lblVaccinationPlaceFirstAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblVaccinationPlaceSecondAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblVaccinationPlaceFirstAppointment.AutoSize = true;
-            this.lblVaccinationPlaceFirstAppointment.Location = new System.Drawing.Point(176, 428);
-            this.lblVaccinationPlaceFirstAppointment.Name = "lblVaccinationPlaceFirstAppointment";
-            this.lblVaccinationPlaceFirstAppointment.Size = new System.Drawing.Size(210, 47);
-            this.lblVaccinationPlaceFirstAppointment.TabIndex = 8;
-            this.lblVaccinationPlaceFirstAppointment.Text = "<Lugar>";
+            this.lblVaccinationPlaceSecondAppointment.AutoSize = true;
+            this.tableLayoutPanel6.SetColumnSpan(this.lblVaccinationPlaceSecondAppointment, 5);
+            this.lblVaccinationPlaceSecondAppointment.Location = new System.Drawing.Point(176, 428);
+            this.lblVaccinationPlaceSecondAppointment.Name = "lblVaccinationPlaceSecondAppointment";
+            this.lblVaccinationPlaceSecondAppointment.Size = new System.Drawing.Size(511, 47);
+            this.lblVaccinationPlaceSecondAppointment.TabIndex = 8;
+            this.lblVaccinationPlaceSecondAppointment.Text = "<Lugar>";
             // 
             // btnAddSecondAppointment
             // 
@@ -2200,6 +2202,7 @@ namespace ProyectoPOOxBDD
             this.btnAddSecondAppointment.TabIndex = 36;
             this.btnAddSecondAppointment.Text = "Agendar cita";
             this.btnAddSecondAppointment.UseVisualStyleBackColor = false;
+            this.btnAddSecondAppointment.Click += new System.EventHandler(this.btnAddSecondAppointment_Click);
             // 
             // lblSecondAppointment
             // 
@@ -2236,10 +2239,9 @@ namespace ProyectoPOOxBDD
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(547, 341);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 47);
+            this.label9.Size = new System.Drawing.Size(15, 47);
             this.label9.TabIndex = 5;
             this.label9.Text = ":";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabBooth
             // 
@@ -2549,7 +2551,7 @@ namespace ProyectoPOOxBDD
         private System.Windows.Forms.Label lblHourSecondAppointment;
         private System.Windows.Forms.Label lblMinutesSecondAppointment;
         private System.Windows.Forms.Label lblVaccinationPlaceRegister2;
-        private System.Windows.Forms.Label lblVaccinationPlaceFirstAppointment;
+        private System.Windows.Forms.Label lblVaccinationPlaceSecondAppointment;
         private System.Windows.Forms.Button btnAddSecondAppointment;
         private System.Windows.Forms.Label lblSecondAppointment;
         private System.Windows.Forms.PictureBox picAppointmentImage2;
