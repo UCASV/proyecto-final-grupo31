@@ -45,6 +45,16 @@ namespace ProyectoPOOxBDD
                 {
                     if (result[0].KeyCode == userPass)
                     {
+                        //Agregar el inicio de sesión al historial
+                        LogInHistory login = new LogInHistory()
+                        {
+                            IdManager = result[0].Id, 
+                            LogInDateTime = DateTime.Now
+                        };
+
+                        db.Add(login);
+                        db.SaveChanges();
+
                         //Instanciar formulario que aun no hemos creado
                         frmPrincipal principal = new frmPrincipal(result[0]);
 
