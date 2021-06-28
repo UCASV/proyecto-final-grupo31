@@ -686,9 +686,15 @@ namespace ProyectoPOOxBDD
             if (aCitizen == null)
                 MessageBox.Show("No hay datos que exportar", "Vacunación Covid-19", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
+            {
+                string insititutionName = aCitizen.IdInstitutionNavigation == null
+                                        ? "N/A"
+                                        : aCitizen.IdInstitutionNavigation.InstitutionName;
+
                 CreatePDFTracking(aCitizen.Dui, aCitizen.FullName, aCitizen.HomeAddress, aCitizen.PhoneNumber, aCitizen.EmailAddress,
                     aCitizen.IdPriorityGroupNavigation.PriorityGroupName, aCitizen.InstitutionIdentification,
-                    aCitizen.IdInstitutionNavigation.InstitutionName, aCitizen.Diseases.ToList());
+                    insititutionName, aCitizen.Diseases.ToList());
+            }
         }
 
         private void CreatePDFTracking(string dui, string fullName, string address, string phone, string email, string priorityGroup,
