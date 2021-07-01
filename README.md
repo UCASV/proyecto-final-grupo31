@@ -28,10 +28,10 @@ Este patrón de diseño se utilizó para mostrar la información de contacto de 
 # **Instalación del software**
 ## Requisitos de instalación:
 
-Para la correcta instalación y el buen funcionamiento del programa es necesario lo siguiente:
+Para la correcta instalación y el buen funcionamiento del programa es necesario descargar e instalar lo siguiente:
  - [SQL Server 2019 Developer](https://www.microsoft.com/es-es/sql-server/sql-server-downloads)
  - [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
- - [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.301-windows-x64-installer)
+ - [.NET Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer)
 - [Script Banco de datos.sql](https://github.com/UCASV/proyecto-final-grupo31/blob/c9ee513eb9bd88a591e5ff47f6b86995b9f5fa6e/Proyecto%20BASES-POO%202021/Bases%20de%20datos/Banco%20de%20datos.sql)
 
 ## Pasos a seguir:
