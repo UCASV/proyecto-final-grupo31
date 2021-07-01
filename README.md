@@ -1,4 +1,4 @@
-# **Aspectos tecnicos**
+# **Aspectos técnicos**
 ## Versiones de software
 Para la realización de este proyecto se utilizaron los siguientes software:
 
@@ -23,7 +23,7 @@ Este patrón de diseño se utilizó para mostrar la información de contacto de 
 - Microsoft.EntityFrameworkCore versión 5.0.7
 - Microsoft.EntityFrameworkCore.SqlServer versión 5.0.7
 - Microsoft.EntityFrameworkCore.Design versión 5.0.7
-- itext7 versión 7.1.15
+- iText7 versión 7.1.15
 
 # **Instalación del software**
 ## Requisitos de instalación:
