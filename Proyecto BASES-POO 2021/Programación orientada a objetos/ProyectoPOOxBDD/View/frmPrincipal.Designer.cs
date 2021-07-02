@@ -716,10 +716,10 @@ namespace ProyectoPOOxBDD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDiseaseRegister.AutoSize = true;
-            this.tlpRegisterP2.SetColumnSpan(this.lblDiseaseRegister, 5);
+            this.tlpRegisterP2.SetColumnSpan(this.lblDiseaseRegister, 6);
             this.lblDiseaseRegister.Location = new System.Drawing.Point(167, 448);
             this.lblDiseaseRegister.Name = "lblDiseaseRegister";
-            this.lblDiseaseRegister.Size = new System.Drawing.Size(529, 38);
+            this.lblDiseaseRegister.Size = new System.Drawing.Size(696, 38);
             this.lblDiseaseRegister.TabIndex = 5;
             this.lblDiseaseRegister.Text = "Si posee enfermedades crónicas agreguelas una a una";
             this.lblDiseaseRegister.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
