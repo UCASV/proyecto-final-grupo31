@@ -42,19 +42,19 @@ Una vez cumplidos todos los requisitos, procedemos a la instalación del program
 
 Para que nuestro programa funcione correctamente es necesario realizar la creación de la base de datos antes de la instalación. Primero se debe abrir el archivo llamado “Banco de datos.sql”, el cual está contenido en “Proyecto BASES-POO 2021\Bases de datos” del repositorio.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/1.png" width = "250">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/1.png" width = "250">
 
 Se abrirá el archivo en SQL Server Management Studio (SSMS), luego se debe de conectar con el motor de la base de datos y con el servidor de la base de datos.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/2.gif">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/2.gif">
 
 Finalmente debemos ejecutar lo contenido en el script para la creación de la base de datos de la siguiente manera: 
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/3.gif">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/3.gif">
 
 Si la creación de la base de datos se realizó correctamente, en la carpeta “Databases” se encontrará la nueva base de datos llamada “VaccinationDB”.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/4.png" width = "400">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/4.png" width = "400">
 
 En caso de no realizar este proceso, el programa no funcionará correctamente, por lo cual es estrictamente necesario realizar el proceso anteriormente descrito.
 
@@ -62,35 +62,35 @@ En caso de no realizar este proceso, el programa no funcionará correctamente, p
 
 Primero se debe abrir el instalador llamado “Setup.msi”, el cual está contenido en “Proyecto BASES-POO 2021\Programación orientada a objetos” del repositorio.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/5.png" width = 240>
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/5.png" width = 240>
 
 Se abrirá el inicio del asistente para la instalación del programa. Para seguir con el proceso de instalación damos clic en “Siguiente”.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/6.png">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/6.png">
 
 Posteriormente debemos escoger la ruta de instalación del programa, también debemos indicar si queremos que el programa se instale para todos los usuarios o únicamente para el usuario en el que está iniciada la sesión de Windows al momento de la instalación, luego damos clic en “Siguiente”.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/7.png">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/7.png">
 
 Después confirmamos la instalación dando clic en siguiente.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/8.png">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/8.png">
 
 Se nos mostrará un mensaje en donde se solicita la confirmación para permitir la instalación del programa, debemos dar clic en “Sí”.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/9.PNG" width = 525>
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/9.PNG" width = 525>
 
 Posteriormente comenzará la instalación del programa. Al finalizar este proceso se nos mostrará la confirmación que el programa se ha instalado correctamente, terminaremos dando clic en "Cerrar".
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/10.png">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/10.png">
 
 Buscamos el acceso directo que se nos ha creado en el escritorio y damos doble clic para ejecutar el programa.
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/11.png" width = 200>
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/11.png" width = 200>
 
 De esta manera habremos instalado correctamente el programa y ya está listo para ser utilizado. 
 
-<img src="https://raw.githubusercontent.com/KevinEsc21/Images/main/12.png" width = "510">
+<img src="https://raw.githubusercontent.com/Rockevinche/Images/main/POO/12.png" width = "510">
 
 # **Manual de usuario**
 
